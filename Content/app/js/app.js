@@ -1,5 +1,3 @@
-'use strict';
-
 var app = angular.module('cotriacWebApp', ['ngRoute']);
 
 var services = angular.module("Services", []);

@@ -1,8 +1,5 @@
-"use strict";
-
 directives.directive('treeView', function () {
     return {
-        restrict: 'E',
         templateUrl: 'Content/app/js/navigation/navigation.html',
         replace: true,
         scope: {},
@@ -14,28 +11,16 @@ directives.directive('treeView', function () {
 });
 
 controllers.controller("TreeController", ['$scope', function ($scope) {
-    $scope.delete = function (data) {
-        .nodes = [];
+    this.init = function () {
+
     };
-    $scope.add = function (data) {
-        var post = data.nodes.length + 1;
-        var newName = data.name + '-' + post;
-        data.nodes.push({
-            name: newName,
-            nodes: []
-        });
-    };
-    $scope.tree = [{
-        name: "Node",
-        nodes: []
-    }];
     $scope.tree = [
         {
             name: "About Us",
             nodes: [
                 {
                     name: "History & Purpose",
-                    link: "#/historyAndPurpose/historyAndPurpose.html"
+                    link: "#/historyAndPurpose"
                 },
                 {
                     name: "Annual Report",
