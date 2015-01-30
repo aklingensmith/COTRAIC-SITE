@@ -1,6 +1,6 @@
 
 
-controllers.controller('HistoryAndPurposeController', ['$scope',
+app.controller('HistoryAndPurposeController', ['$scope',
 
     function ($scope) {
         this.init = function () {

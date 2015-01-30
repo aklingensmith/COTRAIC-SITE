@@ -1,6 +1,6 @@
 
 
-controllers.controller('AboutUsController', ['$scope',
+app.controller('AboutUsController', ['$scope',
 
     function ($scope) {
         this.init = function () {

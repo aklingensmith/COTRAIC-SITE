@@ -5,10 +5,8 @@
     </ul>
 </script>
 
-<div ng-controller="TreeController" id="wrapper">
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand" ng-repeat="data in tree" ng-include="'tree_item_renderer.html'"></li>
-        </ul>
-    </div>
+<div>
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand" ng-repeat="data in tree" ng-include="'tree_item_renderer.html'"></li>
+    </ul>
 </div>

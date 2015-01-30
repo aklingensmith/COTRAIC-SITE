@@ -1,22 +1,23 @@
-directives.directive('treeView', function () {
+app.directive('treeview', function () {
     return {
-        templateUrl: 'Content/app/js/navigation/navigation.html',
-        replace: true,
+        restrict: "E",
+        templateUrl: 'navigation/navigation.html',
         scope: {},
         controller: 'TreeController',
-        link: function (scope) {
+        link: function (scope, e, a, controller) {
             controller.init();
         }
     };
 });
 
-controllers.controller("TreeController", ['$scope', function ($scope) {
+app.controller("TreeController", ['$scope', function ($scope) {
     this.init = function () {
 
     };
     $scope.tree = [
         {
             name: "About Us",
+            link: "#/aboutUs",
             nodes: [
                 {
                     name: "History & Purpose",
@@ -24,7 +25,7 @@ controllers.controller("TreeController", ['$scope', function ($scope) {
                 },
                 {
                     name: "Annual Report",
-                    link: "#/aboutus"
+                    link: ""
                 },
                 {
                     name: "Contact Cotraic",
@@ -34,6 +35,7 @@ controllers.controller("TreeController", ['$scope', function ($scope) {
         },
         {
             name: "Education",
+            link: "",
             nodes: [
                 {
                     name: "Headstart",
@@ -49,14 +51,6 @@ controllers.controller("TreeController", ['$scope', function ($scope) {
                 },
                 {
                     name: "Pre-K"
-                }
-            ]
-        },
-        {
-            name: "Item3",
-            nodes: [
-                {
-                    name: "SubItem6"
                 }
             ]
         }
