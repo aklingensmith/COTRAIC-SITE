@@ -50,7 +50,8 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     }]
                 },
                 {
-                    name: "Pre-K"
+                    name: "Pre-K",
+                    link: "#/preK"
                 }
             ]
         }
