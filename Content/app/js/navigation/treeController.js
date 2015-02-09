@@ -35,7 +35,6 @@ app.controller("TreeController", ['$scope', function ($scope) {
         },
         {
             name: "Education",
-            link: "#/Education",
             nodes: [
                 {
                     name: "Headstart",

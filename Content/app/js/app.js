@@ -9,8 +9,8 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'aboutUs/aboutUs.html',
             controller: 'AboutUsController'
         })
-	.when('/Education/HeadStart/whatIs', {
-            templateUrl: '/HeadStart/whatIsHeadStart.html',
+	.when('/whatIsHeadStart', {
+            templateUrl: 'headStart/whatIsHeadStart.html',
             controller: 'WhatIsHeadStartController'
         })
         .otherwise({
