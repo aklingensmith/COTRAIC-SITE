@@ -9,12 +9,14 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'aboutUs/aboutUs.html',
             controller: 'AboutUsController'
         })
-    
         .when('/ContactCotraic', {
             templateUrl: 'aboutUsContact/aboutUsContact.html',
             controller: 'AboutUsContactController'
         })
-    
+        .when('/preK', {
+            templateUrl: 'preK/preK.html',
+            controller: 'preKController'
+        })
         .otherwise({
             redirectTo: '/historyAndPurpose'
         });
