@@ -45,6 +45,7 @@ app.controller("TreeController", ['$scope', function ($scope) {
                 },
                 {
                     name: "Early Headstart",
+                    link:"#/EarlyHeadStart", 
                     nodes: [{
                         name: "What is Early Headstart?"
                     }]
