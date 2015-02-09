@@ -29,7 +29,7 @@ app.controller("TreeController", ['$scope', function ($scope) {
                 },
                 {
                     name: "Contact Cotraic",
-                    link: ""
+                    link: "#/ContactCotraic"
                 }
             ]
         },
