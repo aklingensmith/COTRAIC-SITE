@@ -16,6 +16,12 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/preK', {
             templateUrl: 'preK/preK.html',
             controller: 'preKController'
+    })
+        
+    .when('/EarlyHeadStart', {
+            templateUrl: 'EarlyHeadStart/EarlyHeadStart.html',
+            controller: 'EarlyHeadStartController'
+
         })
         .otherwise({
             redirectTo: '/historyAndPurpose'
