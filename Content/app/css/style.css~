@@ -12,7 +12,7 @@
 
 #parent_div_2 {
     margin-right: 10px;
-    width: 1000px;
+    width: 1200px;
     float: right;
 }
 

@@ -17,11 +17,13 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'preK/preK.html',
             controller: 'preKController'
     })
-        
-    .when('/EarlyHeadStart', {
+        .when('/EarlyHeadStart', {
             templateUrl: 'EarlyHeadStart/EarlyHeadStart.html',
             controller: 'EarlyHeadStartController'
-
+        })
+	   .when('/annualReport', {
+            templateUrl: 'annualReport/annualReport.html',
+            controller: 'annualReportController'
         })
         .otherwise({
             redirectTo: '/historyAndPurpose'

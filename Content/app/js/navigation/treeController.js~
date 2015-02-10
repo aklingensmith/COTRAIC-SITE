@@ -25,11 +25,11 @@ app.controller("TreeController", ['$scope', function ($scope) {
                 },
                 {
                     name: "Annual Report",
-                    link: "#/annualReport"
+                    link: ""
                 },
                 {
                     name: "Contact Cotraic",
-                    link: "#/ContactCotraic"
+                    link: ""
                 }
             ]
         },
@@ -41,19 +41,17 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     name: "Headstart",
                     nodes: [{
                         name: "What is Headstart?"
-			link: ""
+			link: "#/whatIsHeadstart"
                     }]
                 },
                 {
                     name: "Early Headstart",
-                    link:"#/EarlyHeadStart", 
                     nodes: [{
                         name: "What is Early Headstart?"
                     }]
                 },
                 {
-                    name: "Pre-K",
-                    link: "#/preK"
+                    name: "Pre-K"
                 }
             ]
         }

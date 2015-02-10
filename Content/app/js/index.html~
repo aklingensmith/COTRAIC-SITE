@@ -12,10 +12,7 @@
     <script src="navigation/treeController.js"></script>
     <script src="historyAndPurpose/historyAndPurposeController.js"></script>
     <script src="aboutUs/aboutUsController.js"></script>
-    <script src="aboutUsContact/aboutUsContactController.js"></script>
-    <script src="preK/preKController.js"></script>
-    <script src="EarlyHeadStart/EarlyHeadStartController.js"></script>
-    <script src="annualReport/annualReportController.js"></script>
+    <script src="whatIsHeadstart/whatIsHeadstartController.js"></script>
 </head>
 
 <body ng-cloak>
