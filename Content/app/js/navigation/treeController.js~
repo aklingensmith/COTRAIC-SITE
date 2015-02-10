@@ -25,7 +25,7 @@ app.controller("TreeController", ['$scope', function ($scope) {
                 },
                 {
                     name: "Annual Report",
-                    link: "#/annualReport"
+                    link: ""
                 },
                 {
                     name: "Contact Cotraic",
@@ -41,7 +41,7 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     name: "Headstart",
                     nodes: [{
                         name: "What is Headstart?"
-			link: ""
+			link: "#/whatIsHeadstart"
                     }]
                 },
                 {
