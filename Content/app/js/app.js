@@ -16,12 +16,12 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/preK', {
             templateUrl: 'preK/preK.html',
             controller: 'preKController'
-    })
+        })
         .when('/EarlyHeadStart', {
             templateUrl: 'EarlyHeadStart/EarlyHeadStart.html',
             controller: 'EarlyHeadStartController'
         })
-	   .when('/annualReport', {
+        .when('/annualReport', {
             templateUrl: 'annualReport/annualReport.html',
             controller: 'annualReportController'
         })
