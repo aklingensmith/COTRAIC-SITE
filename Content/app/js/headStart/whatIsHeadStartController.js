@@ -1,5 +1,3 @@
-
-
 app.controller('WhatIsHeadStartController', ['$scope',
 
     function ($scope) {

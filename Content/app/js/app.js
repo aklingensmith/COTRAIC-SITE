@@ -24,8 +24,8 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/annualReport', {
             templateUrl: 'annualReport/annualReport.html',
             controller: 'annualReportController'
-			})
-	.when('/whatIsHeadStart', {
+        })
+        .when('/whatIsHeadStart', {
             templateUrl: 'headStart/whatIsHeadStart.html',
             controller: 'WhatIsHeadStartController'
         })
