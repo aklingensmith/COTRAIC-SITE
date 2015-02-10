@@ -35,12 +35,12 @@ app.controller("TreeController", ['$scope', function ($scope) {
         },
         {
             name: "Education",
-            link: "",
             nodes: [
                 {
                     name: "Headstart",
                     nodes: [{
-                        name: "What is Headstart?"
+                        name: "What is Headstart?",
+						link: "#/whatIsHeadStart"
                     }]
                 },
                 {
