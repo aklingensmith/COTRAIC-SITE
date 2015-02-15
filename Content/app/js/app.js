@@ -1,6 +1,6 @@
 var app = angular.module('cotriacWebApp', ['ngRoute']);
 
-app.config(['$routeProvider', function ($routeProvider) {
+app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/historyAndPurpose', {
             templateUrl: 'historyAndPurpose/historyAndPurpose.html',
             controller: 'HistoryAndPurposeController'
