@@ -1,6 +1,6 @@
 var app = angular.module('cotriacWebApp', ['ngRoute']);
 
-app.config(['$routeProvider', function($routeProvider) {
+app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/historyAndPurpose', {
             templateUrl: 'historyAndPurpose/historyAndPurpose.html',
             controller: 'HistoryAndPurposeController'
@@ -21,6 +21,10 @@ app.config(['$routeProvider', function($routeProvider) {
             templateUrl: 'EarlyHeadStart/EarlyHeadStart.html',
             controller: 'EarlyHeadStartController'
         })
+        .when('/Locations', {
+            templateUrl: 'EarlyHeadStart/Locations.html',
+            controller: 'LocationsController'
+        })
         .when('/annualReport', {
             templateUrl: 'annualReport/annualReport.html',
             controller: 'annualReportController'
@@ -29,9 +33,21 @@ app.config(['$routeProvider', function($routeProvider) {
             templateUrl: 'headStart/whatIsHeadStart.html',
             controller: 'WhatIsHeadStartController'
         })
-	.when('/WIAContact', {
+        .when('/WIAContact', {
             templateUrl: 'WIAProgram/WIAContact.html',
             controller: 'WIAContactController'
+        })
+        .when('/Enrollment', {
+            templateUrl: 'headStart/Enrollment.html',
+            controller: 'EnrollmentController'
+        })
+        .when('/WIAPrograms', {
+            templateUrl: 'AssistancePrograms/WIAProgram/WIAPrograms.html',
+            controller: 'WIAProgramsController'
+        })
+        .when('/WIALocations', {
+            templateUrl: 'AssistancePrograms/WIAProgram/WIALocations.html',
+            controller: 'WIALocationsController'
         })
         .otherwise({
             redirectTo: '/aboutUs'
