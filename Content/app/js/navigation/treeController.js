@@ -40,21 +40,46 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     name: "Headstart",
                     nodes: [{
                         name: "What is Headstart?",
-						link: "#/whatIsHeadStart"
+                        link: "#/whatIsHeadStart"
                     }]
                 },
                 {
                     name: "Early Headstart",
                     link: "#/EarlyHeadStart",
                     nodes: [{
-                        name: "What is Early Headstart?"
-                    }]
-                },
+                            name: "What is Early Headstart?"
+                    },
+                        {
+                            name: "Enrollment",
+                            link: "#/earlyHeadStartEnrollment"
+                        },
+                        {
+                            name: "Am I Eligible?",
+                            link: "#/earlyHeadStartEligibility"
+                            }
+                           ]
+                            },
                 {
                     name: "Pre-K",
-                    link: "#/preK"
+                    link: "#/preK",
+                    nodes: [{
+                        name: "Enrollment",
+                        link: "#/preKEnrollment"
+                    }]
+                            }
+                            ]
+                    },
+        {
+            name: "Assistance Programs",
+            nodes: [
+                {
+                    name: "Elders",
+                    nodes: [{
+                        name: "Am I eligible?",
+                        link: "#/eldersEligibility"
+                    }]
                 }
             ]
-        }
-    ];
-}]);
+                    }
+                    ];
+            }]);
