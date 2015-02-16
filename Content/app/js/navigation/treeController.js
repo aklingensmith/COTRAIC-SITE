@@ -47,12 +47,57 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     name: "Early Headstart",
                     link: "#/EarlyHeadStart",
                     nodes: [{
-                        name: "What is Early Headstart?"
+                        name: "What is Early Headstart?",
+                        link: ""
+                    },
+                    {
+                        name: "Contact",
+                        link: "#/earlyHeadstartContact"
                     }]
                 },
                 {
                     name: "Pre-K",
-                    link: "#/preK"
+                    link: "#/preK",
+                    nodes: [{
+                        name: "What is Pre-K?",
+                        link: ""
+                    },
+                    {
+                        name: "Locations",
+                        link: "#/preKLocations"
+                    },
+                    {
+                        name: "Am I Eligible?",
+                        link: "#/preKEligible"
+                    },
+                    {
+                        name: "Enrollment",
+                        link: ""
+                    },
+                    {
+                        name: "Contact",
+                        link: "#/preKContact"
+                    }]
+                },
+                {
+                    name: "Assistance Programs",
+                    link: "",
+                    nodes: [{
+                        name: "Elders",
+                        link: "",
+                    },
+                    {
+                        name: "WIA Program",
+                        link: "",
+                        nodes: [{
+                            name: "What is WIA?",
+                            link: ""
+                        },
+                        {
+                            name: "Am I Eligible?",
+                            link: "#/WIAEligible"
+                        }]
+                    }]
                 }
             ]
         }
