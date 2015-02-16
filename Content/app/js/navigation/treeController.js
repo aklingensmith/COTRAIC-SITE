@@ -1,19 +1,19 @@
-app.directive('treeview', function() {
+app.directive('treeview', function () {
     return {
         restrict: "E",
         templateUrl: 'navigation/navigation.html',
         scope: {},
         controller: 'TreeController',
-        link: function(scope, e, a, controller) {
+        link: function (scope, e, a, controller) {
             controller.init();
         }
     };
 });
 
-app.controller("TreeController", ['$scope', function($scope) {
-    this.init = function() {
+app.controller("TreeController", ['$scope', function ($scope) {
+    this.init = function () {
 
-    };    
+    };
     $scope.tree = [
         {
             name: "About Us",
@@ -70,12 +70,15 @@ app.controller("TreeController", ['$scope', function($scope) {
                     nodes: [{
                         name: "WIAPrograms",
                         link: "#/WIAPrograms",
-                        nodes: [{
+                        nodes: [
+                            {
                                 name: "WIALocations",
                                 link: "#/WIALocations"
-                    },
-                           ]
-
+                            },
+                            {
+                                name: "WIA Contact",
+                                link: "#/WIAContact"
+                            }]
                     }, ]
                 }
             ]
