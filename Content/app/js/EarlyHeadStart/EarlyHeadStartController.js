@@ -1,5 +1,3 @@
-
-
 app.controller('EarlyHeadStartController', ['$scope',
 
     function ($scope) {
