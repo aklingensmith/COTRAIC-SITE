@@ -49,6 +49,22 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'AssistancePrograms/WIAProgram/WIALocations.html',
             controller: 'WIALocationsController'
         })
+        .when('/eldersEligibility', {
+            templateUrl: 'eldersEligibility/eldersEligibility.html',
+            controller: 'eldersEligibilityController'
+        })
+        .when('/earlyHeadStartEnrollment', {
+            templateUrl: 'EarlyHeadStart/earlyHeadStartEnrollment.html',
+            controller: 'earlyHeadStartEnrollmentController'
+        })
+        .when('/preKEnrollment', {
+            templateUrl: 'preK/preKEnrollment.html',
+            controller: 'preKEnrollmentController'
+        })
+        .when('/earlyHeadStartEligibility', {
+            templateUrl: 'EarlyHeadStart/earlyHeadStartEligibility.html',
+            controller: 'earlyHeadStartEligibilityController'
+        })
         .otherwise({
             redirectTo: '/aboutUs'
         });

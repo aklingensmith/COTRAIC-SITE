@@ -47,37 +47,57 @@ app.controller("TreeController", ['$scope', function ($scope) {
                             link: "#/Enrollment"
                     }
                             ]
-                },
-                {
-                    name: "Early Headstart",
-                    link: "#/EarlyHeadStart",
-                    nodes: [{
-                            name: "What is Early Headstart?",
-                            link: "#WhatisEarlyHeadStart"
-
-                    },
-                        {
-                            name: "Locations",
-                            link: "#/Locations"
                     }]
                 },
+        {
+            name: "Early Headstart",
+            link: "#/EarlyHeadStart",
+            nodes: [{
+                    name: "What is Early Headstart?",
+                    link: "#WhatisEarlyHeadStart"
+
+                    },
                 {
-                    name: "Pre-K",
-                    link: "#/preK",
+                    name: "Enrollment",
+                    link: "#/earlyHeadStartEnrollment"
+                        },
+                {
+                    name: "Am I Eligible?",
+                    link: "#/earlyHeadStartEligibility"
+                        },
+                {
+                    name: "Locations",
+                    link: "#/Locations"
+                    }]
                 },
+        {
+            name: "Pre-K",
+            link: "#/preK",
+            nodes: [{
+                name: "Enrollment",
+                link: "#/preKEnrollment"
+                    }]
+                },
+        {
+            name: "Assistance Programs",
+            nodes: [
                 {
-                    name: "Assistance Programs",
+                    name: "Elders",
                     nodes: [{
-                        name: "WIAPrograms",
-                        link: "#/WIAPrograms",
-                        nodes: [
-                            {
-                                name: "WIALocations",
-                                link: "#/WIALocations"
+                            name: "Am I eligible?",
+                            link: "#/eldersEligibility"
+                    },
+                        {
+                            name: "WIAPrograms",
+                            link: "#/WIAPrograms",
+                            nodes: [
+                                {
+                                    name: "WIALocations",
+                                    link: "#/WIALocations"
                             },
-                            {
-                                name: "WIA Contact",
-                                link: "#/WIAContact"
+                                {
+                                    name: "WIA Contact",
+                                    link: "#/WIAContact"
                             }]
                     }, ]
                 }
