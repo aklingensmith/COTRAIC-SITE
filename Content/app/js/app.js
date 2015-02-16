@@ -29,6 +29,10 @@ app.config(['$routeProvider', function($routeProvider) {
             templateUrl: 'headStart/whatIsHeadStart.html',
             controller: 'WhatIsHeadStartController'
         })
+	.when('/WIAContact', {
+            templateUrl: 'WIAProgram/WIAContact.html',
+            controller: 'WIAContactController'
+        })
         .otherwise({
             redirectTo: '/aboutUs'
         });
