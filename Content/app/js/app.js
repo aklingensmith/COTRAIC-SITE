@@ -21,6 +21,10 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'EarlyHeadStart/EarlyHeadStart.html',
             controller: 'EarlyHeadStartController'
         })
+        .when('/Locations', {
+            templateUrl: 'EarlyHeadStart/Locations.html',
+            controller: 'LocationsController'
+        })
         .when('/annualReport', {
             templateUrl: 'annualReport/annualReport.html',
             controller: 'annualReportController'
@@ -28,6 +32,18 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/whatIsHeadStart', {
             templateUrl: 'headStart/whatIsHeadStart.html',
             controller: 'WhatIsHeadStartController'
+        })
+        .when('/Enrollment', {
+            templateUrl: 'headStart/Enrollment.html',
+            controller: 'EnrollmentController'
+        })
+        .when('/WIAPrograms', {
+            templateUrl: 'AssistancePrograms/WIAProgram/WIAPrograms.html',
+            controller: 'WIAProgramsController'
+        })
+        .when('/WIALocations', {
+            templateUrl: 'AssistancePrograms/WIAProgram/WIALocations.html',
+            controller: 'WIALocationsController'
         })
         .otherwise({
             redirectTo: '/aboutUs'
