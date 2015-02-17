@@ -12,11 +12,11 @@
 
 #parent_div_2 {
     margin-right: 10px;
-    width: 1000px;
-    float: right;
+    width: 500px;
+    float: left;
 }
 
 .child_div_2 {
     float: left;
-    margin-right: 200px;
+    margin-right: 20px;
 }

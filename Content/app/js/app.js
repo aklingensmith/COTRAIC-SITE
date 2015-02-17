@@ -17,9 +17,29 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'preK/preK.html',
             controller: 'preKController'
         })
+        .when('/preKLocations', {
+            templateUrl: 'preKLocations/preKLocations.html',
+            controller: 'PreKLocationsController'
+        })
+        .when('/preKEligible', {
+            templateUrl: 'preKAmIEligible/preKAmIEligible.html',
+            controller: 'PreKAmIEligibleController'
+        })
+        .when('/preKContact', {
+            templateUrl: 'preKContact/preKContact.html',
+            controller: 'PreKContactController'
+        })
         .when('/EarlyHeadStart', {
             templateUrl: 'EarlyHeadStart/EarlyHeadStart.html',
             controller: 'EarlyHeadStartController'
+        })
+        .when('/Locations', {
+            templateUrl: 'EarlyHeadStart/Locations.html',
+            controller: 'LocationsController'
+        })
+        .when('/earlyHeadstartContact', {
+            templateUrl: 'earlyHeadstartContact/earlyHeadstartContact.html',
+            controller: 'EarlyHeadstartContactController'
         })
         .when('/annualReport', {
             templateUrl: 'annualReport/annualReport.html',
@@ -28,6 +48,58 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/whatIsHeadStart', {
             templateUrl: 'headStart/whatIsHeadStart.html',
             controller: 'WhatIsHeadStartController'
+        })
+        .when('/WIAContact', {
+            templateUrl: 'WIAProgram/WIAContact.html',
+            controller: 'WIAContactController'
+        })
+        .when('/Enrollment', {
+            templateUrl: 'headStart/Enrollment.html',
+            controller: 'EnrollmentController'
+        })
+        .when('/WIAPrograms', {
+            templateUrl: 'AssistancePrograms/WIAProgram/WIAPrograms.html',
+            controller: 'WIAProgramsController'
+        })
+        .when('/WIALocations', {
+            templateUrl: 'AssistancePrograms/WIAProgram/WIALocations.html',
+            controller: 'WIALocationsController'
+        })
+        .when('/eldersEligibility', {
+            templateUrl: 'eldersEligibility/eldersEligibility.html',
+            controller: 'eldersEligibilityController'
+        })
+        .when('/earlyHeadStartEnrollment', {
+            templateUrl: 'EarlyHeadStart/earlyHeadStartEnrollment.html',
+            controller: 'earlyHeadStartEnrollmentController'
+        })
+        .when('/preKEnrollment', {
+            templateUrl: 'preK/preKEnrollment.html',
+            controller: 'preKEnrollmentController'
+        })
+        .when('/earlyHeadStartEligibility', {
+            templateUrl: 'EarlyHeadStart/earlyHeadStartEligibility.html',
+            controller: 'earlyHeadStartEligibilityController'
+        })
+        .when('/WIAEligible', {
+            templateUrl: 'wiaAmIEligible/wiaAmIEligible.html',
+            controller: 'WIAAmIEligibleController'
+        })
+        .when('/assistanceProgramsEldersServices', {
+            templateUrl: 'assistanceProgramsEldersServices/assistanceProgramsEldersServices.html',
+            controller: 'assistanceProgramsEldersServicesController'
+        })
+        .when('/headstartContact', {
+            templateUrl: 'headstartContact/headstartContact.html',
+            controller: 'headstartContactController'
+        })
+        .when('/culturalPowWow', {
+            templateUrl: 'culturalPowWow/culturalPowWow.html',
+            controller: 'culturalPowWowController'
+        })
+        .when('/headstartAmIEligible', {
+            templateUrl: 'headstartAmIEligible/headstartAmIEligible.html',
+            controller: 'headstartAmIEligibleController'
         })
         .otherwise({
             redirectTo: '/aboutUs'

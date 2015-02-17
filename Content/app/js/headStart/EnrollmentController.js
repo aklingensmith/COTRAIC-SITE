@@ -1,4 +1,4 @@
-app.controller('EarlyHeadStartController', ['$scope',
+app.controller('EnrollmentController', ['$scope',
 
     function ($scope) {
         this.init = function () {

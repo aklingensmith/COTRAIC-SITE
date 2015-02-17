@@ -1,4 +1,6 @@
-app.controller('EarlyHeadStartController', ['$scope',
+
+
+app.controller('PreKAmIEligibleController', ['$scope',
 
     function ($scope) {
         this.init = function () {

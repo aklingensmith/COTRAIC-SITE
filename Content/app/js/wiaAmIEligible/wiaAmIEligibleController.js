@@ -1,4 +1,6 @@
-app.controller('EarlyHeadStartController', ['$scope',
+
+
+app.controller('WIAAmIEligibleController', ['$scope',
 
     function ($scope) {
         this.init = function () {

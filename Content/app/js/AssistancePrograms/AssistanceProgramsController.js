@@ -1,4 +1,4 @@
-app.controller('EarlyHeadStartController', ['$scope',
+app.controller('AssistanceProgramsController', ['$scope',
 
     function ($scope) {
         this.init = function () {
