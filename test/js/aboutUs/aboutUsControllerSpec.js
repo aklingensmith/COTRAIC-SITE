@@ -1,7 +1,7 @@
 'use strict';
 
 describe('Unit: AboutUsController', function () {
-    // Load the module with MainController
+    
     beforeEach(module('cotriacWebApp'));
 
     describe('AboutUsController', function () {
