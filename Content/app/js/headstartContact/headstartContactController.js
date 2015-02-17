@@ -1,4 +1,4 @@
-app.controller('headstartContactController', ['$scope',
+app.controller('HeadStartContactController', ['$scope',
 
     function ($scope) {
         this.init = function () {

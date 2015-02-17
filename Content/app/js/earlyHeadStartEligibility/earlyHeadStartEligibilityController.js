@@ -1,4 +1,4 @@
-app.controller('LocationsController', ['$scope',
+app.controller('EarlyHeadStartEligibilityController', ['$scope',
 
     function ($scope) {
         this.init = function () {

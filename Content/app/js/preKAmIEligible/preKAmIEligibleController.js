@@ -1,5 +1,3 @@
-
-
 app.controller('PreKAmIEligibleController', ['$scope',
 
     function ($scope) {

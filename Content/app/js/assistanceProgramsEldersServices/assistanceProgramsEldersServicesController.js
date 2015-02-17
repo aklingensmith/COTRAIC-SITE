@@ -1,4 +1,4 @@
-app.controller('assistanceProgramsEldersServicesController', ['$scope',
+app.controller('AssistanceProgramsEldersServicesController', ['$scope',
 
     function ($scope) {
         this.init = function () {

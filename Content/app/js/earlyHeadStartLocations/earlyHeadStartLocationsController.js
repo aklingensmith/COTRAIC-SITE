@@ -1,6 +1,4 @@
-
-
-app.controller('earlyHeadStartEligibilityController', ['$scope',
+app.controller('EarlyHeadStartLocationsController', ['$scope',
 
     function ($scope) {
         this.init = function () {

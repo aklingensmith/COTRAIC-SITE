@@ -1,5 +1,3 @@
-
-
 app.controller('WIAAmIEligibleController', ['$scope',
 
     function ($scope) {

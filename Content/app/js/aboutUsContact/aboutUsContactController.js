@@ -1,5 +1,3 @@
-
-
 app.controller('AboutUsContactController', ['$scope',
 
     function ($scope) {

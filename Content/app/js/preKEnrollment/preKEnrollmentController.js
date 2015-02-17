@@ -1,4 +1,4 @@
-app.controller('preKEnrollmentController', ['$scope',
+app.controller('PreKEnrollmentController', ['$scope',
 
     function ($scope) {
         this.init = function () {

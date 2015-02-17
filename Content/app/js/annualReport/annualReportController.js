@@ -1,6 +1,4 @@
-
-
-app.controller('annualReportController', ['$scope',
+app.controller('AnnualReportController', ['$scope',
 
     function ($scope) {
         this.init = function () {

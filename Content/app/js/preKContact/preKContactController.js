@@ -1,5 +1,3 @@
-
-
 app.controller('PreKContactController', ['$scope',
 
     function ($scope) {

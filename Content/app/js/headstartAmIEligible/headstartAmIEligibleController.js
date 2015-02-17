@@ -1,4 +1,4 @@
-app.controller('headstartAmIEligibleController', ['$scope',
+app.controller('HeadstartAmIEligibleController', ['$scope',
 
     function ($scope) {
         this.init = function () {

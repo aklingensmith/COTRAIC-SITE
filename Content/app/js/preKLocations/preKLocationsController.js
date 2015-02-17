@@ -1,5 +1,3 @@
-
-
 app.controller('PreKLocationsController', ['$scope',
 
     function ($scope) {

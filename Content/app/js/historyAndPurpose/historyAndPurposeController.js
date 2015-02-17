@@ -1,5 +1,3 @@
-
-
 app.controller('HistoryAndPurposeController', ['$scope',
 
     function ($scope) {

@@ -29,43 +29,37 @@ app.controller("TreeController", ['$scope', function ($scope) {
                 },
                 {
                     name: "Contact Cotraic",
-                    link: "#/ContactCotraic"
-                }
-            ]
+                    link: "#/aboutUsContact"
+                }]
         },
         {
             name: "Education",
             nodes: [
                 {
-                    name: "Headstart",
+                    name: "HeadStart",
                     nodes: [{
-                            name: "What is Headstart?",
+                            name: "What is HeadStart?",
                             link: "#/whatIsHeadStart"
                     },
                         {
                             name: "Am I Eligible?",
-                            link: "#/headstartAmIEligible"
+                            link: "#/headStartAmIEligible"
                         },
                         {
                             name: "Enrollment",
-                            link: "#/Enrollment"
+                            link: "#/headStartEnrollment"
                     },
                         {
-                            name: "Contact Headstart",
-                            link: "#/headstartContact"
-                        }
-                            ]
+                            name: "Contact HeadStart",
+                            link: "#/headStartContact"
+                        }]
                     }]
-
-
                 },
         {
-            name: "Early Headstart",
-            link: "#/EarlyHeadStart",
+            name: "Early HeadStart",
             nodes: [{
-                    name: "What is Early Headstart?",
-                    link: "#/WhatisEarlyHeadStart"
-
+                    name: "What is Early HeadStart?",
+                    link: "#/earlyHeadStart",
                     },
                 {
                     name: "Enrollment",
@@ -77,11 +71,11 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     },
                 {
                     name: "Locations",
-                    link: "#/Locations"
+                    link: "#/earlyHeadStartLocations"
                     },
                 {
                     name: "Contact",
-                    link: "#/earlyHeadstartContact"
+                    link: "#/earlyHeadStartContact"
                     }]
                 },
         {
@@ -107,51 +101,47 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     name: "Contact",
                     link: "#/preKContact"
                     }]
-
                 },
         {
             name: "Assistance Programs",
             nodes: [
                 {
                     name: "Elders",
-                    nodes: [{
+                    nodes: [
+                        {
                             name: "Services",
                             link: "#/assistanceProgramsEldersServices"
                             },
                         {
                             name: "Am I eligible?",
                             link: "#/eldersEligibility"
-                    },
+                        }]
+                },
+                {
+                    name: "WIAPrograms",
+                    link: "#/wiaPrograms",
+                    nodes: [
                         {
-                            name: "WIAPrograms",
-                            link: "#/WIAPrograms",
-                            nodes: [
-                                {
-                                    name: "Am I Eligible?",
-                                    link: "#/WIAEligible"
-                        },
-                                {
-                                    name: "WIA Locations",
-                                    link: "#/WIALocations"
-                            },
-
-                                {
-                                    name: "WIA Contact",
-                                    link: "#/WIAContact"
-                            }]
-                    }]
-                }
-                    ]
-        },
-        {
+                            name: "Am I Eligible?",
+                            link: "#/wiaAmIEligible"
+                                },
+                        {
+                            name: "WIA Locations",
+                            link: "#/wiaLocations"
+                                },
+                        {
+                            name: "WIA Contact",
+                            link: "#/wiaContact"
+                                }]
+                }]
+    }, {
             name: "Cultural",
             nodes: [
                 {
                     name: "Pow Wow",
                     link: "#/culturalPowWow"
-                }
-                    ]
-        }
+                }]
+    }
 
     ];
 }]);

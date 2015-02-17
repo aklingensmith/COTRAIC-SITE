@@ -1,4 +1,4 @@
-app.controller('culturalPowWowController', ['$scope',
+app.controller('CulturalPowWowController', ['$scope',
 
     function ($scope) {
         this.init = function () {

@@ -1,6 +1,4 @@
-
-
-app.controller('eldersEligibilityController', ['$scope',
+app.controller('EldersEligibilityController', ['$scope',
 
     function ($scope) {
         this.init = function () {
