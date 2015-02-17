@@ -38,23 +38,58 @@ app.controller("TreeController", ['$scope', function ($scope) {
             nodes: [
                 {
                     name: "Headstart",
-                    nodes: [{
-                        name: "What is Headstart?",
-						link: "#/whatIsHeadStart"
-                    }]
+                    nodes: [
+                        {
+                            name: "What is Headstart?",
+                            link: "#/whatIsHeadStart"
+                        },
+                        {
+                            name: "Am I Eligible?",
+                            link: "#/headstartAmIEligible"
+                        },
+                        {
+                            name: "Contact Headstart",
+                            link: "#/headstartContact"
+                        }
+                            ]
                 },
                 {
                     name: "Early Headstart",
                     link: "#/EarlyHeadStart",
-                    nodes: [{
-                        name: "What is Early Headstart?"
-                    }]
+                    nodes: [
+                        {
+                            name: "What is Early Headstart?"
+                        }
+                            ]
                 },
                 {
                     name: "Pre-K",
                     link: "#/preK"
                 }
-            ]
+                    ]
+        },
+        {
+            name: "Cultural",
+            nodes: [
+                {
+                    name: "Pow Wow",
+                    link: "#/culturalPowWow"
+                }
+                    ]
+        },
+        {
+            name: "Assistance Programs",
+            nodes: [
+                {
+                    name: "Elders",
+                    nodes: [
+                        {
+                            name: "Services",
+                            link: "#/assistanceProgramsEldersServices"
+                        }
+                            ]
+                }
+                    ]
         }
     ];
 }]);

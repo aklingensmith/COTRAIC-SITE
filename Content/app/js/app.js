@@ -29,6 +29,22 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'headStart/whatIsHeadStart.html',
             controller: 'WhatIsHeadStartController'
         })
+        .when('/assistanceProgramsEldersServices', {
+            templateUrl: 'assistanceProgramsEldersServices/assistanceProgramsEldersServices.html',
+            controller: 'assistanceProgramsEldersServicesController'
+        })
+        .when('/headstartContact', {
+            templateUrl: 'headstartContact/headstartContact.html',
+            controller: 'headstartContactController'
+        })
+        .when('/culturalPowWow', {
+            templateUrl: 'culturalPowWow/culturalPowWow.html',
+            controller: 'culturalPowWowController'
+        })
+        .when('/headstartAmIEligible', {
+            templateUrl: 'headstartAmIEligible/headstartAmIEligible.html',
+            controller: 'headstartAmIEligibleController'
+        })
         .otherwise({
             redirectTo: '/aboutUs'
         });
