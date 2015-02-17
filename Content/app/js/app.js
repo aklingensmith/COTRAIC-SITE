@@ -16,11 +16,11 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/preK', {
             templateUrl: 'preK/preK.html',
             controller: 'preKController'
-        }) 
+        })
         .when('/preKLocations', {
             templateUrl: 'preKLocations/preKLocations.html',
             controller: 'PreKLocationsController'
-        })          
+        })
         .when('/preKEligible', {
             templateUrl: 'preKAmIEligible/preKAmIEligible.html',
             controller: 'PreKAmIEligibleController'
@@ -28,7 +28,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/preKContact', {
             templateUrl: 'preKContact/preKContact.html',
             controller: 'PreKContactController'
-        })          
+        })
         .when('/EarlyHeadStart', {
             templateUrl: 'EarlyHeadStart/EarlyHeadStart.html',
             controller: 'EarlyHeadStartController'
@@ -84,6 +84,22 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/WIAEligible', {
             templateUrl: 'wiaAmIEligible/wiaAmIEligible.html',
             controller: 'WIAAmIEligibleController'
+        })
+        .when('/assistanceProgramsEldersServices', {
+            templateUrl: 'assistanceProgramsEldersServices/assistanceProgramsEldersServices.html',
+            controller: 'assistanceProgramsEldersServicesController'
+        })
+        .when('/headstartContact', {
+            templateUrl: 'headstartContact/headstartContact.html',
+            controller: 'headstartContactController'
+        })
+        .when('/culturalPowWow', {
+            templateUrl: 'culturalPowWow/culturalPowWow.html',
+            controller: 'culturalPowWowController'
+        })
+        .when('/headstartAmIEligible', {
+            templateUrl: 'headstartAmIEligible/headstartAmIEligible.html',
+            controller: 'headstartAmIEligibleController'
         })
         .otherwise({
             redirectTo: '/aboutUs'

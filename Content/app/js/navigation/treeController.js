@@ -43,11 +43,21 @@ app.controller("TreeController", ['$scope', function ($scope) {
                             link: "#/whatIsHeadStart"
                     },
                         {
+                            name: "Am I Eligible?",
+                            link: "#/headstartAmIEligible"
+                        },
+                        {
                             name: "Enrollment",
                             link: "#/Enrollment"
-                    }
+                    },
+                        {
+                            name: "Contact Headstart",
+                            link: "#/headstartContact"
+                        }
                             ]
                     }]
+
+
                 },
         {
             name: "Early Headstart",
@@ -97,6 +107,7 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     name: "Contact",
                     link: "#/preKContact"
                     }]
+
                 },
         {
             name: "Assistance Programs",
@@ -104,6 +115,10 @@ app.controller("TreeController", ['$scope', function ($scope) {
                 {
                     name: "Elders",
                     nodes: [{
+                            name: "Services",
+                            link: "#/assistanceProgramsEldersServices"
+                            },
+                        {
                             name: "Am I eligible?",
                             link: "#/eldersEligibility"
                     },
@@ -126,7 +141,17 @@ app.controller("TreeController", ['$scope', function ($scope) {
                             }]
                     }]
                 }
-            ]
+                    ]
+        },
+        {
+            name: "Cultural",
+            nodes: [
+                {
+                    name: "Pow Wow",
+                    link: "#/culturalPowWow"
+                }
+                    ]
         }
+
     ];
 }]);
