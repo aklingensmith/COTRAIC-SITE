@@ -1,15 +1,15 @@
 'use strict';
 
-describe('Unit: assistanceProgramsEldersServicesController', function () {
+describe('Unit: AssistanceProgramsEldersServicesController', function () {
 
     beforeEach(module('cotriacWebApp'));
 
-    describe('assistanceProgramsEldersServicesController', function () {
+    describe('AssistanceProgramsEldersServicesController', function () {
         var scope, controller;
 
         beforeEach(inject(function ($rootScope, $controller) {
             scope = $rootScope.$new();
-            controller = $controller('assistanceProgramsEldersServicesController', {
+            controller = $controller('AssistanceProgramsEldersServicesController', {
                 $scope: scope
             });
         }));
