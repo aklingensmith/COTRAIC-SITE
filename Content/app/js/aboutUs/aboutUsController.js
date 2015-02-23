@@ -1,9 +1,11 @@
-app.controller('AboutUsController', ['$scope',
+app.controller('AboutUsController', ['$scope', 'AboutUsService',
 
-    function ($scope) {
-        this.init = function () {
-
-        };
-        $scope.title = 'About Us';
-        $scope.text = 'Some text about cotriac';
+    function ($scope, AboutUsService) {
+        AboutUsService.get().then(function (data) {
+            console.log(data);
+            $scope.title = data.data.title;
+            $scope.text = data.data.text;
+        })
+        
+        ////
 }]);
