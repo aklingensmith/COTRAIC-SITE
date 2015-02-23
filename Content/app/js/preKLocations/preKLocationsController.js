@@ -4,5 +4,8 @@ app.controller('PreKLocationsController', ['$scope',
         this.init = function () {
 
         };
-        $scope.doSomething = function () {};
+        $scope.title = 'Pre-K Locations';
+        $scope.name = 'Our Lady of Loreto School';
+        $scope.addressLine = '1901 Pioneer Ave.';
+        $scope.cityLine = 'Pittsburgh, PA 15226';
 }]);
