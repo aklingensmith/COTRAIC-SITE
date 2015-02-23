@@ -33,7 +33,7 @@ describe('Unit: AssistanceProgramsEldersServicesController', function () {
             expect(scope.emergency).toEqual('Emergency Food Bank: A service given for those faced with a crisis situation.');
         });
         it('displays copyright information', function () {
-            expect(scope.copyrighttext).toEqual('&copy; 2014 COTRAIC, Inc.');
+            expect(scope.copyrighttext).toEqual('2014 COTRAIC, Inc.');
         });
 
     });
