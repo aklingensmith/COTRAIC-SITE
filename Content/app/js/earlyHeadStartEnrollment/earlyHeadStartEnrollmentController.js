@@ -1,9 +1,9 @@
-app.controller('EarlyHeadStartEnrollmentController', ['$scope',
+app.controller('EarlyHeadStartEnrollmentController', ['$scope', 'EarlyHeadStartEnrollmentService',
 
-    function ($scope) {
-        this.init = function () {};
-        $scope.titletext = "Early HeadStart Enrollment";
-        $scope.text = "Early Head Start is a child development program primarily for low income families who meet the Federal poverty guidelines.  The Head Start Program Performance Standards require that at least 10 percent of the total number of enrollment opportunities be made available to children with special needs.  Head Start programs are also allowed to enroll 10 percent of families that are over income.  Once enrolled, children are eligible for EHS until 3 years of age or when they are transitioned into an appropriate preschool setting.";
-        $scope.copyrightdate = "2014";
-        $scope.copyrighttext = $scope.copyrightdate + " COTRAIC, Inc.";
-}]);
+    function ($scope, EarlyHeadStartEnrollmentService) {
+        EarlyHeadStartEnrollmentService.get().then(function (data) {
+            $scope.title = data.data.title;
+            $scope.text = data.data.text;
+            $scope.copyrighttext = data.data.copyrightdate;
+        })
+    }]);

@@ -5,20 +5,32 @@ describe('Unit: PreKController', function () {
     beforeEach(module('cotriacWebApp'));
 
     describe('PreKController', function () {
-        var scope, controller;
+        var scope, controller, httpBackend;
+        var response;
 
-        beforeEach(inject(function ($rootScope, $controller) {
+        beforeEach(inject(function ($rootScope, $controller, PreKService, $httpBackend) {
             scope = $rootScope.$new();
+            httpBackend = $httpBackend;
+            response = {
+                title: 'This is the title',
+                text: 'This is the text'
+            };
+
+            httpBackend.expectGET('preK/preK.json').respond(200, response);
             controller = $controller('PreKController', {
-                $scope: scope
+                $scope: scope,
+                PreKService: PreKService
             });
+
+            httpBackend.flush();
+
         }));
 
         it('sets the default title of Pre-K', function () {
-            expect(scope.titletext).toEqual('Pre-K');
+            expect(scope.title).toEqual(response.title);
         });
         it('sets the text for screen', function () {
-            expect(scope.text).toEqual('The Council of Three Rivers American Indian Centers, Inc. Pre-K Counts Program provides high quality pre-kindergarten education for 3 and 4 year olds at no cost to families. It is a two year program for your child.');
+            expect(scope.text).toEqual(response.text);
         });
     });
 });

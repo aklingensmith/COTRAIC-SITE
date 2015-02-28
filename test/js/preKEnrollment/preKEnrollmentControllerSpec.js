@@ -5,20 +5,32 @@ describe('Unit: PreKEnrollmentController', function () {
     beforeEach(module('cotriacWebApp'));
 
     describe('PreKEnrollmentController', function () {
-        var scope, controller;
+        var scope, controller, httpBackend;
+        var response;
 
-        beforeEach(inject(function ($rootScope, $controller) {
+        beforeEach(inject(function ($rootScope, $controller, PreKEnrollmentService, $httpBackend) {
             scope = $rootScope.$new();
+            httpBackend = $httpBackend;
+            response = {
+                title: 'This is the title',
+                text: 'This is the text'
+            };
+
+            httpBackend.expectGET('preKEnrollment/preKEnrollment.json').respond(200, response);
             controller = $controller('PreKEnrollmentController', {
-                $scope: scope
+                $scope: scope,
+                PreKEnrollmentService: PreKEnrollmentService
             });
+
+            httpBackend.flush();
+
         }));
 
-        it('sets the default title of About Us', function () {
-            expect(scope.titletext).toEqual('Pre-K Enrollment');
+        it('sets the default title of Pre-K Enrollment', function () {
+            expect(scope.title).toEqual(response.title);
         });
         it('sets the text for screen', function () {
-            expect(scope.text).toEqual('Could not find information regarding the enrollment into PreK');
+            expect(scope.text).toEqual(response.text);
         });
     });
 });

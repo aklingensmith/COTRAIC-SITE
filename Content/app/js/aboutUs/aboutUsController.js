@@ -5,6 +5,4 @@ app.controller('AboutUsController', ['$scope', 'AboutUsService',
             $scope.title = data.data.title;
             $scope.text = data.data.text;
         })
-        
-        ////
 }]);

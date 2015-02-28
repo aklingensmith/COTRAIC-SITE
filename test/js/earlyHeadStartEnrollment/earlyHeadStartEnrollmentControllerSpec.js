@@ -5,20 +5,32 @@ describe('Unit: EarlyHeadStartEnrollmentController', function () {
     beforeEach(module('cotriacWebApp'));
 
     describe('EarlyHeadStartEnrollmentController', function () {
-        var scope, controller;
+        var scope, controller, httpBackend;
+        var response;
 
-        beforeEach(inject(function ($rootScope, $controller) {
+        beforeEach(inject(function ($rootScope, $controller, EarlyHeadStartEnrollmentService, $httpBackend) {
             scope = $rootScope.$new();
+            httpBackend = $httpBackend;
+            response = {
+                title: 'This is the title',
+                text: 'This is the text'
+            };
+
+            httpBackend.expectGET('earlyHeadStartEnrollment/earlyHeadStartEnrollment.json').respond(200, response);
             controller = $controller('EarlyHeadStartEnrollmentController', {
-                $scope: scope
+                $scope: scope,
+                EarlyHeadStartEnrollmentService: EarlyHeadStartEnrollmentService
             });
+
+            httpBackend.flush();
+
         }));
 
-        it('sets the default title of About Us', function () {
-            expect(scope.titletext).toEqual('Early HeadStart Enrollment');
+        it('sets the default title of Early HeadStart Enrollment', function () {
+            expect(scope.title).toEqual(response.title);
         });
         it('sets the text for screen', function () {
-            expect(scope.text).toEqual('Early Head Start is a child development program primarily for low income families who meet the Federal poverty guidelines.  The Head Start Program Performance Standards require that at least 10 percent of the total number of enrollment opportunities be made available to children with special needs.  Head Start programs are also allowed to enroll 10 percent of families that are over income.  Once enrolled, children are eligible for EHS until 3 years of age or when they are transitioned into an appropriate preschool setting.');
+            expect(scope.text).toEqual(response.text);
         });
     });
 });

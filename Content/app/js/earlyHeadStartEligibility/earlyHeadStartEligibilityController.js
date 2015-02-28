@@ -1,9 +1,9 @@
-app.controller('EarlyHeadStartEligibilityController', ['$scope',
+app.controller('EarlyHeadStartEligibilityController', ['$scope', 'EarlyHeadStartEligibilityService',
 
-    function ($scope) {
-        this.init = function () {};
-        $scope.titletext = "Early HeadStart Eligibility";
-        $scope.text = "There will be a chart here that shows eligibility";
-        $scope.copyrightdate = "2014";
-        $scope.copyrighttext = $scope.copyrightdate + " COTRAIC, Inc.";
-}]);
+    function ($scope, EarlyHeadStartEligibilityService) {
+        EarlyHeadStartEligibilityService.get().then(function (data) {
+            $scope.title = data.data.title;
+            $scope.text = data.data.text;
+            $scope.copyrighttext = data.data.copyrighttext;
+        })
+    }]);
