@@ -30,10 +30,10 @@ describe('Unit: HistoryAndPurposeController', function () {
         }));
 
         it('sets the default title of History And Purpose', function () {
-            expect(scope.title).toEqual(response.title);
+            expect(scope.titletext).toEqual(response.titletext);
         });
         it('sets the main text for History And Purpose', function () {
-            expect(scope.text).toEqual(response.text);
+            expect(scope.historyandpurposetext).toEqual(response.historyandpurposetext);
         });
 	it('sets the copyright date for History And Purpose', function () {
             expect(scope.copyrightdate).toEqual(response.copyrightdate);
