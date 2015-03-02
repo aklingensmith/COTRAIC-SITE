@@ -1,13 +1,12 @@
-app.controller('PreKContactController', ['$scope',
+app.controller('PreKContactController', ['$scope', 'PreKContactService',
 
-    function ($scope) {
-        this.init = function () {
-
-        };
-        $scope.title = 'Contact Pre-K';
-        $scope.preK = 'Pre-K, Brookline Area';
-        $scope.name = 'Our Lady of Loreto School';
-        $scope.addressLine = '1901 Pioneer Ave.';
-        $scope.cityLine = 'Pittsburgh, PA 15226';
-        $scope.faxLine = 'Fax: (412) 531-3295';
+    function ($scope, PreKContactService) {
+        PreKContactService.get().then(function (data) {
+        $scope.title = data.data.title;
+        $scope.preK = data.data.preK;
+        $scope.name = data.data.name;
+        $scope.addressLine = data.data.addressLine;
+        $scope.cityLine = data.data.cityLine;
+        $scope.faxLine = data.data.faxLine;
+        })
 }]);

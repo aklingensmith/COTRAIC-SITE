@@ -1,6 +1,9 @@
 .site-flex{
     display: flex;
     flex-direction: row;
+    font-family: sans-serif;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .about-us{
@@ -9,4 +12,6 @@
     vertical-align: top;
     float: right;
     overflow: hidden;
+    background: gray;
+    color: white;
 }

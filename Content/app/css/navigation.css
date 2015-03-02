@@ -1,0 +1,41 @@
+.navigation {
+    display: inline-block;
+    background: gray;
+    border: 5px groove red;
+    border-radius: 10px;
+}
+
+a {
+    color: white;
+    background: gray;
+    text-decoration: none;
+    list-style: none;
+}
+
+.list-item {
+    color: white;
+    background: gray;
+    text-decoration: none;
+    list-style: none;
+}
+
+.list-item:hover {
+    background: dodgerblue;
+    z-index: 0;
+}
+
+.list-group {
+    color: white;
+    background: gray;
+    text-decoration: none;
+    list-style: none;
+}
+
+.list-group:hover {
+    background: dodgerblue;
+    z-index: 0;
+}
+/*
+.navigation li:hover {
+    background-color: dodgerblue;
+}*/
