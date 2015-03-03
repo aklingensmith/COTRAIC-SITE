@@ -1,11 +1,10 @@
-app.controller('PreKLocationsController', ['$scope',
+app.controller('PreKLocationsController', ['$scope', 'PreKLocationsService',
 
-    function ($scope) {
-        this.init = function () {
-
-        };
-        $scope.title = 'Pre-K Locations';
-        $scope.name = 'Our Lady of Loreto School';
-        $scope.addressLine = '1901 Pioneer Ave.';
-        $scope.cityLine = 'Pittsburgh, PA 15226';
+    function ($scope, PreKLocationsService) {
+        PreKLocationsService.get().then(function (data) {
+        $scope.title = data.data.title;
+        $scope.name = data.data.name;
+        $scope.addressLine = data.data.addressLine;
+        $scope.cityLine = data.data.cityLine;
+        })
 }]);

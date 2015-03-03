@@ -5,29 +5,43 @@ describe('Unit: PreKLocationsController', function () {
     beforeEach(module('cotriacWebApp'));
 
     describe('PreKLocationsController', function () {
-        var scope, controller;
+        var scope, controller, httpBackend;
+        var response;
 
-        beforeEach(inject(function ($rootScope, $controller) {
+        beforeEach(inject(function ($rootScope, $controller, PreKLocationsService, $httpBackend) {
             scope = $rootScope.$new();
+            httpBackend = $httpBackend;
+            response = {
+                title: 'This is the title',
+                name: 'This is the name',
+                addressLine: 'this is the address',
+                cityLine: 'this is the city',
+            };
+
+            httpBackend.expectGET('preKLocations/preKLocations.json').respond(200, response);
             controller = $controller('PreKLocationsController', {
-                $scope: scope
+                $scope: scope,
+                PreKLocationsService: PreKLocationsService
             });
+
+            httpBackend.flush();
+
         }));
                                          
         it('sets the title for preKLocations', function () {
-            expect(scope.title).toEqual('Pre-K Locations');
+            expect(scope.title).toEqual(response.title);
         });
                                                  
-        it('sets name on address for preKContact', function () {
-            expect(scope.name).toEqual('Our Lady of Loreto School');
+        it('sets name on address for preKLocations', function () {
+            expect(scope.name).toEqual(response.name);
         });
                                                          
-        it('sets address for preKContact', function () {
-            expect(scope.addressLine).toEqual('1901 Pioneer Ave.');
+        it('sets address for preKLocations', function () {
+            expect(scope.addressLine).toEqual(response.addressLine);
         });
                                                                   
-        it('sets city on address for preKContact', function () {
-            expect(scope.cityLine).toEqual('Pittsburgh, PA 15226');
+        it('sets city on address for preKLocations', function () {
+            expect(scope.cityLine).toEqual(response.cityLine);
         });
         
     });

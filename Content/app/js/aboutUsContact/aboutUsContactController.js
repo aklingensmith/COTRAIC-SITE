@@ -1,13 +1,12 @@
-app.controller('AboutUsContactController', ['$scope',
+app.controller('AboutUsContactController', ['$scope', 'AboutUsContactService',
 
-    function ($scope) {
-        this.init = function () {
-
-        };
-        $scope.title = 'Contact Us';
-        $scope.name = 'Singing Winds- Administrative Offices';
-        $scope.addressLine = '120 Charles Street';
-        $scope.cityLine = 'Pittsburgh, PA 15238';
-        $scope.phoneLine = 'Telephone: (412)-782-4457';
-        $scope.faxLine = 'Fax (412)-767-4808';
+    function ($scope, AboutUsContactService) {
+        AboutUsContactService.get().then(function (data) {
+        $scope.title = data.data.title;
+        $scope.name = data.data.name;
+        $scope.addressLine = data.data.addressLine;
+        $scope.cityLine = data.data.cityLine;
+        $scope.phoneLine = data.data.phoneLine;
+        $scope.faxLine = data.data.faxLine;
+        })
 }]);

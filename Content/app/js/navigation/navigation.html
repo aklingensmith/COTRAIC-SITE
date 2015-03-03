@@ -1,11 +1,11 @@
 <script type="text/ng-template" id="tree_item_renderer.html">
     <a href="{{data.link}}">{{data.name}}</a>
-    <ul>
-        <li ng-repeat="data in data.nodes" ng-include="'tree_item_renderer.html'"></li>
+    <ul class="list-group">
+        <li class="list-item" ng-repeat="data in data.nodes" ng-include="'tree_item_renderer.html'"></li>
     </ul>
 </script>
 
-<div>
+<div class="navigation">
     <ul>
         <li ng-repeat="data in tree" ng-include="'tree_item_renderer.html'"></li>
     </ul>
