@@ -1,8 +1,8 @@
-app.controller('WIAProgramsController', ['$scope',
+app.controller('WIAProgramsController', ['$scope', 'WIAProgramsService',
 
-    function ($scope) {
-        this.init = function () {
-
-        };
-        $scope.doSomething = function () {};
+    function ($scope, WIAProgramsService) {
+        WIAProgramsService.get().then(function (data) {
+            $scope.title = data.data.title;
+            $scope.text = data.data.text;
+        })
 }]);

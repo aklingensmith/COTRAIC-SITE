@@ -1,8 +1,8 @@
-app.controller('WIALocationsController', ['$scope',
+app.controller('WIALocationsController', ['$scope', 'WIALocationsService',
 
-    function ($scope) {
-        this.init = function () {
-
-        };
-        $scope.doSomething = function () {};
+    function ($scope, WIALocationsService) {
+        WIALocationsService.get().then(function (data) {
+            $scope.title = data.data.title;
+            $scope.text = data.data.text;
+        })
 }]);

@@ -1,8 +1,8 @@
-app.controller('HeadStartEnrollmentController', ['$scope',
+app.controller('HeadStartEnrollmentController', ['$scope', 'HeadStartEnrollmentService',
 
-    function ($scope) {
-        this.init = function () {
-
-        };
-        $scope.doSomething = function () {};
+      function ($scope, HeadStartEnrollmentService) {
+        HeadStartEnrollmentService.get().then(function (data) {
+            $scope.title = data.data.title;
+            $scope.text = data.data.text;
+        })
 }]);
