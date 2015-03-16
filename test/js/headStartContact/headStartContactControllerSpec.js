@@ -5,80 +5,113 @@ describe('Unit: HeadStartContactController', function () {
     beforeEach(module('cotriacWebApp'));
 
     describe('HeadStartContactController', function () {
-        var scope, controller;
+        var scope, controller, httpBackend;
+        var response;
 
-        beforeEach(inject(function ($rootScope, $controller) {
+        beforeEach(inject(function ($rootScope, $controller, HeadStartContactService, $httpBackend) {
             scope = $rootScope.$new();
-            controller = $controller('HeadStartContactController', {
-                $scope: scope
+            httpBackend = $httpBackend
+            response = {
+                "title": "This is the title",
+                "knoxville": "This is the name of HeadStart Location",
+                "knoxvilleCenter": "This is the name of the center",
+                "knoxvilleAddress": "This is the address",
+                "knoxvilleZip": "This is the zip code",
+                "knoxvillePhone": "This is the contact information",
+                "overbrook": "This is the name of HeadStart Location",
+                "overbrookCenter": "This is the name of the center",
+                "overbrookAddress": "This is the address",
+                "overbrookZip": "This is the zip code",
+                "overbrookPhone": "This is the contact information",
+                "hazelwood": "This is the name of HeadStart Location",
+                "hazelwoodCenter": "This is the name of the center",
+                "hazelwoodAddress": "This is the address",
+                "hazelwoodZip": "This is the zip code",
+                "hazelwoodPhone": "This is the contact information",
+                "dorseyville": "This is the name of HeadStart Location",
+                "dorseyvilleCenter": "This is the name of the center",
+                "dorseyvilleAddress": "This is the address",
+                "dorseyvilleZip": "This is the zip code",
+                "dorseyvillePhone": "This is the contact information",
+                "copyrighttext" : "2014 COTRAIC, Inc."
+                
+            }
+                httpBackend.expectGET('headStartContact/headStartContact.json').respond(200, response);
+                controller = $controller('HeadStartContactController', {
+                $scope: scope,
+                HeadStartContactService: HeadStartContactService
             });
+
+            httpBackend.flush();
+
+                
         }));
 
         it('sets the default title of Contact HeadStart', function () {
-            expect(scope.title).toEqual('HeadStart Contact');
+            expect(scope.title).toEqual(response.title);
         });
         it('sets the name of the area', function () {
-            expect(scope.knoxville).toEqual('HeadStart Central Office Knoxville Area');
+            expect(scope.knoxville).toEqual(response.knoxville);
         });
         it('sets the name of the center', function () {
-            expect(scope.knoxvilleCenter).toEqual('Rochelle Street Center');
+            expect(scope.knoxvilleCenter).toEqual(response.knoxvilleCenter);
         });
         it('sets the address of the Knoxville area', function () {
-            expect(scope.knoxvilleAddress).toEqual('201 Rochelle Street');
+            expect(scope.knoxvilleAddress).toEqual(response.knoxvilleAddress);
         });
         it('sets the zip code of the Knoxville area', function () {
-            expect(scope.knoxvilleZip).toEqual('Pittsburgh, PA 15234');
+            expect(scope.knoxvilleZip).toEqual(response.knoxvilleZip);
         });
         it('sets the Phone number for the Knoxville area', function () {
-            expect(scope.knoxvillePhone).toEqual('Telephone: (412)-488-2750 -- Fax (412) 488-7527');
+            expect(scope.knoxvillePhone).toEqual(response.knoxvillePhone);
         });
         it('sets the name of the area', function () {
-            expect(scope.overbrook).toEqual('HeadStart Overbrook Area');
+            expect(scope.overbrook).toEqual(response.overbrook);
         });
         it('sets the name of the center', function () {
-            expect(scope.overbrookCenter).toEqual('Overbrook Center');
+            expect(scope.overbrookCenter).toEqual(response.overbrookCenter);
         });
         it('sets the address of the Overbrook area', function () {
-            expect(scope.overbrookAddress).toEqual('2413 Sawmill Run Blvd');
+            expect(scope.overbrookAddress).toEqual(response.overbrookAddress);
         });
         it('sets the zip code of the Overbrook area', function () {
-            expect(scope.overbrookZip).toEqual('Pittsburgh, PA 15234');
+            expect(scope.overbrookZip).toEqual(response.overbrookZip);
         });
         it('sets the Phone number for the Overbrook area', function () {
-            expect(scope.overbrookPhone).toEqual('Telephone: (412)-882-1481');
+            expect(scope.overbrookPhone).toEqual(response.overbrookPhone);
         });
         it('sets the name of the area', function () {
-            expect(scope.hazelwood).toEqual('HeadStart Hazelwood Area');
+            expect(scope.hazelwood).toEqual(response.hazelwood);
         });
         it('sets the name of the center', function () {
-            expect(scope.hazelwoodCenter).toEqual('Hazelwood Center');
+            expect(scope.hazelwoodCenter).toEqual(response.hazelwoodCenter);
         });
         it('sets the address of the Hazelwood area', function () {
-            expect(scope.hazelwoodAddress).toEqual('4900 Second Avenue');
+            expect(scope.hazelwoodAddress).toEqual(response.hazelwoodAddress);
         });
         it('sets the zip code of the Hazelwood area', function () {
-            expect(scope.hazelwoodZip).toEqual('Pittsburgh, PA 15207');
+            expect(scope.hazelwoodZip).toEqual(response.hazelwoodZip);
         });
         it('sets the Phone number for the Hazelwood area', function () {
-            expect(scope.hazelwoodPhone).toEqual('Telephone: (412)-421-6379');
+            expect(scope.hazelwoodPhone).toEqual(response.hazelwoodPhone);
         });
         it('sets the name of the area', function () {
-            expect(scope.dorseyville).toEqual('HeadStart Dorseyville Area');
+            expect(scope.dorseyville).toEqual(response.dorseyville);
         });
         it('sets the name of the center', function () {
-            expect(scope.dorseyvilleCenter).toEqual('Dorseyville Center');
+            expect(scope.dorseyvilleCenter).toEqual(response.dorseyvilleCenter);
         });
         it('sets the address of the Dorseyville area', function () {
-            expect(scope.dorseyvilleAddress).toEqual('120 Charles Street');
+            expect(scope.dorseyvilleAddress).toEqual(response.dorseyvilleAddress);
         });
         it('sets the zip code of the Dorseyville area', function () {
-            expect(scope.dorseyvilleZip).toEqual('Dorseyville, PA 15238');
+            expect(scope.dorseyvilleZip).toEqual(response.dorseyvilleZip);
         });
         it('sets the Phone number for the Dorseyville area', function () {
-            expect(scope.dorseyvillePhone).toEqual('Telephone: (412)-782-4457');
+            expect(scope.dorseyvillePhone).toEqual(response.dorseyvillePhone);
         });
         it('displays copyright information', function () {
-            expect(scope.copyrighttext).toEqual('2014 COTRAIC, Inc.');
+            expect(scope.copyrighttext).toEqual(response.copyrighttext);
         });
 
     });

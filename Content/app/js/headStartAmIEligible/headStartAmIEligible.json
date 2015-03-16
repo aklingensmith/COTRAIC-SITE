@@ -1,0 +1,27 @@
+{
+    "title": "Am I Eligible?",
+    "guidelines": "2014 Poverty Guidelines",
+    "content": "Every year, the federal government establishes poverty guidelines to determine who is financially eligible for particular programs. The chart below tells you what the yearly income cutoffs are for 2014-2015 at 100%. The following figures are the 2014 HHS poverty guidelines which have been published in the Federal Register on January 22, 2014. (Additional information will be posted if the guidelines are changed.)",
+    "size": "Household size",
+    "percent": "100% Poverty",
+    "size1": "1",
+    "percent1": "$11,670",
+    "size2": "2",
+    "percent2": "$15,730",
+    "size3": "3",
+    "percent3": "$19,790",
+    "size4": "4",
+    "percent4": "$23,850",
+    "size5": "5",
+    "percent5": "$27,910",
+    "size6": "6",
+    "percent6": "$31,970",
+    "size7": "7",
+    "percent7": "$36,030",
+    "size8": "8",
+    "percent8": "$40,000",
+    "size9": "For each additional person add",
+    "percent9": "$4,060",
+    "copyrighttext": "2014 COTRAIC, Inc."
+    
+}
