@@ -1,0 +1,21 @@
+.body-styling
+{
+    font-family:sans-serif;
+    background-color: #ffffff;
+}
+
+.navbar
+{
+    width: 275px;
+    height: 100%;
+    background: rgba(60,60,60,0.8);
+    float: left;
+}
+
+.site-flex{
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    padding-left: 0;
+    margin-left: 0;
+}

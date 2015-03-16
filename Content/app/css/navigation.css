@@ -1,41 +1,46 @@
 .navigation {
     display: inline-block;
-    background: gray;
+    /*
     border: 5px groove red;
     border-radius: 10px;
+    */
+    text-decoration: none;
+    font-size: 16px;
 }
 
 a {
-    color: white;
-    background: gray;
+    color: rgba(220,220,220,1);
+    background: none;
     text-decoration: none;
     list-style: none;
+    width: 250px;
 }
+
 
 .list-item {
     color: white;
-    background: gray;
+    background: none;
     text-decoration: none;
     list-style: none;
 }
 
 .list-item:hover {
-    background: dodgerblue;
+    background: rgba(255,0,0,0.4);
     z-index: 0;
 }
 
 .list-group {
     color: white;
-    background: gray;
+    background: none;
     text-decoration: none;
     list-style: none;
 }
 
 .list-group:hover {
-    background: dodgerblue;
+    background: none;
     z-index: 0;
 }
-/*
-.navigation li:hover {
-    background-color: dodgerblue;
-}*/
+
+/*li:hover {
+    background-color: rgba(255,0,0,0.4);*/
+}
