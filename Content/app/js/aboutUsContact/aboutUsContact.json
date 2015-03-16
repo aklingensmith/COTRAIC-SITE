@@ -1,8 +1,14 @@
 {
-    "title":"Contact Us",
-    "name": "Singing Winds- Administrative Offices",
+    "title": "Contact COTRAIC Administrative Offices",
+    "formTitle": "Contact Form",
+    "formInfo": "Send a message to a COTRAIC Administrator by using the form below.",
+    "oname": "Singing Winds- Administrative Offices",
     "addressLine": "120 Charles Street",
     "cityLine": "Pittsburgh, PA 15238",
     "phoneLine": "Telephone: (412)-782-4457",
-    "faxLine": "Fax (412)-767-4808"    
+    "faxLine": "Fax (412)-767-4808",
+    "contactName1": "Russ Sims, TITLE",
+    "contactName2": "Bob Sample, TITLE",
+    "contactName3": "Susie Sample, TITLE"
+
 }

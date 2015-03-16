@@ -1,8 +1,10 @@
-app.controller('EarlyHeadStartLocationsController', ['$scope',
+app.controller('EarlyHeadStartLocationsController', ['$scope', 'EarlyHeadStartLocationsService',
 
-    function ($scope) {
-        this.init = function () {
-
-        };
-        $scope.doSomething = function () {};
+  function ($scope, EarlyHeadStartLocationsService) {
+        EarlyHeadStartLocationsService.get().then(function (data) {
+            $scope.title = data.data.title;
+            $scope.name = data.data.name;
+            $scope.addressLine = data.data.addressLine;
+            $scope.cityLine = data.data.cityLine;
+        })
 }]);
