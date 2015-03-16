@@ -4,7 +4,7 @@
         <div id="content" align="center">
             <!-- begin navigation -->
 
-            <h1>{{title}}</h1>
+            <div class="about-us-contact-title">{{title}}</div>
             <div class="about-us-contact-address">
                 	<div><span class="about-us-contact-address-oname">{{oname}}</span> </div>
 					<div>{{addressLine}} </div>
@@ -12,21 +12,33 @@
                     <div>{{phoneLine}} </div>
                     <div>{{faxLine}}</div>
             </div>
+			<div>
+				<iframe width="600" height="450" frameborder="1" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=120%20Charles%20Street%2C%20Pittsburgh%2C%20PA%2015238%2C%20United%20States&key=AIzaSyAxL3FYuqkStyspgR8y1-_N12IlmywbvrM"></iframe>
+			</div>
 			<div class="about-us-contact-form-wrapper">
+			<div class="about-us-contact-form-title">
+				{{formTitle}}
+			</div>
 				<div>
-					{{messageinfo}}
+					{{formInfo}}
 				</div>
 				<form class="aboutuscontact" name="aboutuscontactsubmit" method="post">
 				<fieldset>
-				<div>
-					<label>Last Name</label>
-					<input type="text" name="aboutuslname" class="about-us-contact-form-name">
-					<label>First Name</label>
-					<input type="text" name="aboutusfname" class="about-us-contact-form-name">
-					<label>Initial</label>
-					<input type="text" name="aboutusinit" class="about-us-contact-form-initial" maxlength="1">
+				<div class=".about-us-contact-form-box">
+					<div class=".about-us-contact-form-item">
+						<label>Last Name</label>
+						<input type="text" name="aboutuslname" class="about-us-contact-form-name">
+					</div>
+					<div class=".about-us-contact-form-item">
+						<label>First Name</label>
+						<input type="text" name="aboutusfname" class="about-us-contact-form-name">
+					</div>
+					<div class=".about-us-contact-form-item">
+						<label>Initial</label>
+						<input type="text" name="aboutusinit" class="about-us-contact-form-initial" maxlength="1">
+					</div>
 				</div>
-				<div>
+				<div class=".about-us-contact-form-box">
 					<label>Phone Number</label>
 					<input type="text" name="aboutusphoneareacode" class="about-us-contact-form-phone3" maxlength="3">
 					<input type="text" name="aboutusphonefirst" class="about-us-contact-form-phone3" maxlength="3">
@@ -34,7 +46,7 @@
 					<label>Email</label>
 					<input type="text" name="aboutusemail" class="about-us-contact-form-email">
 				</div>
-				<div>
+				<div class=".about-us-contact-form-box">
 					<label>Person to Contact</label>
 					<select name="aboutuscontactsubject">
 						<option selected="selected"></option>

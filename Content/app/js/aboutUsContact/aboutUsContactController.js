@@ -11,6 +11,7 @@ app.controller('AboutUsContactController', ['$scope', 'AboutUsContactService',
 	$scope.contactName1 = data.data.contactName1;
 	$scope.contactName2 = data.data.contactName2;
 	$scope.contactName3 = data.data.contactName3;
-	$scope.messageinfo = data.data.messageinfo;
+	$scope.formInfo = data.data.formInfo;
+	$scope.formTitle = data.data.formTitle;
         })
 }]);

@@ -21,7 +21,8 @@ describe('Unit: AboutUsContactController', function () {
 		contactName1: 'Russ Sims, TITLE',
 		contactName2: 'Bob Sample, TITLE',
 		contactName3: 'Susie Sample, TITLE',
-		messageinfo: 'This is the messageinfo'
+		formInfo: 'This is the messageinfo',
+		formTitle: 'This is the form title'
             };
 
             httpBackend.expectGET('aboutUsContact/aboutUsContact.json').respond(200, response);
@@ -71,7 +72,10 @@ describe('Unit: AboutUsContactController', function () {
         });
 
 	it('sets the message to display above the contact form Cotraic administrative offices', function () {
-            expect(scope.messageinfo).toEqual(response.messageinfo);
+            expect(scope.formInfo).toEqual(response.formInfo);
+        });
+	it('sets the message to display above the contact form Cotraic administrative offices', function () {
+            expect(scope.formTitle).toEqual(response.formTitle);
         });
         
     });
