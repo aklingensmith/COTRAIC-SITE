@@ -1,0 +1,67 @@
+.about-us-contact{
+	display: inline-block;
+    flex: 1 0 auto;
+    vertical-align: top;
+    float: right;
+    overflow: hidden;
+    background: gray;
+    color: white;
+}
+
+/* The contact form */
+.about-us-contact-form-wrapper{
+	border: 1px solid #000;
+	float:center;
+	width: 910px;
+}
+
+/* The first and last name input boxes */
+.about-us-contact-form-name {
+    width: 200px;
+}
+
+/* The initial input box */
+.about-us-contact-form-initial {
+    width: 25px;
+}
+
+/* The input box for 3 digit phone item */
+.about-us-contact-form-phone3{
+	width: 40px;
+}
+
+/* The input box for 4 digit phone item */
+.about-us-contact-form-phone4{
+	width: 50px;
+}
+
+/* The input box for email */
+.about-us-contact-form-email{
+	width: 200px;
+}
+
+/* The input box for the messasge subject */
+.about-us-contact-form-messagesubject{
+	width: 200px;
+}
+
+/* The input box for the messasge */
+.about-us-contact-form-message{
+	width: 700px;
+	height:400px;
+}
+
+/* The address of the admin offices */
+.about-us-contact-address{
+	float:center;
+	font-family: Trebuchet MS;
+	font-size: .8em;
+}
+
+/* The name of the admin offices */
+.about-us-contact-address-oname{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+

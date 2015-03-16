@@ -1,24 +1,63 @@
-<div id='parent_div_1'>
-    <div class='child_div_1'>
-        <treeview></treeview>
-    </div>
-</div>
-<div id='parent_div_2'>
-    <div class='child_div_2'>
+<div class='site-flex'>
+<treeview></treeview>
+    <div class='about-us-contact'>
         <div id="content" align="center">
             <!-- begin navigation -->
 
             <h1>{{title}}</h1>
-            <div id="text" align="left">
-                
-                <p>{{name}}<br>
-                    {{addressLine}} <br>
-                    {{cityLine}} <br>
-                    {{phoneLine}} <br>
-                    {{faxLine}}
-                </p>
+            <div class="about-us-contact-address">
+                	<div><span class="about-us-contact-address-oname">{{oname}}</span> </div>
+					<div>{{addressLine}} </div>
+                    <div>{{cityLine}} </div>
+                    <div>{{phoneLine}} </div>
+                    <div>{{faxLine}}</div>
             </div>
-            <p>&copy; 2014 COTRAIC, Inc.</p>
+			<div class="about-us-contact-form-wrapper">
+				<div>
+					{{messageinfo}}
+				</div>
+				<form class="aboutuscontact" name="aboutuscontactsubmit" method="post">
+				<fieldset>
+				<div>
+					<label>Last Name</label>
+					<input type="text" name="aboutuslname" class="about-us-contact-form-name">
+					<label>First Name</label>
+					<input type="text" name="aboutusfname" class="about-us-contact-form-name">
+					<label>Initial</label>
+					<input type="text" name="aboutusinit" class="about-us-contact-form-initial" maxlength="1">
+				</div>
+				<div>
+					<label>Phone Number</label>
+					<input type="text" name="aboutusphoneareacode" class="about-us-contact-form-phone3" maxlength="3">
+					<input type="text" name="aboutusphonefirst" class="about-us-contact-form-phone3" maxlength="3">
+					<input type="text" name="aboutusphonesecond" class="about-us-contact-form-phone4" maxlength="4">
+					<label>Email</label>
+					<input type="text" name="aboutusemail" class="about-us-contact-form-email">
+				</div>
+				<div>
+					<label>Person to Contact</label>
+					<select name="aboutuscontactsubject">
+						<option selected="selected"></option>
+						<option value="Name1">{{contactName1}}</option>
+						<option value="Name2">{{contactName2}}</option>
+						<option value="Name3">{{contactName3}}</option>
+					</select>
+					<label>Message Subject</label>
+					<input type="text" name="aboutusmessagesubject" class="about-us-contact-form-messagesubject">
+				</div>
+				<div>
+				<label>Message to Send:</label>
+				<textarea name="aboutusmessage" class="about-us-contact-form-message"></textarea>
+				</div>
+
+				<input type="submit" name="Submit" />
+
+
+				</fieldset>
+
+				</form>
+			</div>
+			<p>&copy; 2014 COTRAIC, Inc.</p>
         </div>
     </div>
 </div>

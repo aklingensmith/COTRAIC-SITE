@@ -13,11 +13,15 @@ describe('Unit: AboutUsContactController', function () {
             httpBackend = $httpBackend;
             response = {
                 title: 'This is the title',
-                name: 'This is the name',
+                oname: 'This is the office name',
                 addressLine: 'this is the address',
                 cityLine: 'this is the city',
                 phoneLine: 'this is the phone',
-                faxLine: 'this is the fax'
+                faxLine: 'this is the fax',
+		contactName1: 'Russ Sims, TITLE',
+		contactName2: 'Bob Sample, TITLE',
+		contactName3: 'Susie Sample, TITLE',
+		messageinfo: 'This is the messageinfo'
             };
 
             httpBackend.expectGET('aboutUsContact/aboutUsContact.json').respond(200, response);
@@ -35,7 +39,7 @@ describe('Unit: AboutUsContactController', function () {
         });
         
         it('sets the name on the address for Cotraic administrative offices', function () {
-            expect(scope.name).toEqual(response.name);
+            expect(scope.oname).toEqual(response.oname);
         });
         
         it('sets the address for Cotraic administrative offices', function () {
@@ -52,6 +56,22 @@ describe('Unit: AboutUsContactController', function () {
         
         it('sets the fax number in the address for Cotraic administrative offices', function () {
             expect(scope.faxLine).toEqual(response.faxLine);
+        });
+
+	it('sets the contact name in contact form Cotraic administrative offices', function () {
+            expect(scope.contactName1).toEqual(response.contactName1);
+        });
+
+	it('sets the contact name in contact form Cotraic administrative offices', function () {
+            expect(scope.contactName2).toEqual(response.contactName2);
+        });
+
+	it('sets the contact name in contact form Cotraic administrative offices', function () {
+            expect(scope.contactName3).toEqual(response.contactName3);
+        });
+
+	it('sets the message to display above the contact form Cotraic administrative offices', function () {
+            expect(scope.messageinfo).toEqual(response.messageinfo);
         });
         
     });
