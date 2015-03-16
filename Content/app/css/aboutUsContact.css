@@ -1,97 +1,73 @@
-.about-us-contact{
-	font-family: Trebuchet MS;
-	display: inline-block;
-    flex: 1 0 auto;
-    vertical-align: top;
-    float: right;
-    overflow: hidden;
-    background: white;
-    color: #5C5C5C;
+.about-us-contact {
+font-family:Trebuchet MS;
+display:inline-block;
+flex:1 0 auto;
+vertical-align:top;
+float:right;
+overflow:hidden;
+background:#FFF;
+color:#5C5C5C;
 }
 
-/* The title text */
-.about-us-contact-title{
-	font-family: Trebuchet MS;
-	font-size: 2em;
-	font-weight: 600;
-	padding: 50px;
-}	
-
-/* The contact form */
-.about-us-contact-form-wrapper{
-	border: 0px solid #000;
-	width: 910px;
-	padding: 20px;
+.about-us-contact-title {
+font-family:Trebuchet MS;
+font-size:2em;
+font-weight:600;
+padding:50px;
 }
 
-/* The contact form title */
-.about-us-contact-form-title{
-	font-family: Trebuchet MS;
-	font-size: 1.5em;
-	font-weight: 600;
-	padding: 20px;
+.about-us-contact-form-wrapper {
+border:0 solid #000;
+width:910px;
+padding:20px;
 }
 
-/* Box to hold related form items */
-.about-us-contact-form-box{
-	display: flex;
-    flex-flow: row nowrap;
+.about-us-contact-form-title {
+font-family:Trebuchet MS;
+font-size:1.5em;
+font-weight:600;
+padding:20px;
 }
 
-/* Box to hold form items */
-.about-us-contact-form-item{
-    flex: 0 1 auto;
+.about-us-contact-form-box {
+display:flex;
+flex-flow:row nowrap;
 }
 
-/* The first and last name input boxes */
-.about-us-contact-form-name{
-    width: 200px;
+.about-us-contact-form-item {
+flex:0 1 auto;
 }
 
-/* The initial input box */
-.about-us-contact-form-initial{
-    width: 25px;
+.about-us-contact-form-initial {
+width:25px;
 }
 
-/* The input box for 3 digit phone item */
-.about-us-contact-form-phone3{
-	width: 40px;
+.about-us-contact-form-phone3 {
+width:40px;
 }
 
-/* The input box for 4 digit phone item */
-.about-us-contact-form-phone4{
-	width: 50px;
+.about-us-contact-form-phone4 {
+width:50px;
 }
 
-/* The input box for email */
-.about-us-contact-form-email{
-	width: 200px;
+.about-us-contact-form-message {
+width:700px;
+height:400px;
+padding:10px;
 }
 
-/* The input box for the messasge subject */
-.about-us-contact-form-messagesubject{
-	width: 200px;
+.about-us-contact-address {
+float:center;
+font-family:Trebuchet MS;
+font-size:.8em;
+padding:20px;
 }
 
-/* The input box for the messasge */
-.about-us-contact-form-message{
-	width: 700px;
-	height:400px;
-	padding: 10px;
+.about-us-contact-address-oname {
+font-size:1.1em;
+font-weight:700;
 }
 
-/* The address of the admin offices */
-.about-us-contact-address{
-	float:center;
-	font-family: Trebuchet MS;
-	font-size: .8em;
-	padding: 20px;
+.about-us-contact-form-name,.about-us-contact-form-email,.about-us-contact-form-messagesubject {
+width:200px;
 }
-
-/* The name of the admin offices */
-.about-us-contact-address-oname{
-	font-size: 1.1em;
-	font-weight: bold;
-}
-
-
