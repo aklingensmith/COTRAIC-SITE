@@ -1,31 +1,31 @@
-app.controller('HeadStartAmIEligibleController', ['$scope',
+app.controller('HeadStartAmIEligibleController', ['$scope', 'HeadStartAmIEligibleService',
 
-    function ($scope) {
-        this.init = function () {
-
-        };
-        $scope.title = "Am I Eligible?";
-        $scope.guidelines = "2014 Poverty Guidelines";
-        $scope.content = "Every year, the federal government establishes poverty guidelines to determine who is financially eligible for particular programs. The chart below tells you what the yearly income cutoffs are for 2014-2015 at 100%. The following figures are the 2014 HHS poverty guidelines which have been published in the Federal Register on January 22, 2014. (Additional information will be posted if the guidelines are changed.)";
-        $scope.size = "Household size";
-        $scope.percent = "100% Poverty";
-        $scope.size1 = "1";
-        $scope.percent1 = "$11,670";
-        $scope.size2 = "2";
-        $scope.percent2 = "$15,730";
-        $scope.size3 = "3";
-        $scope.percent3 = "$19,790";
-        $scope.size4 = "4";
-        $scope.percent4 = "$23,850";
-        $scope.size5 = "5";
-        $scope.percent5 = "$27,910";
-        $scope.size6 = "6";
-        $scope.percent6 = "$31,970";
-        $scope.size7 = "7";
-        $scope.percent7 = "$36,030";
-        $scope.size8 = "8";
-        $scope.percent8 = "$40,000";
-        $scope.size9 = "For each additional person add";
-        $scope.percent9 = "$4,060";
-        $scope.copyrighttext = "2014" + " COTRAIC, Inc.";
+    function ($scope, HeadStartAmIEligibleService) {
+       HeadStartAmIEligibleService.get().then(function (data){
+           
+           $scope.title = data.data.title;
+           $scope.guidelines = data.data.guidelines;
+           $scope.content = data.data.content;
+           $scope.size = data.data.size;
+           $scope.percent = data.data.percent;
+           $scope.size1 = data.data.size1;
+           $scope.percent1 = data.data.percent1;
+           $scope.size2 = data.data.size2;
+           $scope.percent2 = data.data.percent2;
+           $scope.size3 = data.data.size3;
+           $scope.percent3 = data.data.percent3;
+           $scope.size4 = data.data.size4;
+           $scope.percent4 = data.data.percent4;
+           $scope.size5 = data.data.size5;
+           $scope.percent5 = data.data.percent5;
+           $scope.size6 = data.data.size6;
+           $scope.percent6 = data.data.percent6;
+           $scope.size7 = data.data.size7;
+           $scope.percent7 = data.data.percent7;
+           $scope.size8 = data.data.size8;
+           $scope.percent8 = data.data.percent8;
+           $scope.size9 = data.data.size9;
+           $scope.percent9 = data.data.percent9;
+           $scope.copyrighttext = data.data.copyrighttext;
+       })
 }]);

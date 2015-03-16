@@ -5,35 +5,51 @@ describe('Unit: AssistanceProgramsEldersServicesController', function () {
     beforeEach(module('cotriacWebApp'));
 
     describe('AssistanceProgramsEldersServicesController', function () {
-        var scope, controller;
+        var scope, controller, httpBackend;
+        var response;
 
-        beforeEach(inject(function ($rootScope, $controller) {
+        beforeEach(inject(function ($rootScope, $controller, AssistanceProgramsEldersServicesService, $httpBackend) {
             scope = $rootScope.$new();
+            httpBackend = $httpBackend;
+            response = {
+                title: 'This is the title',
+                information: 'This is text about information and referral',
+                outReach: 'This is text about reaching elders in need',
+                socialization: 'This is text about socialization and activities',
+                counseling: 'This is text about counseling',
+                emergency: 'Emergency text',
+                copyrighttext: 'This is the copyright'
+            };
+            
+            httpBackend.expectGET('assistanceProgramsEldersServices/assistanceProgramsEldersServices.json').respond(200, response);
             controller = $controller('AssistanceProgramsEldersServicesController', {
-                $scope: scope
+                $scope: scope,
+                AssistanceProgramsEldersServicesService: AssistanceProgramsEldersServicesService
             });
+
+            httpBackend.flush();
         }));
 
         it('sets the default title of Assistance Programs Elders Services', function () {
-            expect(scope.title).toEqual('Elders Services');
+            expect(scope.title).toEqual(response.title);
         });
         it('sets the text for the information and referral', function () {
-            expect(scope.information).toEqual('Information and referral: Direct provision of information and referrals for the elderly concerning community services.');
+            expect(scope.information).toEqual(response.information);
         });
         it('sets the text for the out reach information', function () {
-            expect(scope.outReach).toEqual('Out Reach: Contact lonely and hard to reach elderly that would benefit from the program and or other community services.');
+            expect(scope.outReach).toEqual(response.outReach);
         });
         it('sets the text for the socialization and recreation', function () {
-            expect(scope.socialization).toEqual('Socialization and Recreation: Includes activities which foster the health and social well-being of the elderly through direct interaction and the satisfying use of leisure time.');
+            expect(scope.socialization).toEqual(response.socialization);
         });
         it('sets the text for the counseling', function () {
-            expect(scope.counseling).toEqual('Counseling: Assisting the elderly with problems in finance, life skills, consumerism, etc.');
+            expect(scope.counseling).toEqual(response.counseling);
         });
         it('sets the text for the emergency food bank', function () {
-            expect(scope.emergency).toEqual('Emergency Food Bank: A service given for those faced with a crisis situation.');
+            expect(scope.emergency).toEqual(response.emergency);
         });
         it('displays copyright information', function () {
-            expect(scope.copyrighttext).toEqual('2014 COTRAIC, Inc.');
+            expect(scope.copyrighttext).toEqual(response.copyrighttext);
         });
 
     });
