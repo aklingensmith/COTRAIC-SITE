@@ -17,6 +17,9 @@
 
     <!-- Source Code references -->
     <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/hr.css">
+    <link rel="stylesheet" href="../css/historyAndPurpose.css">
+    <link rel="stylesheet" href="../css/index.css">
     <script src="app.js"></script>
     <script src="navigation/treeController.js"></script>
     <script src="historyAndPurpose/historyAndPurposeController.js"></script>
@@ -71,10 +74,11 @@
     <script src="culturalPowWow/culturalPowWowService.js"></script>
 </head>
 
-<body ng-cloak>
-    <a href="./#"> <img src="../img/COTRAICTransp.png" height="200" />
-    </a>
+<body class="body-styling" ng-cloak>
+    <div class="navbar"> <center><a href="./#"> <img src="../img/COTRAICTransp.png" height="260" /></center>
+    </a><treeview></treeview></div>
+   
     <div ng-view></div>
 </body>
-
+    
 </html>
