@@ -31,6 +31,7 @@
     <script src="aboutUsContact/aboutUsContactService.js"></script>
     <link rel="stylesheet" href="../css/aboutUsContact.css">
     <script src="annualReport/annualReportController.js"></script>
+    <script src="annualReport/annualReportService.js"></script>
     <script src="headStart/whatIsHeadStartController.js"></script>
     <script src="headStart/whatIsHeadStartService.js"></script>
     <script src="headStartAmIEligible/headStartAmIEligibleController.js"></script>
@@ -75,10 +76,15 @@
 </head>
 
 <body class="body-styling" ng-cloak>
-    <div class="navbar"> <center><a href="./#"> <img src="../img/COTRAICTransp.png" height="260" /></center>
-    </a><treeview></treeview></div>
-   
+    <div class="navbar">
+        <center>
+            <a href="./#"> <img src="../img/COTRAICTransp.png" height="260" />
+        </center>
+        </a>
+        <treeview></treeview>
+    </div>
+
     <div ng-view></div>
 </body>
-    
+
 </html>

@@ -1,8 +1,8 @@
-app.controller('AnnualReportController', ['$scope',
+app.controller('AnnualReportController', ['$scope', 'AnnualReportService',
 
-    function ($scope) {
-        this.init = function () {
-
-        };
-        $scope.doSomething = function () {};
+    function ($scope, AnnualReportService) {
+        AnnualReportService.get().then(function (data) {
+            $scope.title = data.data.title;
+            $scope.text = data.data.text;
+        })
 }]);
