@@ -1,14 +1,15 @@
 {
-        "title": "Am I Eligible for Pre-K?",
-        "header": "2014 Poverty Guidelines",
-        "pInfo": "Every year, the federal government establishes poverty guidelines to determine who is financially eligible for particular programs. The chart below tells you what the yearly income cutoffs are for 2014-2015 at 100%. The following figures are the 2014 HHS poverty guidelines which have been published in the Federal Register on January 22, 2014. (Additional information will be posted if the guidelines are changed.",
-        "val1": "$11,670",
-        "val2": "$15,730",
-        "val3": "$19,790",
-        "val4": "$23,850",
-        "val5": "$27,910",
-        "val6": "$31,970",
-        "val7": "$36,030",
-        "val8": "$40,090",
-        "valA": "$4,060"
+    "title": "Am I Eligible for Pre-K?",
+    "header": "2014 Poverty Guidelines",
+    "pInfo": "Every year, the federal government establishes poverty guidelines to determine who is financially eligible for particular programs. The chart below tells you what the yearly income cutoffs are for 2014-2015 at 100%. The following figures are the 2014 HHS poverty guidelines which have been published in the Federal Register on January 22, 2014. (Additional information will be posted if the guidelines are changed)",
+    "val1": "$11,670",
+    "val2": "$15,730",
+    "val3": "$19,790",
+    "val4": "$23,850",
+    "val5": "$27,910",
+    "val6": "$31,970",
+    "val7": "$36,030",
+    "val8": "$40,090",
+    "valA": "$4,060",
+    "copyrighttext": "2014 COTRAIC, Inc."
 }

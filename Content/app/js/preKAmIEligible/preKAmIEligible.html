@@ -1,14 +1,7 @@
-<div id='parent_div_1'>
-    <div class='child_div_1'>
-        <treeview></treeview>
-    </div>
-</div>
-<div id='parent_div_2'>
-    <div class='child_div_2'>
+<div class="site-flex">
+    <div class="Pre-K-Am-I-Eligible">
         <div id="content" align="center">
-            <!-- begin navigation -->
-
-             <h1>{{title}}</h1>
+            <h1>{{title}}</h1>
             <div id="text" align="left">
                 <h2>{{header}}</h2>
                 <p>{{pInfo}}
@@ -16,7 +9,7 @@
                     <br>
                     <br>
 
-                    <table border="1" style="width:40%">
+                    <table id="table">
                         <tr>
                             <th>Household Size</th>
                             <th>100% of Poverty</th>
@@ -25,7 +18,7 @@
                             <td>1</td>
                             <td>{{val1}}</td>
                         </tr>
-                        <tr>
+                        <tr class="alt">
                             <td>2</td>
                             <td>{{val2}}</td>
                         </tr>
@@ -33,7 +26,7 @@
                             <td>3</td>
                             <td>{{val3}}</td>
                         </tr>
-                        <tr>
+                        <tr class="alt">
                             <td>4</td>
                             <td>{{val4}}</td>
                         </tr>
@@ -41,7 +34,7 @@
                             <td>5</td>
                             <td>{{val5}}</td>
                         </tr>
-                        <tr>
+                        <tr class="alt">
                             <td>6</td>
                             <td>{{val6}}</td>
                         </tr>
@@ -49,7 +42,7 @@
                             <td>7</td>
                             <td>{{val7}}</td>
                         </tr>
-                        <tr>
+                        <tr class="alt">
                             <td>8</td>
                             <td>{{val8}}</td>
                         </tr>
@@ -59,7 +52,10 @@
                         </tr>
                     </table>
                 </p>
-            <p>&copy; 2014 COTRAIC, Inc.</p>
+                <div id="copyright" align="center">
+                    <p>{{copyrighttext}}</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
