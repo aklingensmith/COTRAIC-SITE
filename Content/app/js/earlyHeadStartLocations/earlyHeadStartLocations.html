@@ -1,22 +1,25 @@
-<div id='parent_div_1'>
-    <div class='child_div_1'>
-    </div>
-</div>
-<div id='parent_div_2'>
-    <div class='child_div_2'>
-        <div id="content" align="center">
-            <!-- begin navigation -->
-            <h1>{{title}}</h1>
-            <div id="text" align="left">
 
-                <p>{{name}}
+<div class = "site-flex">
+    <div class = "early-head-start-locations">
+        <div id="content" align="center">
+            <!-- begin navigation --> 
+            <h1>{{title}}</h1>
+            <div class = "header">
+            <div id="text" align="left">
+                <span class= "first">{{name}}</span>
+            <div class= "first-col">
+                <p>
                     <br> {{addressLine}}
                     <br> {{cityLine}}
-                    <br>
-                    <a href="https://www.google.com/maps/dir//2201+Salisbury+St,+Pittsburgh,+PA+15210/@40.4193377,-79.9753745,17z/data=!4m13!1m4!3m3!1s0x8834f1127f1e1bb5:0xde2d32798f116fc3!2s2201+Salisbury+St,+Pittsburgh,+PA+15210!3b1!4m7!1m0!1m5!1m1!1s0x8834f1127f1e1bb5:0xde2d32798f116fc3!2m2!1d-79.9753745!2d40.4193377">Map Link</a>
-                </p>
+                    <br> {{phone}}
+                    <br> {{fax}}
+                    </p>
+                
+                    <p><a href="https://www.google.com/maps/dir//2201+Salisbury+St,+Pittsburgh,+PA+15210/@40.4193377,-79.9753745,17z/data=!4m13!1m4!3m3!1s0x8834f1127f1e1bb5:0xde2d32798f116fc3!2s2201+Salisbury+St,+Pittsburgh,+PA+15210!3b1!4m7!1m0!1m5!1m1!1s0x8834f1127f1e1bb5:0xde2d32798f116fc3!2m2!1d-79.9753745!2d40.4193377"> <img src ="/Content/app/img/EarlyHeadStartLocationsMap.png"></a></p>
             </div>
-            <p>&copy; 2014 COTRAIC, Inc.</p>
-        </div>
+            </div>
+            </div>
+        <div class="copyright"><p>&copy;{{copyrighttext}}</p></div>
+    </div>
     </div>
 </div>

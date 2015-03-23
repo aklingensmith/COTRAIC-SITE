@@ -1,21 +1,25 @@
-<div id='parent_div_1'>
-    <div class='child_div_1'>
-    </div>
-</div>
-<div id='parent_div_2'>
-    <div class='child_div_2'>
+
+<div class = "site-flex">
+    <div class = "pre-k-locations">
         <div id="content" align="center">
             <!-- begin navigation -->
 
             <h1>{{title}}</h1>
+            <div class = "header">
             <div id="text" align="left">
-                
-                <p>{{name}}<br>
+                <span class= "first">{{name}}</span>
+                <div class= "first-col">
+                    <p>
                     {{addressLine}}<br>
                     {{cityLine}}<br>
-                    <a href = "https://www.google.com/maps/place/1901+Pioneer+Ave,+Pittsburgh,+PA+15226/@40.4041489,-80.015038,17z/data=!3m1!4b1!4m2!3m1!1s0x8834f729f2872165:0xb2e06b4d15feb95d">Map Link</a></p>
+                    {{phone}}<br>
+                    {{fax}}<br></p>
+                    
+                    <a href = "https://www.google.com/maps/place/1901+Pioneer+Ave,+Pittsburgh,+PA+15226/@40.4041489,-80.015038,17z/data=!3m1!4b1!4m2!3m1!1s0x8834f729f2872165:0xb2e06b4d15feb95d"><img src="/Content/app/img/PreKLocationsMap.png"></a></p>
             </div>
-            <p>&copy; 2014 COTRAIC, Inc.</p>
-        </div>
+            </div>
+            </div>
+        <div class="copyright"><p>&copy;{{copyrighttext}}</p></div>
     </div>
+</div>
 </div>

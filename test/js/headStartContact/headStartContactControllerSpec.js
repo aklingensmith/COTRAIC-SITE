@@ -18,6 +18,7 @@ describe('Unit: HeadStartContactController', function () {
                 "knoxvilleAddress": "This is the address",
                 "knoxvilleZip": "This is the zip code",
                 "knoxvillePhone": "This is the contact information",
+                "knoxvilleFax": "This is the contact information",
                 "overbrook": "This is the name of HeadStart Location",
                 "overbrookCenter": "This is the name of the center",
                 "overbrookAddress": "This is the address",
@@ -64,6 +65,9 @@ describe('Unit: HeadStartContactController', function () {
         });
         it('sets the Phone number for the Knoxville area', function () {
             expect(scope.knoxvillePhone).toEqual(response.knoxvillePhone);
+        });
+         it('sets the fax number for the Knoxville area', function () {
+            expect(scope.knoxvilleFax).toEqual(response.knoxvilleFax);
         });
         it('sets the name of the area', function () {
             expect(scope.overbrook).toEqual(response.overbrook);

@@ -1,7 +1,27 @@
+html{
+    height: 100%;
+    font-family:sans-serif;
+    background-color: #ffffff;
+}
+
+body
+{
+    font-family:sans-serif;
+    background-color: #ffffff;
+    height: 100%;
+}
+
 .body-styling
 {
     font-family:sans-serif;
     background-color: #ffffff;
+    height: 100%;
+    max-width: 100%;
+    width: 1050px;
+    float: right;
+    position:absolute;
+    padding-left:275px;
+    overflow-x: hidden;
 }
 
 .navbar
@@ -10,6 +30,8 @@
     height: 100%;
     background: rgba(60,60,60,0.8);
     float: left;
+    position: fixed;
+    z-index: 4;
 }
 
 .site-flex{
@@ -18,4 +40,5 @@
     font-family: sans-serif;
     padding-left: 0;
     margin-left: 0;
+    height: 100%;
 }
