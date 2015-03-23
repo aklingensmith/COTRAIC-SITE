@@ -1,19 +1,83 @@
-.site-flex{
-    display: flex;
-    flex-direction: row;
-    font-family: sans-serif;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-.about-us{
-    display: inline-block;
-    flex: 1 0 auto;
-    vertical-align: top;
-    float: right;
+.about-us {
+    flex-direction: column;
     overflow: hidden;
-    background: gray;
-    color: white;
 }
 
+.about-us .title-container {
+    flex-direction: column;
+    display: inline-block;
+}
 
+.about-us .title {
+    text-align: center;
+    width: auto;
+    background: #E8E8E8;
+    color: black;
+}
+
+.about-us .title-left {
+    float: left;
+    width: 15%;
+    display: inline-block;
+}
+
+.about-us .title-right {
+    float: right;
+    width: 15%;
+    display: inline-block;
+}
+
+.about-us .title-center {
+    display: inline-block;
+    width: 70%;
+}
+
+.about-us .horizontal-spacer {
+    flex: 1 1 auto;
+    background: white;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.about-us .splash {
+    flex: 1 1 auto;
+    flex-direction: row;
+}
+
+.about-us .splash .column-container {
+    flex-direction: column;
+    display: inline-block;
+}
+
+.about-us .splash .column-header {
+    flex: 0 1 auto;
+    font-size: 20px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    background: #E8E8E8;
+    color: black;
+}
+
+.about-us .splash .column-text {
+    flex: 1 1 auto;
+    font-size: 16px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    background: #E8E8E8;
+    color: black;
+}
+
+.about-us .splash .column-left {
+    float: left;
+    width: 33%;
+}
+
+.about-us .splash .column-right {
+    float: right;
+    width: 33%;
+}
+
+.about-us .splash .column-center {
+    display: inline-block;
+    width: 33%;
+}
