@@ -75,7 +75,7 @@
     <script src="culturalPowWow/culturalPowWowService.js"></script>
 </head>
 
-<body class="body-styling" ng-cloak>
+<body ng-cloak>
     <div class="navbar">
         <center>
             <a href="./#"> <img src="../img/COTRAICTransp.png" height="260" />
@@ -83,8 +83,9 @@
         </a>
         <treeview></treeview>
     </div>
-
-    <div ng-view></div>
+    <div class="body-styling">
+        <div ng-view></div>
+    </div>
 </body>
 
 </html>
