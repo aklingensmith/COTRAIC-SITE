@@ -16,6 +16,8 @@ describe('Unit: PreKLocationsController', function () {
                 name: 'This is the name',
                 addressLine: 'this is the address',
                 cityLine: 'this is the city',
+                phone: 'This is the phone number',
+                fax: 'This is the fax number'
             };
 
             httpBackend.expectGET('preKLocations/preKLocations.json').respond(200, response);
@@ -42,6 +44,12 @@ describe('Unit: PreKLocationsController', function () {
                                                                   
         it('sets city on address for preKLocations', function () {
             expect(scope.cityLine).toEqual(response.cityLine);
+        });
+         it('sets phone number for preKLocations', function () {
+            expect(scope.phone).toEqual(response.phone);
+        });
+         it('sets fax number for preKLocations', function () {
+            expect(scope.fax).toEqual(response.fax);
         });
         
     });

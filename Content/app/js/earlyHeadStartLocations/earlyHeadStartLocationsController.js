@@ -6,5 +6,7 @@ app.controller('EarlyHeadStartLocationsController', ['$scope', 'EarlyHeadStartLo
             $scope.name = data.data.name;
             $scope.addressLine = data.data.addressLine;
             $scope.cityLine = data.data.cityLine;
+            $scope.phone = data.data.phone;
+            $scope.fax = data.data.fax;
         })
 }]);

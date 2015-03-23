@@ -10,6 +10,7 @@ app.controller('HeadStartContactController', ['$scope', 'HeadStartContactService
         $scope.knoxvilleAddress = data.data.knoxvilleAddress;
         $scope.knoxvilleZip = data.data.knoxvilleZip;
         $scope.knoxvillePhone = data.data.knoxvillePhone;
+        $scope.knoxvilleFax = data.data.knoxvilleFax;    
         $scope.overbrook = data.data.overbrook;
         $scope.overbrookCenter = data.data.overbrookCenter;
         $scope.overbrookAddress = data.data.overbrookAddress;

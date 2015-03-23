@@ -1,10 +1,24 @@
-<div class='site-flex'>
-    <treeview></treeview>
-    <div class='about-us-contact'>
+<div class="site-flex">
+    <div class="about-us-contact">
         <div id="content" align="center">
             <!-- begin navigation -->
-
-            <div class="about-us-contact-title">{{title}}</div>
+            <h1>{{title}}</h1>
+            <div class = "header">
+            <div id="text" align ="left">     
+            <span class= "first">{{oname}}</span>
+            <div class= "first-col">
+                <p>
+                    <br> {{addressLine}}
+                    <br> {{cityLine}}
+                    <br> {{phoneLine}}
+                    <br> {{faxLine}}
+                    <br> Email:
+                    </p>
+                
+                    <a href="https://www.google.com/maps/place/120+Charles+St,+Blawnox,+PA+15238/@40.581618,-79.894539,17z/data=!3m1!4b1!4m2!3m1!1s0x8834923dd10c03cf:0xe66d734238845d80"><img src="/Content/app/img/DorseyvilleMap.png"/></a></p></div>
+                
+                
+           <!-- <div class="about-us-contact-title">{{title}}</div>
             <div class="about-us-contact-address">
                 <div><span class="about-us-contact-address-oname">{{oname}}</span> </div>
                 <div>{{addressLine}} </div>
@@ -15,6 +29,8 @@
             <div>
                 <iframe width="600" height="450" frameborder="1" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=120%20Charles%20Street%2C%20Pittsburgh%2C%20PA%2015238%2C%20United%20States&key=AIzaSyAxL3FYuqkStyspgR8y1-_N12IlmywbvrM"></iframe>
             </div>
+                
+                
             <div class="about-us-contact-form-wrapper">
                 <div class="about-us-contact-form-title">
                     {{formTitle}}
@@ -68,8 +84,10 @@
                     </fieldset>
 
                 </form>
+                </div>
+-->
             </div>
-            <p>&copy; 2014 COTRAIC, Inc.</p>
+            <div class ="copyright"><p>&copy; 2014 COTRAIC, Inc.</p></div>
         </div>
     </div>
 </div>
