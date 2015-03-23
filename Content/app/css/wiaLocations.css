@@ -11,11 +11,10 @@
     flex: 1 0 auto;
     vertical-align: top;
     float: right;
-    overflow: hidden;
+    overflow-x: hidden;
     background: white;
     color: rgba(60,60,60,0.8);
     font-size: 14px;
-    padding-left: 200px;
 }
 .header{
     background: red;

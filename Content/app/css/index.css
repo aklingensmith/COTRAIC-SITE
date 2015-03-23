@@ -16,9 +16,12 @@ body
     font-family:sans-serif;
     background-color: #ffffff;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
+    width: 1050px;
     float: right;
     position:absolute;
+    padding-left:275px;
+    overflow-x: hidden;
 }
 
 .navbar
