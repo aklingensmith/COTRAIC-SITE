@@ -1,5 +1,4 @@
 <div class='site-flex'>
-    <treeview></treeview>
     <div class='about-us-contact'>
         <div id="content" align="center">
             <!-- begin navigation -->
@@ -22,42 +21,11 @@
                 <div>
                     {{formInfo}}
                 </div>
-                <form class="aboutuscontact" name="aboutuscontactsubmit" method="post">
+		<button ng-click='toggleModal()'>Message</button>
+		<modal-dialog show='modalShown' width='750px' height='60%'>
+  		<p><form class="aboutuscontact" name="aboutuscontactsubmit" method="post">
                     <fieldset>
                         <div class=".about-us-contact-form-box">
-                            <div class=".about-us-contact-form-item">
-                                <label>Last Name</label>
-                                <input type="text" name="aboutuslname" class="about-us-contact-form-name">
-                            </div>
-                            <div class=".about-us-contact-form-item">
-                                <label>First Name</label>
-                                <input type="text" name="aboutusfname" class="about-us-contact-form-name">
-                            </div>
-                            <div class=".about-us-contact-form-item">
-                                <label>Initial</label>
-                                <input type="text" name="aboutusinit" class="about-us-contact-form-initial" maxlength="1">
-                            </div>
-                        </div>
-                        <div class=".about-us-contact-form-box">
-                            <label>Phone Number</label>
-                            <input type="text" name="aboutusphoneareacode" class="about-us-contact-form-phone3" maxlength="3">
-                            <input type="text" name="aboutusphonefirst" class="about-us-contact-form-phone3" maxlength="3">
-                            <input type="text" name="aboutusphonesecond" class="about-us-contact-form-phone4" maxlength="4">
-                            <label>Email</label>
-                            <input type="text" name="aboutusemail" class="about-us-contact-form-email">
-                        </div>
-                        <div class=".about-us-contact-form-box">
-                            <label>Person to Contact</label>
-                            <select name="aboutuscontactsubject">
-                                <option selected="selected"></option>
-                                <option value="Name1">{{contactName1}}</option>
-                                <option value="Name2">{{contactName2}}</option>
-                                <option value="Name3">{{contactName3}}</option>
-                            </select>
-                            <label>Message Subject</label>
-                            <input type="text" name="aboutusmessagesubject" class="about-us-contact-form-messagesubject">
-                        </div>
-                        <div>
                             <label>Message to Send:</label>
                             <textarea name="aboutusmessage" class="about-us-contact-form-message"></textarea>
                         </div>
@@ -67,7 +35,9 @@
 
                     </fieldset>
 
-                </form>
+                </form><p>
+		</modal-dialog>
+                
             </div>
             <p>&copy; 2014 COTRAIC, Inc.</p>
         </div>
