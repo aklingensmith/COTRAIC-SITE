@@ -1,0 +1,14 @@
+.site-flex {
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.cultural-pow-wow {
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    border: none
+}
