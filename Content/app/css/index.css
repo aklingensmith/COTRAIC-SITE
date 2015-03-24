@@ -35,9 +35,6 @@ body
 .bodied
 {
     margin-left: 150px;  
-    position: absolute;
-    padding-left: 275px;
-    overflow-x: hidden;
 }
 
 .navbar {
