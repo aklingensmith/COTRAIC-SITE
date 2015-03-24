@@ -22,9 +22,8 @@ body
     width: auto;
 }
 
-.body-styling
-{
-    font-family:sans-serif;
+.body-styling {
+    font-family: sans-serif;
     background-color: #ffffff;
     height: 96%;
     max-width: auto;
@@ -35,11 +34,22 @@ body
 }
 .bodied
 {
-  margin-left: 150px;  
-    
+    margin-left: 150px;  
+    position: absolute;
+    padding-left: 275px;
+    overflow-x: hidden;
 }
 
-.site-flex{
+.navbar {
+    width: 275px;
+    height: 96%;
+    background: rgba(60, 60, 60, 0.8);
+    float: left;
+    position: fixed;
+    z-index: 4;
+}
+
+.site-flex {
     display: flex;
     flex-direction: row;
     font-family: sans-serif;
