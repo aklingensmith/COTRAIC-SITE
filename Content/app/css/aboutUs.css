@@ -1,7 +1,7 @@
 .about-us {
     flex-direction: column;
     overflow: hidden;
-    color: rgba(60, 60, 60, 0.8)
+    color: rgba(60, 60, 60, 0.8);
 }
 
 .about-us .title-container {
@@ -11,7 +11,7 @@
 .about-us .title {
     text-align: center;
     width: auto;
-    color: rgba(60, 60, 60, 0.9)
+    color: rgba(60, 60, 60, 0.9);
 }
 
 .about-us .title-left {
