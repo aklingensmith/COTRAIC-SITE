@@ -42,28 +42,10 @@ span.first{
     font-size: 10px;
     
 }
-<!--.about-us-contact {
-font-family:Trebuchet MS;
-display:inline-block;
-flex:1 0 auto;
-vertical-align:top;
-float:right;
-overflow:hidden;
-background:#FFF;
-color:#5C5C5C;
-}
-
-.about-us-contact-title {
-font-family:Trebuchet MS;
-font-size:2em;
-font-weight:600;
-padding:50px;
-}
-
 .about-us-contact-form-wrapper {
 border:0 solid #000;
 width:910px;
-padding:20px;
+padding: 20px;
 }
 
 .about-us-contact-form-title {
@@ -100,10 +82,9 @@ font-size:1.1em;
 font-weight:700;
 }
 
-<<<<<<< HEAD
 .about-us-contact-form-name,.about-us-contact-form-email,.about-us-contact-form-messagesubject {
 width:200px;
-}-->
+}
 .ng-modal-overlay {
   /* A dark translucent div that covers the whole screen */
   position:absolute;
