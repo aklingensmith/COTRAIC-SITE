@@ -1,0 +1,18 @@
+.email-dialog-backplane {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3000;
+    background: rgba(180, 180, 180, 0.3);
+}
+
+.email-dialog-view {
+    display: flex;
+    flex-direction: column;
+    z-index: 3010;
+    background: #E8E8E8;
+    color: rgba(60, 60, 60, 0.8);
+    border: 2px solid rgba(60, 60, 60, 0.8);
+    border-radius: 5px;
+    padding: 5px;
+}
