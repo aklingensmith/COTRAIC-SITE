@@ -4,7 +4,9 @@ app.controller('WhatIsHeadStartController', ['$scope', 'WhatIsHeadStartService',
         WhatIsHeadStartService.get().then(function (data) {
             $scope.titletext = data.data.titletext;
             $scope.whatisheadstarttext = data.data.whatisheadstarttext;
-	    $scope.copyrightdate = data.data.copyrightdate;
-	    $scope.copyrighttext = data.data.copyrighttext;
+            $scope.copyrightdate = data.data.copyrightdate;
+            $scope.copyrighttext = data.data.copyrighttext;
+            $scope.supplemental = data.data.supplemental;
+            $scope.link = data.data.link;
         })
 }]);
