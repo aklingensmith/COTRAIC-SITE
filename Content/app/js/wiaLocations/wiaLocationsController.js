@@ -41,4 +41,7 @@ app.controller('WIALocationsController', ['$scope', 'WIALocationsService',
             $scope.niaPhone = data.data.niaPhone;
             $scope.copyrighttext = data.data.copyrighttext;
         })
+         $scope.openEmail = function () {
+            $scope.showEmailDialog = true;
+        };
 }]);

@@ -9,4 +9,7 @@ app.controller('PreKLocationsController', ['$scope', 'PreKLocationsService',
         $scope.phone = data.data.phone;
         $scope.fax = data.data.fax;
         })
+         $scope.openEmail = function () {
+            $scope.showEmailDialog = true;
+        };
 }]);

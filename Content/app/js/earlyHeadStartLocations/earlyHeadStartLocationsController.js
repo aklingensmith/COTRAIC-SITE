@@ -9,4 +9,8 @@ app.controller('EarlyHeadStartLocationsController', ['$scope', 'EarlyHeadStartLo
             $scope.phone = data.data.phone;
             $scope.fax = data.data.fax;
         })
+        
+         $scope.openEmail = function () {
+            $scope.showEmailDialog = true;
+        };
 }]);
