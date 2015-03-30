@@ -8,56 +8,19 @@
                     <span class="first">{{oname}}</span>
                     <div class="first-col">
                         <p>
-                            <br> {{addressLine}}
-                            <br> {{cityLine}}
-                            <br> {{phoneLine}}
-                            <br> {{faxLine}}
-                            <button ng-click="openEmail()"> Email:</button>
+			    <div class="about-us-contact-address">
+				<div>{{addressLine}} </div>
+				<div>{{cityLine}} </div>
+				<div>{{phoneLine}} </div>
+				<div>{{faxLine}}</div>
+			    </div>
+                            <a class="emailbutton" ng-click="openEmail()"> Send Email to {{onameshort}}</a>
                         </p>
 
                         <a href="https://www.google.com/maps/place/120+Charles+St,+Blawnox,+PA+15238/@40.581618,-79.894539,17z/data=!3m1!4b1!4m2!3m1!1s0x8834923dd10c03cf:0xe66d734238845d80"><img src="/Content/app/img/DorseyvilleMap.png" />
                         </a>
                         </p>
                     </div>
-
-
-                    <!-- <div class="about-us-contact-title">{{title}}</div>
-            <div class="about-us-contact-address">
-                <div><span class="about-us-contact-address-oname">{{oname}}</span> </div>
-                <div>{{addressLine}} </div>
-                <div>{{cityLine}} </div>
-                <div>{{phoneLine}} </div>
-                <div>{{faxLine}}</div>
-            </div>
-            <div>
-                <iframe width="600" height="450" frameborder="1" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=120%20Charles%20Street%2C%20Pittsburgh%2C%20PA%2015238%2C%20United%20States&key=AIzaSyAxL3FYuqkStyspgR8y1-_N12IlmywbvrM"></iframe>
-            </div>
-                
-                
-            <div class="about-us-contact-form-wrapper">
-                <div class="about-us-contact-form-title">
-                    {{formTitle}}
-                </div>
-                <div>
-                    {{formInfo}}
-                </div>
-		<button ng-click='toggleModal()'>Email</button>
-		<modal-dialog show='modalShown' width='750px' height='60%'>
-  		<p><form class="aboutuscontact" name="aboutuscontactsubmit" method="post">
-                    <fieldset>
-                        <div class=".about-us-contact-form-box">
-                            <label>Message to Send:</label>
-                            <textarea name="aboutusmessage" class="about-us-contact-form-message"></textarea>
-                        </div>
-                        <input type="submit" name="Submit" />
-                    </fieldset>
-                </form>
-                </div>
-
-                </form><p>
-		</modal-dialog>
-                -->
-                </div>
                 <div class="copyright">
                     <p>&copy; 2014 COTRAIC, Inc.</p>
                 </div>

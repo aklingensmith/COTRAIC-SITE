@@ -4,6 +4,7 @@ app.controller('AboutUsContactController', ['$scope', 'AboutUsContactService',
         AboutUsContactService.get().then(function (data) {
             $scope.title = data.data.title;
             $scope.oname = data.data.oname;
+	    $scope.onameshort = data.data.onameshort;
             $scope.addressLine = data.data.addressLine;
             $scope.cityLine = data.data.cityLine;
             $scope.phoneLine = data.data.phoneLine;
