@@ -73,6 +73,10 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'eldersEligibility/eldersEligibility.html',
             controller: 'EldersEligibilityController'
         })
+        .when('/earlyEducation', {
+            templateUrl: 'earlyEducation/earlyEducation.html',
+            controller: 'EarlyEducationController'
+        })
         .when('/earlyHeadStartEnrollment', {
             templateUrl: 'earlyHeadStartEnrollment/earlyHeadStartEnrollment.html',
             controller: 'EarlyHeadStartEnrollmentController'
@@ -92,6 +96,10 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/assistanceProgramsEldersServices', {
             templateUrl: 'assistanceProgramsEldersServices/assistanceProgramsEldersServices.html',
             controller: 'AssistanceProgramsEldersServicesController'
+        })
+        .when('/assistancePrograms', {
+            templateUrl: 'assistancePrograms/assistancePrograms.html',
+            controller: 'AssistanceProgramsController'
         })
         .when('/headStartContact', {
             templateUrl: 'headStartContact/headStartContact.html',
