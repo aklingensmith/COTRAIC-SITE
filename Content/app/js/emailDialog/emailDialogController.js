@@ -12,9 +12,10 @@ app.directive('emailDialog', function () {
 
 app.controller('EmailDialogController', ['$scope',
     function ($scope) {
+	$scope.contactName;
+	$scope.contactEmail;
         $scope.close = function(){
             $scope.showEmailDialog = false;
         };
-        //$scope.contactName = {contactName: 'troy.bell@stu.laroche.edu'};
     }
 ]);
