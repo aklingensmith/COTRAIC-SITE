@@ -3,9 +3,11 @@
         <div id="content" align="center">
             <!-- begin navigation -->
             <h1>{{title}}</h1>
-            <div class="single-col-header">
+            <div class="single-col-wrapper">
                 <div id="text">
-                    <div class="titlebar">{{oname}}</div>
+		    <div class="single-col-header">
+                    	<div class="titlebar">{{oname}}</div>
+		    </div>
                     <div class="col">
                         <p>
 			    <div class="about-us-contact-address">
@@ -14,12 +16,12 @@
 				<div>{{phoneLine}} </div>
 				<div>{{faxLine}}</div>
 			    </div>
-				<email-dialog show-email-dialog="showEmailDialog" contact-name="test">A</email-dialog>
 				<div class="email-button-wrapper">
                             <a class="email-button" ng-click="openEmail()"> Send Email to {{onameshort}}</a>
 				</div>
-                        </p>
-
+			</p>
+		
+			<email-dialog show-email-dialog="showEmailDialog" contact-name="test">A</email-dialog>
                         <a href="https://www.google.com/maps/place/120+Charles+St,+Blawnox,+PA+15238/@40.581618,-79.894539,17z/data=!3m1!4b1!4m2!3m1!1s0x8834923dd10c03cf:0xe66d734238845d80"><img src="/Content/app/img/DorseyvilleMap.png" />
                         </a>
                         </p>
