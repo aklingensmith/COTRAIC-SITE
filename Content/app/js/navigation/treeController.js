@@ -47,6 +47,10 @@ app.controller("TreeController", ['$scope', function ($scope) {
                 {
                     name: "Headstart",
                     link: "#/headStartAmIEligible"
+                },
+                {
+                    name: "Contact",
+                    link: "#/headStartContact"
                 }]
         },
         {
@@ -57,7 +61,7 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     name: "Elders",
                     nodes: [
                         {
-                            name: "Services",
+                            name: "Elders Services",
                             link: "#/assistanceProgramsEldersServices"
                         },
                         {
@@ -66,8 +70,7 @@ app.controller("TreeController", ['$scope', function ($scope) {
                         }]
                 },
                 {
-                    name: "WIAPrograms",
-                    link: "#/wiaPrograms",
+                    name: "WIA Programs",
                     nodes: [
                         {
                             name: "Am I Eligible?",
