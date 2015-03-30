@@ -33,6 +33,9 @@
     <script src="annualReport/annualReportController.js"></script>
     <script src="annualReport/annualReportService.js"></script>
     <link rel="stylesheet" href="../css/annualReport.css">
+    <script src="earlyEducation/earlyEducationController.js"></script>
+    <script src="earlyEducation/earlyEducationService.js"></script>
+    <link rel="stylesheet" href="../css/earlyEducation.css">
     <script src="headStart/whatIsHeadStartController.js"></script>
     <script src="headStart/whatIsHeadStartService.js"></script>
     <link rel="stylesheet" href="../css/headStart.css">
@@ -84,20 +87,27 @@
     <script src="eldersEligibility/eldersEligibilityService.js"></script>
     <script src="assistanceProgramsEldersServices/assistanceProgramsEldersServicesController.js"></script>
     <script src="assistanceProgramsEldersServices/assistanceProgramsEldersServicesService.js"></script>
+    <script src="assistancePrograms/assistanceProgramsController.js"></script>
+    <script src="assistancePrograms/assistanceProgramsService.js"></script>
+    <link rel="stylesheet" href="../css/assistancePrograms.css">
     <script src="culturalPowWow/culturalPowWowController.js"></script>
     <script src="culturalPowWow/culturalPowWowService.js"></script>
     <link rel="stylesheet" href="../css/culturalPowWow.css">
+    <script src="eligibility/eligibilityController.js"></script>
+    <script src="eligibility/eligibilityService.js"></script>
+    <link rel="stylesheet" href="../css/eligibility.css">
 </head>
 
 <body ng-cloak>
     <div class="container">
         <div class="navbar">
             <center>
-                <a href="./#"> <img src="../img/COTRAICTransp.png" height="260" /></a>
+                <a href="./#"> <img src="../img/COTRAICTransp.png" height="260" />
+                </a>
             </center>
-        <treeview></treeview>
-    </div>
-    <div class="body-styling">
+            <treeview></treeview>
+        </div>
+        <div class="body-styling">
             <div ng-view></div>
         </div>
     </div>
