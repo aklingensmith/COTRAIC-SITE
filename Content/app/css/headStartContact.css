@@ -16,10 +16,11 @@
     color: rgba(60,60,60,0.8);
     font-size: 14px;
 }
-.header{
+.head-start-contact .header{
     background: red;
     height: 25px;
     position: relative;
+    margin-right: 10px;
     width: 750px;
     box-shadow: 5px 5px 5px rgba(60,60,60,0.8);
     border-radius: 15px;
