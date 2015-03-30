@@ -9,9 +9,8 @@ app.controller('AboutUsContactController', ['$scope', 'AboutUsContactService',
             $scope.cityLine = data.data.cityLine;
             $scope.phoneLine = data.data.phoneLine;
             $scope.faxLine = data.data.faxLine;
-            $scope.contactName1 = data.data.contactName1;
-            $scope.contactName2 = data.data.contactName2;
-            $scope.contactName3 = data.data.contactName3;
+            $scope.contactName = data.data.contactName;
+            $scope.contactEmail = data.data.contactEmail;
             $scope.formInfo = data.data.formInfo;
             $scope.formTitle = data.data.formTitle;
         })
@@ -22,6 +21,7 @@ app.controller('AboutUsContactController', ['$scope', 'AboutUsContactService',
 
         $scope.openEmail = function () {
             $scope.showEmailDialog = true;
+		$scope.test = { cname: $scope.contactName, email: $scope.contactEmail};
         };
     }
 ]);

@@ -1,7 +1,7 @@
 <div ng-show="showEmailDialog">
     <div class="email-dialog-backplane"></div>
     <div class="email-dialog-view">
-        <p><form class="aboutuscontact" name="aboutuscontactsubmit" method="post">
+        <p><form ng-submit = "send()" class="aboutuscontact" name="aboutuscontactsubmit" method="post">
                      <fieldset>
                          <div class=".about-us-contact-form-box">
                             <div class=".about-us-contact-form-item">
@@ -24,7 +24,7 @@
                              <label>Message to Send:</label>
                              <textarea name="aboutusmessage" class="about-us-contact-form-message"></textarea>
                          </div>
-			<button ng-click="send()">Send</button>
+			<input type="submit" id="submit" value="Send" />
         		<button ng-click="close()">Cancel</button>
                       </fieldset>
 			
