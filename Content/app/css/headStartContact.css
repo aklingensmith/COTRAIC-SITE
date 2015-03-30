@@ -88,4 +88,18 @@ span.second2{
     
 }
 
-    
+button{
+  text-decoration:none;
+  border-radius: 8px;
+  border: 1px ;
+  color: rgba(60,60,60,0.8);
+
+}
+button:hover
+{
+    color: red;
+}
+button:focus
+{
+    color: red;
+}

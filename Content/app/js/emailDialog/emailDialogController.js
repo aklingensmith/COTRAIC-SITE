@@ -4,7 +4,8 @@ app.directive('emailDialog', function () {
         controller: 'EmailDialogController',
         templateUrl: 'emailDialog/emailDialog.html',
         scope: {
-            showEmailDialog: '='
+            showEmailDialog: '=',
+            contactName: '='
         },
     };
 });
@@ -14,5 +15,6 @@ app.controller('EmailDialogController', ['$scope',
         $scope.close = function(){
             $scope.showEmailDialog = false;
         };
+        //$scope.contactName = {contactName: 'troy.bell@stu.laroche.edu'};
     }
 ]);

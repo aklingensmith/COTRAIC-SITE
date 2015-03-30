@@ -60,7 +60,7 @@ app.controller("TreeController", ['$scope', function ($scope) {
                 },
                 {
                     name: "Contact",
-                    link: "#/earlyHeadStartContact"
+                    link: "#/earlyHeadStartLocations"
                 }]
         },
         {
@@ -77,7 +77,7 @@ app.controller("TreeController", ['$scope', function ($scope) {
                 },
                 {
                     name: "Contact",
-                    link: "#/preKContact"
+                    link: "#/preKLocations"
                     }]
         },
         {
@@ -105,7 +105,7 @@ app.controller("TreeController", ['$scope', function ($scope) {
                         },
                         {
                             name: "WIA Contact",
-                            link: "#/wiaContact"
+                            link: "#/wiaLocations"
                         }]
                 }]
     },
