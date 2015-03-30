@@ -1,41 +1,67 @@
-html {
-    height: 100%;
-    font-family: sans-serif;
+html{
+    height: 98%;
+    font-family:sans-serif;
     background-color: #ffffff;
 }
 
-body {
-    font-family: sans-serif;
-    background-color: #ffffff;
-    height: 100%;
+.container
+{
+    display:flex;
+    flex-direction: row;   
+    
 }
 
-.body-styling {
-    font-family: sans-serif;
-    background-color: #ffffff;
-    height: 100%;
-    max-width: 100%;
-    width: 1050px;
-    float: right;
-    position: absolute;
-    padding-left: 275px;
-    overflow-x: hidden;
-}
-
-.navbar {
+.navbar
+{
+    flex 1;
+    order: 1;
     width: 275px;
-    height: 100%;
-    background: rgba(60, 60, 60, 0.8);
-    float: left;
-    position: fixed;
+    height: 98%;
+    background: rgba(60,60,60,0.8);
+    position: absolute;
     z-index: 4;
+    
 }
 
+body
+{
+    height: 98%;
+    width: auto;
+}
+
+@media(min-width: 1331px){
+.body-styling {
+    display:flex;
+    flex: 1 1;
+    order: 2;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    height: 98%;
+    position:absolute;
+    justify-content: center;
+    overflow-x: hidden;
+    width: 99%;
+    }
+}
+
+@media(max-width: 1330px){
+.body-styling {
+    left:290px;
+    flex: 1 1;
+    order: 2;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    height: 98%;
+    position:absolute;
+    justify-content:left;
+    overflow-x: hidden;
+    width: 768px;
+    }
+}
 .site-flex {
     display: flex;
     flex-direction: row;
     font-family: sans-serif;
     padding-left: 0;
     margin-left: 0;
-    height: 100%;
 }

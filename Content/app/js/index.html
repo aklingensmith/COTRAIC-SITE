@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="../css/earlyEducation.css">
     <script src="headStart/whatIsHeadStartController.js"></script>
     <script src="headStart/whatIsHeadStartService.js"></script>
+    <link rel="stylesheet" href="../css/headStart.css">
     <script src="headStartAmIEligible/headStartAmIEligibleController.js"></script>
     <script src="headStartAmIEligible/headStartAmIEligibleService.js"></script>
     <link rel="stylesheet" href="../css/headStartAmIEligible.css">
@@ -50,11 +51,16 @@
     <script src="earlyHeadStartEnrollment/earlyHeadStartEnrollmentService.js"></script>
     <script src="earlyHeadStartEligibility/earlyHeadStartEligibilityController.js"></script>
     <script src="earlyHeadStartEligibility/earlyHeadStartEligibilityService.js"></script>
+    <link rel="stylesheet" href="../css/earlyHeadStartEligibility.css">
     <script src="earlyHeadStartContact/earlyHeadStartContactController.js"></script>
     <script src="earlyHeadStartContact/earlyHeadStartContactService.js"></script>
     <script src="earlyHeadStart/earlyHeadStartController.js"></script>
     <script src="earlyHeadStart/earlyHeadStartService.js"></script>
+    <link rel="stylesheet" href="../css/earlyHeadStart.css">
     <link rel="stylesheet" href="../css/earlyHeadStartLocations.css">
+    <script src="emailDialog/emailDialog.html"></script>
+    <script src="emailDialog/emailDialogController.js"></script>
+    <link rel="stylesheet" href="../css/emailDialog.css"></link>
     <script src="earlyHeadStartLocations/earlyHeadStartLocationsController.js"></script>
     <script src="earlyHeadStartLocations/earlyHeadStartLocationsService.js"></script>
     <script src="preKEnrollment/preKEnrollmentController.js"></script>
@@ -86,18 +92,21 @@
     <link rel="stylesheet" href="../css/assistancePrograms.css">
     <script src="culturalPowWow/culturalPowWowController.js"></script>
     <script src="culturalPowWow/culturalPowWowService.js"></script>
+    <link rel="stylesheet" href="../css/culturalPowWow.css">
 </head>
 
 <body ng-cloak>
-    <div class="navbar">
-        <center>
-            <a href="./#"> <img src="../img/COTRAICTransp.png" height="260" />
-        </center>
-        </a>
+    <div class="container">
+        <div class="navbar">
+            <center>
+                <a href="./#"> <img src="../img/COTRAICTransp.png" height="260" /></a>
+            </center>
         <treeview></treeview>
     </div>
     <div class="body-styling">
-        <div ng-view></div>
+            <div ng-view></div>
+        </div>
+    </div>
     </div>
 </body>
 

@@ -28,5 +28,8 @@ app.controller('HeadStartContactController', ['$scope', 'HeadStartContactService
         $scope.dorseyvillePhone = data.data.dorseyvillePhone;
         $scope.copyrighttext = data.data.copyrighttext;
         })
+         $scope.openEmail = function () {
+            $scope.showEmailDialog = true;
+        };
 
 }]);

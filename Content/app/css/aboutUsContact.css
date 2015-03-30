@@ -16,58 +16,38 @@
     color: rgba(60,60,60,0.8);
     font-size: 14px;
 }
-.header{
+.single-col-header{
     background: red;
     height: 25px;
     position: relative;
-    width: 750px;
+    width: 500px;
     box-shadow: 5px 5px 5px rgba(60,60,60,0.8);
     border-radius: 15px;
 }
-span.first{
-    top: 5px;
-    left: 20px;
+.titlebar{
+	position:relative;
+	top:5px;
     color: #fff;
-    position: absolute;
+    float:center;
 }
+.col{
+	position:relative;
+	top:15px;
 }
-.first-col{
-    float: left;
-    margin: 35px 0 0 20px;
-    width: 240px;
-}
-.copyright{
+.about-us-contact-copyright{
     float: right;
-    margin: 600px 20px 0 0;
+    margin: 60px 20px 0 0;
     font-size: 10px;
     
 }
-<!--.about-us-contact {
-font-family:Trebuchet MS;
-display:inline-block;
-flex:1 0 auto;
-vertical-align:top;
-float:right;
-overflow:hidden;
-background:#FFF;
-color:#5C5C5C;
-}
-
-.about-us-contact-title {
-font-family:Trebuchet MS;
-font-size:2em;
-font-weight:600;
-padding:50px;
-}
-
 .about-us-contact-form-wrapper {
 border:0 solid #000;
 width:910px;
-padding:20px;
+padding: 20px;
 }
 
 .about-us-contact-form-title {
-font-family:Trebuchet MS;
+font-family:sans-serif;
 font-size:1.5em;
 font-weight:600;
 padding:20px;
@@ -90,9 +70,9 @@ padding:10px;
 
 .about-us-contact-address {
 float:center;
-font-family:Trebuchet MS;
-font-size:.8em;
-padding:20px;
+font-family:sans-serif;
+
+padding:0px;
 }
 
 .about-us-contact-address-oname {
@@ -100,49 +80,52 @@ font-size:1.1em;
 font-weight:700;
 }
 
-<<<<<<< HEAD
 .about-us-contact-form-name,.about-us-contact-form-email,.about-us-contact-form-messagesubject {
 width:200px;
-}-->
-.ng-modal-overlay {
-  /* A dark translucent div that covers the whole screen */
-  position:absolute;
-  z-index:9999;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background-color:#000000;
-  opacity: 0.8;
 }
-.ng-modal-dialog {
-  /* A centered div above the overlay with a box shadow. */
-  z-index:10000;
-  position: absolute;
-  width: 50%; /* Default */
 
-  /* Center the dialog */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
+.email-button-wrapper {
+margin:20px;
+}
 
-  background-color: #fff;
-  box-shadow: 4px 4px 80px #000;
+.email-button {
+border: 1px outset #141414;
+box-shadow: 5px 5px 5px rgba(60,60,60,0.8);
+border-radius: 15px;
+background: #636363;
+text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+color: #fff;
+font-size: 1em;
+font-weight:500;
+font-family: sans-serif;
+text-decoration: none;
+vertical-align: middle;
+display: block;
+width: 200px;
+text-align: center;
 }
-.ng-modal-dialog-content {
-  padding:10px;
-  text-align: left;
+.email-button:hover{
+cursor: pointer;
+background: #595959;
+box-shadow: 3px 3px 3px rgba(60,60,60,0.8);
 }
-.ng-modal-close {
-  position: absolute;
-  top: 3px;
-  right: 5px;
-  padding: 5px;
-  cursor: pointer;
-  font-size: 120%;
-  display: inline-block;
-  font-weight: bold;
-  font-family: 'arial', 'sans-serif';
+
+.email-button:active{
+background: #454545;
+box-shadow: 0px 0px 0px rgba(60,60,60,0.8);
+}
+button{
+  text-decoration:none;
+  border-radius: 8px;
+  border: 1px ;
+  color: rgba(60,60,60,0.8);
+
+}
+button:hover
+{
+    color: red;
+}
+button:focus
+{
+    color: red;
 }
