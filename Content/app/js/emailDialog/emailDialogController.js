@@ -1,19 +1,22 @@
 app.directive('emailDialog', function () {
     return {
         restrict: 'E',
-        controller: 'EmailDialogController',
+	replace: true,
         templateUrl: 'emailDialog/emailDialog.html',
         scope: {
-            showEmailDialog: '='
+            showEmailDialog: '=',
+		contactName: '='
         },
-    };
+	controller: 'EmailDialogController',
+    }
 });
 
 app.controller('EmailDialogController', ['$scope',
     function ($scope) {
-	$scope.contactName;
-	$scope.contactEmail;
-        $scope.close = function(){
+
+	$scope.test = { cname: 'atest', email: 'btest'};
+	$scope.close = function(){
+
             $scope.showEmailDialog = false;
         };
     }

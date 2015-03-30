@@ -1,7 +1,33 @@
 <div ng-show="showEmailDialog">
     <div class="email-dialog-backplane"></div>
     <div class="email-dialog-view">
-        <br>This is where all the email information goes you can type whatever you want in this form.
-        <button ng-click="close()">click to close</button>
+        <p><form class="aboutuscontact" name="aboutuscontactsubmit" method="post">
+                     <fieldset>
+                         <div class=".about-us-contact-form-box">
+                            <div class=".about-us-contact-form-item">
+                                <label>Last Name</label>
+                                <input type="text" name="aboutuslname" class="about-us-contact-form-name">
+                            </div>
+                            <div class=".about-us-contact-form-item">
+                                <label>First Name</label>
+                                <input type="text" name="aboutusfname" class="about-us-contact-form-name">
+                            </div>
+                            <label>Your Email</label>
+                            <input type="text" name="aboutusemail" class="about-us-contact-form-email">
+                        </div>
+                        <div class=".about-us-contact-form-box">
+                            <label>Person to Contact - {{contactName.cname}}</label>
+                            <label>Message Subject</label>
+                            <input type="text" name="aboutusmessagesubject" class="about-us-contact-form-messagesubject">
+                       </div>
+                        <div>
+                             <label>Message to Send:</label>
+                             <textarea name="aboutusmessage" class="about-us-contact-form-message"></textarea>
+                         </div>
+			<button ng-click="send()">Send</button>
+        		<button ng-click="close()">Cancel</button>
+                      </fieldset>
+			
+                </form><p>
     </div>
 </div>
