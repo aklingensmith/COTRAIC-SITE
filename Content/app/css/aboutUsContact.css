@@ -16,29 +16,27 @@
     color: rgba(60,60,60,0.8);
     font-size: 14px;
 }
-.header{
+.single-col-header{
     background: red;
     height: 25px;
     position: relative;
-    width: 750px;
+    width: 500px;
     box-shadow: 5px 5px 5px rgba(60,60,60,0.8);
     border-radius: 15px;
 }
-span.first{
-    top: 5px;
-    left: 20px;
+.titlebar{
+	position:relative;
+	top:5px;
     color: #fff;
-    position: absolute;
+    float:center;
 }
+.col{
+	position:relative;
+	top:15px;
 }
-.first-col{
-    float: left;
-    margin: 30px 0 0 20px;
-    width: 240px;
-}
-.copyright{
+.about-us-contact-copyright{
     float: right;
-    margin: 600px 20px 0 0;
+    margin: 60px 20px 0 0;
     font-size: 10px;
     
 }
@@ -86,7 +84,11 @@ font-weight:700;
 width:200px;
 }
 
-.emailbutton {
+.email-button-wrapper {
+margin:20px;
+}
+
+.email-button {
 border: 1px outset #141414;
 box-shadow: 5px 5px 5px rgba(60,60,60,0.8);
 border-radius: 15px;
@@ -94,7 +96,7 @@ background: #636363;
 text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
 color: #fff;
 font-size: 1em;
-font-weight:700px;
+font-weight:500;
 font-family: sans-serif;
 text-decoration: none;
 vertical-align: middle;
@@ -102,13 +104,13 @@ display: block;
 width: 200px;
 text-align: center;
 }
-.emailbutton:hover{
+.email-button:hover{
 cursor: pointer;
 background: #595959;
 box-shadow: 3px 3px 3px rgba(60,60,60,0.8);
 }
 
-.emailbutton:active{
+.email-button:active{
 background: #454545;
 box-shadow: 0px 0px 0px rgba(60,60,60,0.8);
 }
