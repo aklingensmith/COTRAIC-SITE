@@ -16,11 +16,12 @@
     color: rgba(60,60,60,0.8);
     font-size: 14px;
 }
-.header{
+.early-head-start-locations .header{
     background: red;
     height: 25px;
     position: relative;
     width: 750px;
+    margin-right: 10px;
     box-shadow: 5px 5px 5px rgba(60,60,60,0.8);
     border-radius: 15px;
 }
