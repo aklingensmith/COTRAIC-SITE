@@ -37,65 +37,17 @@ app.controller("TreeController", ['$scope', function ($scope) {
             link: "#/earlyEducation",
             nodes: [
                 {
-                    name: "",
-                    link: ""
-                },
-                {
-                    name: "",
-                    link: ""
-                },
-                {
-                    name: "",
-                    link: ""
-                }]
-        },
-        {
-            name: "HeadStart",
-            nodes: [{
-                    name: "What is HeadStart?",
-                    link: "#/whatIsHeadStart"
-                    },
-                {
-                    name: "Am I Eligible?",
-                    link: "#/headStartAmIEligible"
-                    },
-                {
-                    name: "Contact HeadStart",
-                    link: "#/headStartContact"
-                    }]
-        },
-        {
-            name: "Early HeadStart",
-            nodes: [
-                {
-                    name: "What is Early HeadStart?",
-                    link: "#/earlyHeadStart",
-                },
-                {
-                    name: "Am I Eligible?",
-                    link: "#/earlyHeadStartEligibility"
-                },
-                {
-                    name: "Contact",
-                    link: "#/earlyHeadStartLocations"
-                }]
-        },
-        {
-            name: "Pre-K",
-            link: "#/preK",
-            nodes: [
-                {
-                    name: "What is Pre-K?",
-                    link: ""
-                },
-                {
-                    name: "Am I Eligible?",
+                    name: "Pre-K",
                     link: "#/preKEligible"
                 },
                 {
-                    name: "Contact",
-                    link: "#/preKLocations"
-                    }]
+                    name: "Early Headstart",
+                    link: "#/earlyHeadStartEligibility"
+                },
+                {
+                    name: "Headstart",
+                    link: "#/headStartAmIEligible"
+                }]
         },
         {
             name: "Assistance Programs",
