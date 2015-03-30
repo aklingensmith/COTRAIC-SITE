@@ -105,6 +105,10 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'headStartContact/headStartContact.html',
             controller: 'HeadStartContactController'
         })
+        .when('/eligibility', {
+            templateUrl: 'eligibility/eligibility.html',
+            controller: 'EligibilityController'
+        })
         .when('/culturalPowWow', {
             templateUrl: 'culturalPowWow/culturalPowWow.html',
             controller: 'CulturalPowWowController'

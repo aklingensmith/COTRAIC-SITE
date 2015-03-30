@@ -49,6 +49,10 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     link: "#/headStartAmIEligible"
                 },
                 {
+                    name: "Eligibility",
+                    link: "#/eligibility"
+                },
+                {
                     name: "Contact",
                     link: "#/headStartContact"
                 }]

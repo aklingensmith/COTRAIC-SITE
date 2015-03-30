@@ -26,20 +26,20 @@
     background-color: #dae5f4;
 }
 
-.Pre-K-Am-I-Eligible {
-    display: inline-block;
-    flex: 1 1 auto;
-    vertical-align: top;
-    float: right;
-    overflow: hidden;
-    background-color: darksalmon;
-    color: black;
-}
-
 .site-flex {
     display: flex;
     flex-direction: row;
     font-family: sans-serif;
-    padding-left: auto;
-    margin-left: auto;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.Pre-K-Am-I-Eligible {
+    display: inline-block;
+    flex: 1 0 auto;
+    vertical-align: top;
+    float: right;
+    overflow: hidden;
+    background: none;
+    color: rgba(60, 60, 60, 0.8);
 }
