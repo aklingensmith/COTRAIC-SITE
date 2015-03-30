@@ -34,7 +34,8 @@ describe('Unit: HeadStartContactController', function () {
                 "dorseyvilleAddress": "This is the address",
                 "dorseyvilleZip": "This is the zip code",
                 "dorseyvillePhone": "This is the contact information",
-                "copyrighttext" : "2014 COTRAIC, Inc."
+                "copyrighttext" : "2014 COTRAIC, Inc.",
+                "headStartEmail" : "This is the email address for t his page"
                 
             }
                 httpBackend.expectGET('headStartContact/headStartContact.json').respond(200, response);
@@ -116,6 +117,9 @@ describe('Unit: HeadStartContactController', function () {
         });
         it('displays copyright information', function () {
             expect(scope.copyrighttext).toEqual(response.copyrighttext);
+        });
+        it('sets the email address', function () {
+            expect(scope.headStartEmail).toEqual(response.headStartEmail);
         });
 
     });

@@ -1,5 +1,5 @@
 {
-    "title": "WIA Locations",
+    "title": "WIA Contact",
     "westPA": "Western Pennsylvania",
     "westPAText": "Rodney John, WIA Employment & Training Counselor",
     "westPACenter": "Council of Three Rivers American Indian Center, Inc.",
@@ -36,5 +36,13 @@
     "niaAddress": "2900 West Broadway",
     "niaZip": "Louisville, KY 40211",
     "niaPhone": "Telephone: (800)-595-8721",
-    "copyrighttext" : "2014 COTRAIC, Inc."
+    "copyrighttext" : "2014 COTRAIC, Inc.",
+    "westernPaEmail": "rjohn@cotraic.org",
+    "easternPaEmail": "breckard@cotraic.org",
+    "westVirginiaEmail": "wiawv@hotmail.com",
+    "westernMarylandEmail": "swiant@cotraic.org",
+    "eastpointEmail": "fball@cotraic.org",
+    "kentuckyEmail": "jhoward@cotraic.org",
+    "niaEmail": "annett.jones@kentuckianaworks.org"
+    
 }

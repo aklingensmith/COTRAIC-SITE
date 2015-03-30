@@ -49,7 +49,14 @@ describe('Unit: WIALocationsController', function () {
                 niaAddress: 'This is the address',
                 niaZip: 'This is the zip code',
                 niaPhone: 'This is the phone number',
-                copyrighttext: 'This is the copyright'
+                copyrighttext: 'This is the copyright',
+                westernPaEmail: 'This is an email addres',
+                easternPaEmail: 'This is an email addres',
+                westVirginiaEmail: 'This is an email addres',
+                westernMarylandEmail: 'This is an email addres',
+                eastpointEmail: 'This is an email addres',
+                kentuckyEmail: 'This is an email addres',
+                niaEmail: 'This is an email addres',
             };
 
             httpBackend.expectGET('wiaLocations/wiaLocations.json').respond(200, response);
@@ -176,5 +183,27 @@ describe('Unit: WIALocationsController', function () {
           it('displays copyright information', function () {
             expect(scope.copyrighttext).toEqual(response.copyrighttext);
         });
+           it('sets the email address', function () {
+            expect(scope.westernPaEmail).toEqual(response.westernPaEmail);
+        });
+           it('sets the email address', function () {
+            expect(scope.easternPaEmail).toEqual(response.easternPaEmail);
+        });
+           it('sets the email address', function () {
+            expect(scope.westVirginiaEmail).toEqual(response.westVirginiaEmail);
+        });
+           it('sets the email address', function () {
+            expect(scope.westernMarylandEmail).toEqual(response.westernMarylandEmail);
+        });
+           it('sets the email address', function () {
+            expect(scope.eastpointEmail).toEqual(response.eastpointEmail);
+        });
+           it('sets the email address', function () {
+            expect(scope.kentuckyEmail).toEqual(response.kentuckyEmail);
+        });
+           it('sets the email address', function () {
+            expect(scope.niaEmail).toEqual(response.niaEmail);
+        });
+        
     });
 });
