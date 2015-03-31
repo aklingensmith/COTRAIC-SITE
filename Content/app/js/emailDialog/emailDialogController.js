@@ -23,7 +23,7 @@ app.directive('emailDialog', function () {
 
 app.controller('EmailDialogController', ['$scope',
     function ($scope) {
-    $scope.close = function(){
+    $scope.toggle = function(){
     $scope.contactName;
     $scope.headStartEmail;
     $scope.contactEmail;
@@ -36,31 +36,8 @@ app.controller('EmailDialogController', ['$scope',
     $scope.eastpointEmail;
     $scope.kentuckyEmail;
     $scope.niaEmail;
-    $scope.showEmailDialog = false;
+            $scope.showEmailDialog = !$scope.showEmailDialog;
         };
     }
 ]);
 
-/*
-app.directive('modalDialog', function() {
-  return {
-    restrict: 'E',
-    scope: {
-      show: '='
-    },
-    replace: true, // Replace with the template below
-    transclude: true, // we want to insert custom content inside the directive
-    link: function(scope, element, attrs) {
-      scope.dialogStyle = {};
-      if (attrs.width)
-        scope.dialogStyle.width = attrs.width;
-      if (attrs.height)
-        scope.dialogStyle.height = attrs.height;
-      scope.hideModal = function() {
-        scope.show = false;
-      };
-    },
-    template: '...' // See below
-  };
-});
-*/

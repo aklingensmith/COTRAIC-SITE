@@ -3,29 +3,33 @@
     <div class="email-dialog-view">
         <p><form ng-submit = "send()" class="aboutuscontact" name="aboutuscontactsubmit" method="post">
                      <fieldset>
-                         <div class=".about-us-contact-form-box">
-                            <div class=".about-us-contact-form-item">
-                                <label>Last Name</label>
-                                <input type="text" name="aboutuslname" class="about-us-contact-form-name">
-                            </div>
-                            <div class=".about-us-contact-form-item">
-                                <label>First Name</label>
-                                <input type="text" name="aboutusfname" class="about-us-contact-form-name">
-                            </div>
-                            <label>Your Email</label>
-                            <input type="text" name="aboutusemail" class="about-us-contact-form-email">
-                        </div>
-                        <div class=".about-us-contact-form-box">
-                            <label>Person to Contact - {{contactName.cname}}</label>
-                            <label>Message Subject</label>
-                            <input type="text" name="aboutusmessagesubject" class="about-us-contact-form-messagesubject">
-                       </div>
+			    <div class="about-us-contact-form-container">
+		                 <div class="about-us-contact-form-box">
+		                    <div class="about-us-contact-form-item">
+		                        <label>Your Name</label>
+		                        <input type="text" name="aboutusname" class="about-us-contact-form-name">
+		                    </div>
+				    <div class="about-us-contact-form-item">
+		                    <label>Your Email</label>
+		                    	<input type="text" name="aboutusemail" class="about-us-contact-form-email">
+				    </div>
+				    <div class="about-us-contact-form-item">
+		                        <label>Recipient: {{contactName.cname}}</label>
+				    </div>
+				    <div class="about-us-contact-form-item">
+		                        <label>Message Subject</label>
+					<input type="text" name="aboutusmessagesubject" class="about-us-contact-form-messagesubject">
+				    </div>
+		               </div>
+			    </div>
                         <div>
                              <label>Message to Send:</label>
                              <textarea name="aboutusmessage" class="about-us-contact-form-message"></textarea>
                          </div>
-			<input type="submit" id="submit" value="Send" />
-        		<button ng-click="close()">Cancel</button>
+			<div class="about-us-contact-form-box">
+				<input type="submit" id="submit" value="Send" />
+				<button ng-click="toggle()">Cancel</button>
+			</div>
                       </fieldset>
 			
                 </form><p>
