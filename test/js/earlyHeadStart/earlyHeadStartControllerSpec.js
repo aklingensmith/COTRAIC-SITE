@@ -20,7 +20,7 @@ describe('Unit: EarlyHeadStartController', function () {
                 earlyheadstarttext: 'This is the text',
                 earlyheadstarttext2: 'This is the text',
                 earlyheadstarttext3: 'This is the text',
-                earlyheadstarttext4: 'This is the text',
+                earlyheadstarttext4: 'This is the text'
             };
 
             httpBackend.expectGET('EarlyHeadStart/earlyHeadStart.json').respond(200, response);
@@ -33,7 +33,7 @@ describe('Unit: EarlyHeadStartController', function () {
 
         }));
 
-        it('sets the default title of EarlyHeadStart', function () {
+        it('sets the default title of EarlyHeadStart', function (){
             expect(scope.titletext).toEqual(response.titletext);
         });
         it('sets the subheader title', function () {
@@ -60,5 +60,6 @@ describe('Unit: EarlyHeadStartController', function () {
         it('sets the text content', function () {
             expect(scope.earlyheadstarttext4).toEqual(response.earlyheadstarttext4);
         });
+
     });
 });

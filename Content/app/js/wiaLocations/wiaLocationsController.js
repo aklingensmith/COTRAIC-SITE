@@ -40,6 +40,14 @@ app.controller('WIALocationsController', ['$scope', 'WIALocationsService',
             $scope.niaZip = data.data.niaZip;
             $scope.niaPhone = data.data.niaPhone;
             $scope.copyrighttext = data.data.copyrighttext;
+            $scope.westernPaEmail = data.data.westernPaEmail;
+            $scope.easternPaEmail = data.data.easternPaEmail;
+            $scope.westVirginiaEmail = data.data.westVirginiaEmail;
+            $scope.westernMarylandEmail = data.data.westernMarylandEmail;
+            $scope.eastpointEmail = data.data.eastpointEmail;
+            $scope.kentuckyEmail = data.data.kentuckyEmail;
+            $scope.niaEmail = data.data.niaEmail;
+            
         })
          $scope.openEmail = function () {
             $scope.showEmailDialog = true;
