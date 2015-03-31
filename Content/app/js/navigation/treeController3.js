@@ -103,7 +103,7 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     link: "#/preKContact"
                     }]
             }
-    }, {
+    , {
         name: "Assistance Programs",
         link: "#/assistancePrograms",
         nodes: [
