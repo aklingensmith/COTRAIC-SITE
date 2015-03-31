@@ -15,8 +15,7 @@
     color: rgba(60,60,60,0.8);
 }
 
-.history-and-purpose .body-text
+.history-and-purpose
 {
-    flex: 1 1 auto;
-   /* width: 768px; */
+    flex: 1 0 auto;
 }

@@ -156,6 +156,7 @@ button{
 button:hover
 {
     color: red;
+    background-color: #666666;
 }
 button:focus
 {
