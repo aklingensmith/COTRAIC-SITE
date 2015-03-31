@@ -58,6 +58,28 @@ body
     width: 768px;
     }
 }
+
+
+@media(max-width: 1600px){
+.body-text {
+    width: 768px;
+    }
+}
+
+@media(min-width: 1601px){
+.body-text {
+    width: 1000px;
+    
+    }
+}
+
+@media(min-width: 1800px){
+.body-text {
+    width: 1200px;
+    
+    }
+}
+  
 .site-flex {
     display: flex;
     flex-direction: row;
