@@ -38,11 +38,11 @@ app.controller("TreeController", ['$scope', function ($scope) {
             nodes: [
                 {
                     name: "Pre-K",
-                    link: "#/preKEligible"
+                    link: "#/preKServices"
                 },
                 {
                     name: "Early Headstart",
-                    link: "#/earlyHeadStartEligibility"
+                    link: "#/earlyHeadStartServices"
                 },
                 {
                     name: "Headstart",
