@@ -17,7 +17,8 @@ describe('Unit: EarlyHeadStartLocationsController', function () {
                 addressLine: 'this is the address',
                 cityLine: 'this is the city',
                 phone: 'this is the phone number',
-                fax: 'this is the fax number'
+                fax: 'this is the fax number',
+                earlyHeadStartEmail: 'this sets the email address'
             };
 
             httpBackend.expectGET('earlyHeadStartLocations/earlyHeadStartLocations.json').respond(200, response);
@@ -51,6 +52,8 @@ describe('Unit: EarlyHeadStartLocationsController', function () {
         it('sets fax number for earlyHeadStartLocations', function () {
             expect(scope.fax).toEqual(response.fax);
         });
-
+        it('sets the email address', function () {
+ expect(scope.earlyHeadStartEmail).toEqual(response.earlyHeadStartEmail);
+        });
     });
 });

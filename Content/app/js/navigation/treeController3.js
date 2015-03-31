@@ -33,7 +33,8 @@ app.controller("TreeController", ['$scope', function ($scope) {
                 }]
         },
         {
-            name: "Education",
+            name: "Early Education",
+            link: "#/earlyEducation",
             nodes: [
                 {
                     name: "HeadStart",
@@ -53,8 +54,8 @@ app.controller("TreeController", ['$scope', function ($scope) {
                             name: "Contact HeadStart",
                             link: "#/headStartContact"
                         }]
-                    }]
-                },
+                }]
+            },
         {
             name: "Early HeadStart",
             nodes: [{
@@ -77,7 +78,7 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     name: "Contact",
                     link: "#/earlyHeadStartContact"
                     }]
-                },
+            },
         {
             name: "Pre-K",
             link: "#/preK",
@@ -101,45 +102,46 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     name: "Contact",
                     link: "#/preKContact"
                     }]
-                },
-        {
-            name: "Assistance Programs",
-            nodes: [
-                {
-                    name: "Elders",
-                    nodes: [
-                        {
-                            name: "Services",
-                            link: "#/assistanceProgramsEldersServices"
+            }
+    }, {
+        name: "Assistance Programs",
+        link: "#/assistancePrograms",
+        nodes: [
+            {
+                name: "Elders",
+                nodes: [
+                    {
+                        name: "Services",
+                        link: "#/assistanceProgramsEldersServices"
                             },
-                        {
-                            name: "Am I eligible?",
-                            link: "#/eldersEligibility"
+                    {
+                        name: "Am I eligible?",
+                        link: "#/eldersEligibility"
                         }]
                 },
-                {
-                    name: "WIAPrograms",
-                    link: "#/wiaPrograms",
-                    nodes: [
-                        {
-                            name: "Am I Eligible?",
-                            link: "#/wiaAmIEligible"
+            {
+                name: "WIAPrograms",
+                link: "#/wiaPrograms",
+                nodes: [
+                    {
+                        name: "Am I Eligible?",
+                        link: "#/wiaAmIEligible"
                                 },
-                        {
-                            name: "WIA Locations",
-                            link: "#/wiaLocations"
+                    {
+                        name: "WIA Locations",
+                        link: "#/wiaLocations"
                                 },
-                        {
-                            name: "WIA Contact",
-                            link: "#/wiaContact"
+                    {
+                        name: "WIA Contact",
+                        link: "#/wiaContact"
                                 }]
                 }]
     }, {
-            name: "Cultural",
-            nodes: [
-                {
-                    name: "Pow Wow",
-                    link: "#/culturalPowWow"
+        name: "Cultural",
+        nodes: [
+            {
+                name: "Pow Wow",
+                link: "#/culturalPowWow"
                 }]
     }
 
