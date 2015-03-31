@@ -1,7 +1,7 @@
 app.directive('emailDialog', function () {
     return {
         restrict: 'E',
-        controller: 'EmailDialogController',
+	replace: true,
         templateUrl: 'emailDialog/emailDialog.html',
         scope: {
             showEmailDialog: '=',
@@ -16,16 +16,17 @@ app.directive('emailDialog', function () {
             eastpointEmail: '=',
             kentuckyEmail: '=',
             niaEmail: '=',
-            
         },
-    };
+	controller: 'EmailDialogController',
+    }
 });
 
 app.controller('EmailDialogController', ['$scope',
     function ($scope) {
-	$scope.contactName;
+    $scope.toggle = function(){
+    $scope.contactName;
     $scope.headStartEmail;
-	$scope.contactEmail;
+    $scope.contactEmail;
     $scope.earlyHeadStartEmail;
     $scope.prekEmail;
     $scope.westernPaEmail;
@@ -35,9 +36,8 @@ app.controller('EmailDialogController', ['$scope',
     $scope.eastpointEmail;
     $scope.kentuckyEmail;
     $scope.niaEmail;
-        
-        $scope.close = function(){
-            $scope.showEmailDialog = false;
+            $scope.showEmailDialog = !$scope.showEmailDialog;
         };
     }
 ]);
+
