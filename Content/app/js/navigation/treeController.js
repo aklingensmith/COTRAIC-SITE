@@ -33,61 +33,39 @@ app.controller("TreeController", ['$scope', function ($scope) {
                 }]
         },
         {
-                name: "HeadStart",
-                nodes: [{
-                        name: "What is HeadStart?",
-                        link: "#/whatIsHeadStart"
-                    },
-                    {
-                        name: "Am I Eligible?",
-                        link: "#/headStartAmIEligible"
-                    },
-                    {
-                        name: "Contact HeadStart",
-                        link: "#/headStartContact"
-                    }]
-        },
-        {
-            name: "Early HeadStart",
+            name: "Early Education",
+            link: "#/earlyEducation",
             nodes: [
                 {
-                    name: "What is Early HeadStart?",
-                    link: "#/earlyHeadStart",
-                },
-                {
-                    name: "Am I Eligible?",
-                    link: "#/earlyHeadStartEligibility"
-                },
-                {
-                    name: "Contact",
-                    link: "#/earlyHeadStartContact"
-                }]
-        },
-        {
-            name: "Pre-K",
-            link: "#/preK",
-            nodes: [
-                {
-                    name: "What is Pre-K?",
-                    link: ""
-                },
-                {
-                    name: "Am I Eligible?",
+                    name: "Pre-K",
                     link: "#/preKEligible"
                 },
                 {
+                    name: "Early Headstart",
+                    link: "#/earlyHeadStartEligibility"
+                },
+                {
+                    name: "Headstart",
+                    link: "#/headStartAmIEligible"
+                },
+                {
+                    name: "Eligibility",
+                    link: "#/eligibility"
+                },
+                {
                     name: "Contact",
-                    link: "#/preKContact"
-                    }]
+                    link: "#/headStartContact"
+                }]
         },
         {
             name: "Assistance Programs",
+            link: "#/assistancePrograms",
             nodes: [
                 {
                     name: "Elders",
                     nodes: [
                         {
-                            name: "Services",
+                            name: "Elders Services",
                             link: "#/assistanceProgramsEldersServices"
                         },
                         {
@@ -96,8 +74,7 @@ app.controller("TreeController", ['$scope', function ($scope) {
                         }]
                 },
                 {
-                    name: "WIAPrograms",
-                    link: "#/wiaPrograms",
+                    name: "WIA Programs",
                     nodes: [
                         {
                             name: "Am I Eligible?",
@@ -105,11 +82,11 @@ app.controller("TreeController", ['$scope', function ($scope) {
                         },
                         {
                             name: "WIA Contact",
-                            link: "#/wiaContact"
+                            link: "#/wiaLocations"
                         }]
                 }]
     },
-    {
+        {
             name: "Cultural",
             nodes: [
                 {

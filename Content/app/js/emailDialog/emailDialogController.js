@@ -5,7 +5,17 @@ app.directive('emailDialog', function () {
         templateUrl: 'emailDialog/emailDialog.html',
         scope: {
             showEmailDialog: '=',
-		contactName: '='
+            contactName: '=',
+            headStartEmail: '=',
+            earlyHeadStartEmail: '=',
+            prekEmail: '=',
+            westernPaEmail: '=',
+            easternPaEmail: '=',
+            westVirginiaEmail: '=',
+            westernMarylandEmail: '=',
+            eastpointEmail: '=',
+            kentuckyEmail: '=',
+            niaEmail: '=',
         },
 	controller: 'EmailDialogController',
     }
@@ -13,11 +23,20 @@ app.directive('emailDialog', function () {
 
 app.controller('EmailDialogController', ['$scope',
     function ($scope) {
-
-	
-	$scope.close = function(){
-
-            $scope.showEmailDialog = false;
+    $scope.close = function(){
+    $scope.contactName;
+    $scope.headStartEmail;
+    $scope.contactEmail;
+    $scope.earlyHeadStartEmail;
+    $scope.prekEmail;
+    $scope.westernPaEmail;
+    $scope.easternPaEmail;
+    $scope.westVirginiaEmail;
+    $scope.westernMarylandEmail;
+    $scope.eastpointEmail;
+    $scope.kentuckyEmail;
+    $scope.niaEmail;
+    $scope.showEmailDialog = false;
         };
     }
 ]);

@@ -1,4 +1,4 @@
-.site-flex{
+.site-flex {
     display: flex;
     flex-direction: row;
     font-family: sans-serif;
@@ -6,17 +6,16 @@
     margin-left: 0;
 }
 
-.history-and-purpose{
-    display: flex;
-    flex: 1 1 auto;
+.eligibility {
+    display: inline-block;
+    flex: 1 0 auto;
     vertical-align: top;
+    float: right;
     overflow: hidden;
     background: none;
-    color: rgba(60,60,60,0.8);
+    color: rgba(60, 60, 60, 0.8);
 }
 
-.history-and-purpose .body-text
-{
-    flex: 1 1 auto;
-   /* width: 768px; */
+.body-text {
+    width: 768px;
 }

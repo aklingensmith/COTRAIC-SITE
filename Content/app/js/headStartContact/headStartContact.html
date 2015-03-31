@@ -14,7 +14,8 @@
                    {{knoxvilleAddress}}<br>
                    {{knoxvilleZip}}<br>
                    {{knoxvillePhone}}<br>
-                   {{knoxvilleFax}}<br></p>
+                   {{knoxvilleFax}} <button ng-click="openEmail()"> Email:</button> <br>
+                    </p>
                     <p><a href="https://www.google.com/maps/place/201+Rochelle+St,+Pittsburgh,+PA+15210/@40.4153975,-79.9906178,18z/data=!4m2!3m1!1s0x8834f13c8db5752d:0x2ae01e851f946df1"> <img src= "/Content/app/img/KnoxvilleMap.png"/></a></p></div>
                 <br>
                 <br>
@@ -23,7 +24,7 @@
                    {{overbrookCenter}}<br>
                    {{overbrookAddress}}<br>
                    {{overbrookZip}}<br>
-                   {{overbrookPhone}}<br></p>
+                   {{overbrookPhone}} <button ng-click="openEmail()"> Email:</button> <br></p>
                     
                        <p><br><a href="https://www.google.com/maps/search/2413+Sawmill+Run+Road,+Pittsburgh,+PA/@40.3837402,-79.9955327,17z/data=!3m1!4b1"> <img src="/Content/app/img/OverbrookMap.png" /></a></p></div>
                 <div class = "header2">
@@ -34,7 +35,7 @@
                     {{hazelwoodCenter}}<br>
                     {{hazelwoodAddress}}<br>
                     {{hazelwoodZip}}<br>
-                    {{hazelwoodPhone}}<br>
+                    {{hazelwoodPhone}} <button ng-click="openEmail()"> Email:</button> <br>
                     <br>
                     <br>
                     <a href="https://www.google.com/maps/place/4900+Second+Ave,+Pittsburgh,+PA+15207/@40.4096549,-79.943997,17z/data=!3m1!4b1!4m2!3m1!1s0x8834f1b82ee86055:0xf7a323e61d1e31c7"><img src="/Content/app/img/HazelwoodMap.png"/></a></p></div>
@@ -45,17 +46,18 @@
                     {{dorseyvilleCenter}}<br>
                     {{dorseyvilleAddress}}<br>
                     {{dorseyvilleZip}}<br>
-                    {{dorseyvillePhone}}<br>
+                    {{dorseyvillePhone}} <button ng-click="openEmail()"> Email:</button> <br>
                         <br>
                         <br>
                         <a href="https://www.google.com/maps/place/120+Charles+St,+Blawnox,+PA+15238/@40.581618,-79.894539,17z/data=!3m1!4b1!4m2!3m1!1s0x8834923dd10c03cf:0xe66d734238845d80"><img src="/Content/app/img/DorseyvilleMap.png"/></a></p></div>
                     
                 </div>
             </div>
-            </div>
             
-        </div>
+            <email-dialog show-email-dialog="showEmailDialog" head-start-email="headStartEmail"></email-dialog>
+        
         <div class="copyright"><p>&copy;{{copyrighttext}}</p></div>
+</div>
     </div>
-    
+       </div>        
 </div>
