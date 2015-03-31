@@ -25,6 +25,10 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'earlyHeadStartServices/earlyHeadStartServices.html',
             controller: 'EarlyHeadStartServicesController'
         })
+        .when('/headStartServices', {
+            templateUrl: 'headStartServices/headStartServices.html',
+            controller: 'HeadStartServicesController'
+        })
         .when('/preKLocations', {
             templateUrl: 'preKLocations/preKLocations.html',
             controller: 'PreKLocationsController'
