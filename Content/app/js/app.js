@@ -125,6 +125,10 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'culturalPowWow/culturalPowWow.html',
             controller: 'CulturalPowWowController'
         })
+      .when('/contact', {
+            templateUrl: 'contact/contact.html',
+            controller: 'contactController'
+        })
         .otherwise({
             redirectTo: '/aboutUs'
         });

@@ -54,7 +54,7 @@ app.controller("TreeController", ['$scope', function ($scope) {
                 },
                 {
                     name: "Contact",
-                    link: "#/headStartContact"
+                    link: "#/contact"
                 }]
         },
         {

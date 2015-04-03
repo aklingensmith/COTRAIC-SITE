@@ -1,8 +1,8 @@
-app.controller('HeadStartContactController', ['$scope', 'HeadStartContactService',
+app.controller('ContactController', ['$scope', 'ContactService',
 
-    function ($scope, HeadStartContactService) {
+    function ($scope, ContactService) {
         
-        HeadStartContactService.get().then(function(data){
+        ContactService.get().then(function(data){
             
         $scope.title = data.data.title;
         $scope.knoxville = data.data.knoxville;
@@ -28,6 +28,18 @@ app.controller('HeadStartContactController', ['$scope', 'HeadStartContactService
         $scope.dorseyvillePhone = data.data.dorseyvillePhone;
         $scope.copyrighttext = data.data.copyrighttext;
         $scope.headStartEmail = data.data.headStartEmail;
+        $scope.earlyName = data.data.earlyName;
+        $scope.earlyAddressLine = data.data.earlyAddressLine;
+        $scope.earlyCityLine = data.data.earlyCityLine;
+        $scope.earlyPhone = data.data.earlyPhone;
+        $scope.earlyFax = data.data.earlyFax;
+        $scope.earlyHeadStartEmail = data.data.earlyHeadStartEmail;
+        $scope.preKName = data.data.preKName;
+        $scope.preKAddressLine = data.data.preKAddressLine;
+        $scope.preKCityLine = data.data.preKCityLine;
+        $scope.preKPhone = data.data.preKPhone;
+        $scope.preKFax = data.data.preKFax;
+        $scope.preKEmail = data.data.preKEmail;
         
         })
          $scope.openEmail = function () {

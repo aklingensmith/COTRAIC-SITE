@@ -23,5 +23,18 @@
         "dorseyvillePhone": "Telephone: (412)-782-4457",
         "copyrighttext" : "2014 COTRAIC, Inc.",
         "headStartEmail" :  "mrushworth@cotraic.org",
+        "earlyName": "Early HeadStart",
+        "earlyAddressLine": "2201 Salisbury Street",
+        "earlyCityLine": "Pittsburgh, PA 15210",
+        "earlyPhone": "Telephone: (412)-431-4339",
+        "earlyFax": "Fax: (412)-431-2169",
+        "earlyHeadStartEmail": "lruth@cotraic.org",
+        "preKName": "Our Lady of Loreto School (Pre-K)",
+        "preKAddressLine": "1901 Pioneer Ave.",
+        "preKCityLine": "Pittsburgh, PA 15226",
+        "preKPhone": "Telephone: (412)-531-3290",
+        "preKFax": "Fax: (412)-531-3295",
+        "preKEmail": "mmihalko@cotraic.org"
+        
 
 }
