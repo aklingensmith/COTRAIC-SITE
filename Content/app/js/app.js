@@ -127,7 +127,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         })
       .when('/contact', {
             templateUrl: 'contact/contact.html',
-            controller: 'contactController'
+            controller: 'ContactController'
         })
         .otherwise({
             redirectTo: '/aboutUs'

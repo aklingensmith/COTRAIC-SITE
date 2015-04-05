@@ -1,7 +1,7 @@
 html{
     height: 98%;
     font-family:sans-serif;
-    background-color: #ffffff;
+    background-color: #e8e8e8;
 }
 
 .container
@@ -35,7 +35,7 @@ body
     flex: 1 1;
     order: 2;
     font-family: sans-serif;
-    background-color: #ffffff;
+    background-color: #e8e8e8;
     height: 98%;
     position:absolute;
     justify-content: center;
@@ -50,7 +50,7 @@ body
     flex: 1 1;
     order: 2;
     font-family: sans-serif;
-    background-color: #ffffff;
+    background-color: #e8e8e8;
     height: 98%;
     position:absolute;
     justify-content:left;
