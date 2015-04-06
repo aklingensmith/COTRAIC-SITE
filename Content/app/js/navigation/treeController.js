@@ -62,31 +62,24 @@ app.controller("TreeController", ['$scope', function ($scope) {
             link: "#/assistancePrograms",
             nodes: [
                 {
-                    name: "Elders",
-                    nodes: [
-                        {
-                            name: "Elders Services",
-                            link: "#/assistanceProgramsEldersServices"
+                    name: "Elders Services",
+                    link: "#/assistanceProgramsEldersServices"
                         },
-                        {
-                            name: "Am I eligible?",
-                            link: "#/eldersEligibility"
-                        }]
-                },
                 {
-                    name: "WIA Programs",
-                    nodes: [
-                        {
-                            name: "Am I Eligible?",
-                            link: "#/wiaAmIEligible"
-                        },
-                        {
-                            name: "WIA Contact",
-                            link: "#/wiaLocations"
-                        }]
-                }]
-    },
-        {
+                    name: "Elders eligibility",
+                    link: "#/eldersEligibility"
+
+            },
+                {
+                    name: "WIA Eligibility",
+                    link: "#/wiaAmIEligible"
+            },
+                {
+                    name: "WIA Contact",
+                    link: "#/wiaLocations"
+            }
+            ]
+    }, {
             name: "Cultural",
             nodes: [
                 {
