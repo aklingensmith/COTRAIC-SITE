@@ -1,5 +1,5 @@
 {
-        "title": "HeadStart Contact",
+        "title": "Contact",
         "knoxville": "HeadStart Central Office Knoxville Area",
         "knoxvilleCenter": "Rochelle Street Center",
         "knoxvilleAddress": "201 Rochelle Street",
@@ -22,6 +22,6 @@
         "dorseyvilleZip": "Dorseyville, PA 15238",
         "dorseyvillePhone": "Telephone: (412)-782-4457",
         "copyrighttext" : "2014 COTRAIC, Inc.",
-        "headStartEmail" :  "mrushworth@cotraic.org"
+        "headStartEmail" :  "mrushworth@cotraic.org",
 
 }

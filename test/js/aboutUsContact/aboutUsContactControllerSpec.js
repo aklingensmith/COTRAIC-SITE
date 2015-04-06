@@ -18,9 +18,8 @@ describe('Unit: AboutUsContactController', function() {
                 cityLine: 'this is the city',
                 phoneLine: 'this is the phone',
                 faxLine: 'this is the fax',
-                contactName1: 'Russ Sims, TITLE',
-                contactName2: 'Bob Sample, TITLE',
-                contactName3: 'Susie Sample, TITLE',
+                contactName: 'Russ Sims, TITLE',
+                contactEmail: 'email for contact',
                 formInfo: 'This is the messageinfo',
                 formTitle: 'This is the form title'
             };
@@ -60,15 +59,11 @@ describe('Unit: AboutUsContactController', function() {
         });
 
         it('sets the contact name in contact form Cotraic administrative offices', function() {
-            expect(scope.contactName1).toEqual(response.contactName1);
+            expect(scope.contactName).toEqual(response.contactName);
         });
 
-        it('sets the contact name in contact form Cotraic administrative offices', function() {
-            expect(scope.contactName2).toEqual(response.contactName2);
-        });
-
-        it('sets the contact name in contact form Cotraic administrative offices', function() {
-            expect(scope.contactName3).toEqual(response.contactName3);
+        it('sets the email in contact form Cotraic administrative offices', function() {
+            expect(scope.contactEmail).toEqual(response.contactEmail);
         });
 
         it('sets the message to display above the contact form Cotraic administrative offices', function() {

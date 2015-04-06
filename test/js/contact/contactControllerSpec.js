@@ -1,14 +1,14 @@
 'use strict';
 
-describe('Unit: HeadStartContactController', function () {
+describe('Unit: ContactController', function () {
 
     beforeEach(module('cotriacWebApp'));
 
-    describe('HeadStartContactController', function () {
+    describe('ContactController', function () {
         var scope, controller, httpBackend;
         var response;
 
-        beforeEach(inject(function ($rootScope, $controller, HeadStartContactService, $httpBackend) {
+        beforeEach(inject(function ($rootScope, $controller, ContactService, $httpBackend) {
             scope = $rootScope.$new();
             httpBackend = $httpBackend
             response = {
@@ -35,13 +35,26 @@ describe('Unit: HeadStartContactController', function () {
                 "dorseyvilleZip": "This is the zip code",
                 "dorseyvillePhone": "This is the contact information",
                 "copyrighttext" : "2014 COTRAIC, Inc.",
-                "headStartEmail" : "This is the email address for t his page"
+                "headStartEmail" : "This is the email address for t his page",
+                "earlyName" : 'This is the name',
+                "earlyAddressLine" : 'this is the address',
+                "earlyCityLine" : 'this is the city',
+                "earlyPhone" : 'This is the phone number',
+                "earlyFax" : 'This is the fax number',
+                "earlyEmail" : 'This is the email for early head start',
+                "preKName" : 'This is the name',
+                "preKAddressLine" : 'this is the address',
+                "preKCityLine" : 'this is the city',
+                "preKPhone" : 'This is the phone number',
+                "preKFax" : 'This is the fax number',
+                "preKEmail" : 'This is the email for early head start',
+                
                 
             }
-                httpBackend.expectGET('headStartContact/headStartContact.json').respond(200, response);
-                controller = $controller('HeadStartContactController', {
+                httpBackend.expectGET('contact/contact.json').respond(200, response);
+                controller = $controller('ContactController', {
                 $scope: scope,
-                HeadStartContactService: HeadStartContactService
+                ContactService: ContactService
             });
 
             httpBackend.flush();
@@ -120,6 +133,46 @@ describe('Unit: HeadStartContactController', function () {
         });
         it('sets the email address', function () {
             expect(scope.headStartEmail).toEqual(response.headStartEmail);
+        });
+        it('sets name on address for preKLocations', function () {
+            expect(scope.preKName).toEqual(response.preKName);
+        });
+                                                         
+        it('sets address for preKLocations', function () {
+            expect(scope.preKAddressLine).toEqual(response.preKAddressLine);
+        });
+                                                                  
+        it('sets city on address for preKLocations', function () {
+            expect(scope.preKCityLine).toEqual(response.preKCityLine);
+        });
+         it('sets phone number for preKLocations', function () {
+            expect(scope.preKPhone).toEqual(response.preKPhone);
+        });
+         it('sets fax number for preKLocations', function () {
+            expect(scope.preKFax).toEqual(response.preKFax);
+        });
+         it('sets the email address preKLocations', function () {
+            expect(scope.preKEmail).toEqual(response.preKEmail);
+        });
+        it('sets name on address for earlyHeadStartLocations', function () {
+            expect(scope.earlyName).toEqual(response.earlyName);
+        });
+
+        it('sets address for earlyHeadStartLocations', function () {
+            expect(scope.earlyAddressLine).toEqual(response.earlyAddressLine);
+        });
+
+        it('sets city on address for earlyHeadStartLocations', function () {
+            expect(scope.earlyCityLine).toEqual(response.earlyCityLine);
+        });
+         it('sets phone number for earlyHeadStartLocations', function () {
+            expect(scope.earlyPhone).toEqual(response.earlyPhone);
+        });
+        it('sets fax number for earlyHeadStartLocations', function () {
+            expect(scope.earlyFax).toEqual(response.earlyFax);
+        });
+        it('sets the email address', function () {
+            expect(scope.earlyHeadStartEmail).toEqual(response.earlyHeadStartEmail);
         });
 
     });

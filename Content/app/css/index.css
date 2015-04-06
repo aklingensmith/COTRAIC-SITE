@@ -1,7 +1,7 @@
 html{
-    height: 98%;
+    height: 99%;
     font-family:sans-serif;
-    background-color: #ffffff;
+    background-color: #e8e8e8;
 }
 
 .container
@@ -16,7 +16,7 @@ html{
     flex 1;
     order: 1;
     width: 275px;
-    height: 98%;
+    height: 99%;
     background: rgba(60,60,60,0.8);
     position: absolute;
     z-index: 4;
@@ -25,7 +25,7 @@ html{
 
 body
 {
-    height: 98%;
+    height: 99%;
     width: auto;
 }
 
@@ -35,8 +35,8 @@ body
     flex: 1 1;
     order: 2;
     font-family: sans-serif;
-    background-color: #ffffff;
-    height: 98%;
+    background-color: #e8e8e8;
+    height: 99%;
     position:absolute;
     justify-content: center;
     overflow-x: hidden;
@@ -50,8 +50,8 @@ body
     flex: 1 1;
     order: 2;
     font-family: sans-serif;
-    background-color: #ffffff;
-    height: 98%;
+    background-color: #e8e8e8;
+    height: 99%;
     position:absolute;
     justify-content:left;
     overflow-x: hidden;
