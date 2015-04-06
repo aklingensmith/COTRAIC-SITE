@@ -1,6 +1,6 @@
-<div ng-show="showEmailDialog">
-    <div class="email-dialog-backplane"></div>
-    <div class="email-dialog-view">
+<div class='ng-modal' ng-show='showEmailDialog'>
+    <div class='ng-modal-overlay' ng-click='hideModal()'></div>
+    <div class='ng-modal-dialog' ng-style='dialogStyle'>
         <p><form ng-submit = "send()" class="aboutuscontact" name="aboutuscontactsubmit" method="post">
                      <fieldset>
 			    <div class="about-us-contact-form-container">
