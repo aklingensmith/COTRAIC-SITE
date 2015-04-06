@@ -2,17 +2,20 @@
     <div class='ng-modal-overlay' ng-click='hideModal()'></div>
     <div class='ng-modal-dialog' ng-style='dialogStyle'>
         <p><form ng-submit = "send()" class="aboutuscontact" name="aboutuscontactsubmit" method="post">
+			<h1>Email Form</h1>
                      <fieldset>
-			    <div class="about-us-contact-form-container">
+			    <div class="about-us-contact-form-container" align="left">
 		                 <div class="about-us-contact-form-box">
 		                    <div class="about-us-contact-form-item">
 		                        <label>Your Name</label>
 		                        <input type="text" name="aboutusname" class="about-us-contact-form-name">
 		                    </div>
 				    <div class="about-us-contact-form-item">
-		                    <label>Your Email</label>
+		                        <label>Your Email</label>
 		                    	<input type="text" name="aboutusemail" class="about-us-contact-form-email">
 				    </div>
+				</div>
+				<div class="about-us-contact-form-box">
 				    <div class="about-us-contact-form-item">
 		                        <label>Recipient: {{contactName.cname}}</label>
 				    </div>
@@ -22,12 +25,14 @@
 				    </div>
 		               </div>
 			    </div>
-                        <div>
+                        <div class="about-us-contact-form-item">
                              <label>Message to Send:</label>
+			</div>
+			<div class="about-us-contact-form-item">
                              <textarea name="aboutusmessage" class="about-us-contact-form-message"></textarea>
                          </div>
 			<div class="about-us-contact-form-box">
-				<input type="submit" id="submit" value="Send" />
+				<button ng-click="submit()">Send</button>
 				<button ng-click="toggle()">Cancel</button>
 			</div>
                       </fieldset>
