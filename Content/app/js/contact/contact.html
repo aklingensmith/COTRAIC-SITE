@@ -1,6 +1,14 @@
 <div class = "site-flex">
     <div class = "contact">
         <div id="content" align="center">
+	    <div ng-switch="location">
+	    <email-dialog ng-switch-when="knoxville" show-email-dialog="showEmailDialog" contact-name="knoxvilleContactInfo" width='750px'>An error occurred.</email-dialog>
+	    <email-dialog ng-switch-when="overbrook" show-email-dialog="showEmailDialog" contact-name="overbrookContactInfo" width='750px'>An error occurred.</email-dialog>
+	    <email-dialog ng-switch-when="hazelwood" show-email-dialog="showEmailDialog" contact-name="hazelwoodContactInfo" width='750px'>An error occurred.</email-dialog>
+	    <email-dialog ng-switch-when="dorseyville" show-email-dialog="showEmailDialog" contact-name="dorseyvilleContactInfo" width='750px'>An error occurred.</email-dialog>
+	    <email-dialog ng-switch-when="earlyHS" show-email-dialog="showEmailDialog" contact-name="earlyContactInfo" width='750px'>An error occurred.</email-dialog>
+	    <email-dialog ng-switch-when="preK" show-email-dialog="showEmailDialog" contact-name="preKContactInfo" width='750px'>An error occurred.</email-dialog>
+	    </div>
             <!-- begin navigation -->
 
             <h1>{{title}}</h1>
@@ -14,7 +22,9 @@
                    {{knoxvilleAddress}}<br>
                    {{knoxvilleZip}}<br>
                    {{knoxvillePhone}}<br>
-                   {{knoxvilleFax}} <button ng-click="openEmail()"> Email:</button> <br>
+                   {{knoxvilleFax}}
+                            <a ng-if="displayPopup" ng-click="openEmail('knoxville');$log.log(showEmailDialog)" class="email-button" >Email</a>
+                            <a ng-if="!displayPopup" ng-href="mailto:{{headStartEmail}}" class="email-button">Email</a>
                     </p>
                     <p><a href="https://www.google.com/maps/place/201+Rochelle+St,+Pittsburgh,+PA+15210/@40.4153975,-79.9906178,18z/data=!4m2!3m1!1s0x8834f13c8db5752d:0x2ae01e851f946df1"> <img src= "/Content/app/img/KnoxvilleMap.png"/></a></p></div>
                 <br>
@@ -24,7 +34,10 @@
                    {{overbrookCenter}}<br>
                    {{overbrookAddress}}<br>
                    {{overbrookZip}}<br>
-                   {{overbrookPhone}} <button ng-click="openEmail()"> Email:</button> <br></p>
+                   {{overbrookPhone}} 
+                            <a ng-if="displayPopup" ng-click="openEmail('overbrook');$log.log(showEmailDialog)" class="email-button" >Email</a>
+                            <a ng-if="!displayPopup" ng-href="mailto:{{headStartEmail}}" class="email-button">Email</a>
+                    </p>
                     
                        <p><br><a href="https://www.google.com/maps/search/2413+Sawmill+Run+Road,+Pittsburgh,+PA/@40.3837402,-79.9955327,17z/data=!3m1!4b1"> <img src="/Content/app/img/OverbrookMap.png" /></a></p></div>
                 <div class = "header2">
@@ -35,7 +48,10 @@
                     {{hazelwoodCenter}}<br>
                     {{hazelwoodAddress}}<br>
                     {{hazelwoodZip}}<br>
-                    {{hazelwoodPhone}} <button ng-click="openEmail()"> Email:</button> <br>
+                    {{hazelwoodPhone}} 
+                            <a ng-if="displayPopup" ng-click="openEmail('hazelwood');$log.log(showEmailDialog)" class="email-button" >Email</a>
+                            <a ng-if="!displayPopup" ng-href="mailto:{{headStartEmail}}" class="email-button">Email</a>
+                    </p>
                     <br>
                     <br>
                     <a href="https://www.google.com/maps/place/4900+Second+Ave,+Pittsburgh,+PA+15207/@40.4096549,-79.943997,17z/data=!3m1!4b1!4m2!3m1!1s0x8834f1b82ee86055:0xf7a323e61d1e31c7"><img src="/Content/app/img/HazelwoodMap.png"/></a></p></div>
@@ -46,7 +62,10 @@
                     {{dorseyvilleCenter}}<br>
                     {{dorseyvilleAddress}}<br>
                     {{dorseyvilleZip}}<br>
-                    {{dorseyvillePhone}} <button ng-click="openEmail()"> Email:</button> <br>
+                    {{dorseyvillePhone}} 
+                            <a ng-if="displayPopup" ng-click="openEmail('dorseyville');$log.log(showEmailDialog)" class="email-button" >Email</a>
+                            <a ng-if="!displayPopup" ng-href="mailto:{{headStartEmail}}" class="email-button">Email</a>
+                    </p>
                         <br>
                         <br>
                         <a href="https://www.google.com/maps/place/120+Charles+St,+Blawnox,+PA+15238/@40.581618,-79.894539,17z/data=!3m1!4b1!4m2!3m1!1s0x8834923dd10c03cf:0xe66d734238845d80"><img src="/Content/app/img/DorseyvilleMap.png"/></a></p></div>
@@ -60,7 +79,10 @@
                     {{earlyAddressLine}}<br>
                     {{earlyCityLine}}<br>
                     {{earlyPhone}} <br>
-                    {{earlyFax}} <button ng-click="openEmail()"> Email:</button> <br>
+                    {{earlyFax}} 
+                            <a ng-if="displayPopup" ng-click="openEmail('earlyHS');$log.log(showEmailDialog)" class="email-button" >Email</a>
+                            <a ng-if="!displayPopup" ng-href="mailto:{{earlyEmail}}" class="email-button">Email</a>
+                    </p>
                     <br>
                     <br>
                     <a href="https://www.google.com/maps/dir//2201+Salisbury+St,+Pittsburgh,+PA+15210/@40.4193377,-79.9753745,17z/data=!4m13!1m4!3m3!1s0x8834f1127f1e1bb5:0xde2d32798f116fc3!2s2201+Salisbury+St,+Pittsburgh,+PA+15210!3b1!4m7!1m0!1m5!1m1!1s0x8834f1127f1e1bb5:0xde2d32798f116fc3!2m2!1d-79.9753745!2d40.4193377"> <img src ="/Content/app/img/EarlyHeadStartLocationsMap.png"/></a></p></div>
@@ -71,7 +93,10 @@
                     {{preKAddressLine}}<br>
                     {{preKCityLine}}<br>
                     {{preKPhone}}<br>
-                    {{preKFax}} <button ng-click="openEmail()"> Email:</button> <br>
+                    {{preKFax}} 
+                            <a ng-if="displayPopup" ng-click="openEmail('preK');$log.log(showEmailDialog)" class="email-button" >Email</a>
+                            <a ng-if="!displayPopup" ng-href="mailto:{{preKEmail}}" class="email-button">Email</a>
+                    </p>
                         <br>
                         <br>
                         <a href="https://www.google.com/maps/place/1901+Pioneer+Ave,+Pittsburgh,+PA+15226/@40.4041489,-80.015038,17z/data=!3m1!4b1!4m2!3m1!1s0x8834f729f2872165:0xb2e06b4d15feb95d"><img src="/Content/app/img/PreKLocationsMap.png"/></a></p></div>
@@ -79,9 +104,6 @@
                 </div>
                 
             </div>
-            
-            <email-dialog show-email-dialog="showEmailDialog" head-start-email="headStartEmail"></email-dialog>
-        
         <div class="copyright"><p>&copy;{{copyrighttext}}</p></div>
 </div>
     </div>

@@ -48,7 +48,7 @@ describe('Unit: ContactController', function () {
                 "preKPhone" : 'This is the phone number',
                 "preKFax" : 'This is the fax number',
                 "preKEmail" : 'This is the email for early head start',
-                
+                "displayPopup" : false
                 
             }
                 httpBackend.expectGET('contact/contact.json').respond(200, response);
@@ -173,6 +173,10 @@ describe('Unit: ContactController', function () {
         });
         it('sets the email address', function () {
             expect(scope.earlyHeadStartEmail).toEqual(response.earlyHeadStartEmail);
+        });
+
+        it('sets whether the email popup disppppppppppppplays', function () {
+            expect(scope.displayPopup).toEqual(response.displayPopup);
         });
 
     });
