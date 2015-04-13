@@ -8,6 +8,5 @@ app.controller('WIAServicesController', ['$scope', 'WIAServicesService',
             $scope.jobPlacement = data.data.jobPlacement;
             $scope.counseling = data.data.counseling;
             $scope.copyrighttext = data.data.copyrighttext;
-
         })
-                }]);
+}]);
