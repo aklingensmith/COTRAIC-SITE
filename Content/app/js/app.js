@@ -34,8 +34,8 @@ app.config(['$routeProvider', function ($routeProvider) {
             controller: 'WIAAmIEligibleController'
         })
         .when('/wiaServices', {
-            templateUrl: 'wiaServies/wiaservices.html',
-            controller: 'WIAServiesController'
+            templateUrl: 'wiaServices/wiaServices.html',
+            controller: 'WIAServicesController'
         })
         .when('/wiaLocations', {
             templateUrl: 'wiaLocations/wiaLocations.html',
