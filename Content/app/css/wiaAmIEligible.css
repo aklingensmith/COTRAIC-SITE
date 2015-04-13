@@ -1,0 +1,21 @@
+.site-flex {
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.eligibility {
+    display: inline-block;
+    flex: 1 0 auto;
+    vertical-align: top;
+    float: right;
+    overflow: hidden;
+    background: none;
+    color: rgba(60, 60, 60, 0.8);
+}
+
+.wiaAmIEligible .body-text {
+    width: 768px;
+}
