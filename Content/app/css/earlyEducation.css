@@ -1,7 +1,7 @@
 .early-education {
     flex-direction: column;
     overflow: hidden;
-    color: rgba(60, 60, 60, 0.8);
+    color: rgba(60, 60, 60, 1.0);
 }
 
 .early-education .title-container {
@@ -11,7 +11,7 @@
 .early-education .title {
     text-align: center;
     width: auto;
-    color: rgba(60, 60, 60, 0.9);
+    color: rgba(60, 60, 60, 1.0);
 }
 
 .early-education .title-left {
