@@ -54,7 +54,7 @@ app.config(['$routeProvider', function ($routeProvider) {
             controller: 'AssistanceProgramsEldersServicesController'
         })
         .when('/assistancePrograms', {
-            templateUrl: 'assistancePrograms/assistancePrograms.html',
+            templateUrl: 'AssistancePrograms/AssistancePrograms.html',
             controller: 'AssistanceProgramsController'
         })
         .when('/eligibility', {
