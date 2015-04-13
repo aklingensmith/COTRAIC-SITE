@@ -1,7 +1,7 @@
 app.factory('AssistanceProgramsService', ['$http', function ($http) {
 
     var getDataFromJson = function () {
-        var promise = $http.get('assistancePrograms/assistancePrograms.json').success(function (data) {
+        var promise = $http.get('AssistancePrograms/assistancePrograms.json').success(function (data) {
             return data;
         });
 

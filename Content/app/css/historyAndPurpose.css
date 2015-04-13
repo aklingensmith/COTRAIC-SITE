@@ -13,6 +13,8 @@
     overflow: hidden;
     background: none;
     color: rgba(60,60,60,0.8);
+    line-height: 200%;
+    font-size: 16px;
 }
 
 .history-and-purpose

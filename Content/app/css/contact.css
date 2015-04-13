@@ -13,7 +13,7 @@
     float: right;
     overflow-x: hidden;
     background: #e8e8e8;
-    color: rgba(60,60,60,0.8);
+    color: rgba(60,60,60,1);
     font-size: 14px;
 }
 .contact .header{
@@ -46,7 +46,6 @@ span.second{
     float: right;
     margin: 1px 0 0 0;
     width: 350px;
-    <!-- box-shadow: 2px 0 0 black; -->
 }
 
 .header2{
@@ -74,13 +73,45 @@ span.second2{
     float: left;
     margin: 35px 0 0 20px;
     width: 240px;
-    <!--box-shadow: 2px 2px 2px black;-->
 }
 .second2-col{
     float: right;
     margin: 1px 0 0 0;
     width: 350px;
-    <!--box-shadow: 2px 2px 2px black;-->
+}
+.header3{
+    background: red;
+    height: 25px;
+    position: relative;
+    margin: 325px 0 0 0;;
+    width: 750px;
+    box-shadow: 5px 5px 5px rgba(60,60,60,0.8);
+    border-radius: 15px;
+}
+span.first3{
+    top: 5px;
+    left: 20px;
+    color: #fff;
+    position: absolute;
+}
+span.second3{
+    top: 5px;
+    left: 400px;
+    color: #fff;
+    position: absolute;
+}
+.first3-col{
+    float: left;
+    margin: 35px 0 0 20px;
+    width: 240px;
+    position: absolute;
+    
+}
+.second3-col{
+    float: right;
+    margin: 1px 0 0 0;
+    width: 350px;
+    positon: absolute;
 }
 .copyright{
     float: right;
