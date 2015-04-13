@@ -1,14 +1,14 @@
 app.controller('WIAAmIEligibleController', ['$scope', 'WIAAmIEligibleService',
 
     function ($scope, WIAAmIEligibleService) {
-        EldersEligibilityService.get().then(function (data) {
+        WIAAmIEligibleService.get().then(function (data) {
             $scope.title = data.data.title;
             $scope.text = data.data.text;
-            $scope.one = data.data.information;
-            $scope.two = data.data.outReach;
-            $scope.three = data.data.socialization;
-            $scope.four = data.data.counseling;
-            $scope.five = data.data.emergency;
+            $scope.one = data.data.one;
+            $scope.two = data.data.two;
+            $scope.three = data.data.three;
+            $scope.four = data.data.four;
+            $scope.five = data.data.five;
             $scope.copyrighttext = data.data.copyrighttext;
         })
     }]);
