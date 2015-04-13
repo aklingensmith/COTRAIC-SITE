@@ -11,22 +11,18 @@ app.controller('AboutUsContactController', ['$scope', 'AboutUsContactService',
             $scope.faxLine = data.data.faxLine;
             $scope.contactName = data.data.contactName;
             $scope.contactEmail = data.data.contactEmail;
-            $scope.formInfo = data.data.formInfo;
-            $scope.formTitle = data.data.formTitle;
+
+	    $scope.displayPopup = data.data.displayPopup;
+	    
         })
 
 
         $scope.openEmail = function () {
             $scope.showEmailDialog = !$scope.showEmailDialog;
-		$scope.test = { cname: $scope.contactName, email: $scope.contactEmail};
+	    $scope.aboutUsContactInfo = { cname: $scope.contactName, email: $scope.contactEmail};
         };
     }
 ]);
 
-app.directive('modalDialog', function () {
-    return {
-        restrict: 'E',
-        scope: {
-        },
-    };
-});
+
+

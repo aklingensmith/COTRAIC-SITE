@@ -14,14 +14,14 @@ describe('Unit: AboutUsContactController', function() {
             response = {
                 title: 'This is the title',
                 oname: 'This is the office name',
+		onameshort: 'This is the shortened office name',
                 addressLine: 'this is the address',
                 cityLine: 'this is the city',
                 phoneLine: 'this is the phone',
                 faxLine: 'this is the fax',
                 contactName: 'Russ Sims, TITLE',
                 contactEmail: 'email for contact',
-                formInfo: 'This is the messageinfo',
-                formTitle: 'This is the form title'
+		displayPopup: false
             };
 
             httpBackend.expectGET('aboutUsContact/aboutUsContact.json').respond(200, response);
@@ -58,19 +58,20 @@ describe('Unit: AboutUsContactController', function() {
             expect(scope.faxLine).toEqual(response.faxLine);
         });
 
-        it('sets the contact name in contact form Cotraic administrative offices', function() {
+        it('sets the contact name in contact for Cotraic administrative offices', function() {
             expect(scope.contactName).toEqual(response.contactName);
         });
 
-        it('sets the email in contact form Cotraic administrative offices', function() {
+        it('sets the email in contact for Cotraic administrative offices', function() {
             expect(scope.contactEmail).toEqual(response.contactEmail);
         });
 
-        it('sets the message to display above the contact form Cotraic administrative offices', function() {
-            expect(scope.formInfo).toEqual(response.formInfo);
+        it('sets the shortened office name for Cotraic administrative offices', function() {
+            expect(scope.onameshort).toEqual(response.onameshort);
         });
-        it('sets the message to display above the contact form Cotraic administrative offices', function() {
-            expect(scope.formTitle).toEqual(response.formTitle);
+
+	it('sets whether the email popup should be displayed', function() {
+            expect(scope.displayPopup).toEqual(response.displayPopup);
         });
 
     });

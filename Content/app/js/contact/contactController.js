@@ -1,9 +1,8 @@
-app.controller('ContactController', ['$scope', 'ContactService',
+app.controller('ContactController', ['$scope', '$log', 'ContactService',
 
-    function ($scope, ContactService) {
-        
+    function ($scope, $log, ContactService) {
+	$scope.$log = $log;
         ContactService.get().then(function(data){
-            
         $scope.title = data.data.title;
         $scope.knoxville = data.data.knoxville;
         $scope.knoxvilleCenter = data.data.knoxvilleCenter;
@@ -40,10 +39,17 @@ app.controller('ContactController', ['$scope', 'ContactService',
         $scope.preKPhone = data.data.preKPhone;
         $scope.preKFax = data.data.preKFax;
         $scope.preKEmail = data.data.preKEmail;
-        
+	$scope.displayPopup = data.data.displayPopup;
         })
-         $scope.openEmail = function () {
+        $scope.openEmail = function (locationparam) {
             $scope.showEmailDialog = true;
+	    $scope.location = locationparam;
+	    $scope.knoxvilleContactInfo = { cname: $scope.knoxvilleCenter, email: $scope.headStartEmail};
+	    $scope.overbrookContactInfo = { cname: $scope.overbrookCenter, email: $scope.headStartEmail};
+	    $scope.hazelwoodContactInfo = { cname: $scope.hazelwoodCenter, email: $scope.headStartEmail};
+	    $scope.dorseyvilleContactInfo = { cname: $scope.dorseyvilleCenter, email: $scope.headStartEmail};
+	    $scope.earlyContactInfo = { cname: $scope.earlyName, email: $scope.earlyHeadStartEmail};
+	    $scope.preKContactInfo = { cname: $scope.preKName, email: $scope.preKEmail};
         };
 
 }]);
