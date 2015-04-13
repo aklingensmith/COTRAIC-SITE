@@ -66,13 +66,16 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     link: "#/assistanceProgramsEldersServices"
                         },
                 {
-                    name: "Elders eligibility",
+                    name: "Elders Eligibility",
                     link: "#/eldersEligibility"
 
             },
                 {
                     name: "WIA Eligibility",
                     link: "#/wiaAmIEligible"
+            }, {
+                    name: "WIA Services",
+                    link: "#/wiaServices"
             },
                 {
                     name: "WIA Contact",

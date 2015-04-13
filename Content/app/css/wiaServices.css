@@ -1,0 +1,82 @@
+.wia-services {
+    flex-direction: column;
+    overflow: hidden;
+    color: rgba(60, 60, 60, 0.8);
+}
+
+.wia-services .title-container {
+    flex-direction: row;
+}
+
+.wia-services .title {
+    text-align: center;
+    width: auto;
+    color: rgba(60, 60, 60, 0.9);
+}
+
+.wia-services .title-left {
+    float: left;
+    width: 15%;
+}
+
+.wia-services .title-right {
+    float: right;
+    width: 15%;
+}
+
+.wia-services .title-center {
+    display: inline-block;
+    width: 70%;
+}
+
+.wia-services .spacer {
+    flex: 1 1 auto;
+    background: white;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.wia-services .splash {
+    flex: 1 1 auto;
+    flex-direction: row;
+}
+
+.wia-services .splash .column-container {
+    flex-direction: column;
+    display: inline-block;
+}
+
+.wia-services .splash .column-header {
+    flex: 0 1 auto;
+    font-size: 20px;
+    margin: 10px 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    background: #E8E8E8;
+}
+
+.wia-services .body-text {
+    width: 768px;
+}
+
+.wia-services .splash .column-text {
+    flex: 1 1 auto;
+    font-size: 16px;
+    margin: 0 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    background: #E8E8E8;
+}
+
+.wia-services .splash .column-left {
+    float: left;
+    width: 33%;
+}
+
+.wia-services .splash .column-right {
+    float: right;
+    width: 33%;
+}
+
+.wia-services .splash .column-center {
+    display: inline-block;
+    width: 33%;
+}
