@@ -23,3 +23,9 @@
 .wiaAmIEligible a {
     color: blue;
 }
+
+.wiaAmIEligible td {
+    padding-left: 100px;
+    padding-right: 100px;
+    border: none;
+}
