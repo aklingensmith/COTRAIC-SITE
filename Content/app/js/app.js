@@ -29,6 +29,14 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'annualReport/annualReport.html',
             controller: 'AnnualReportController'
         })
+        .when('/wiaAmIEligible', {
+            templateUrl: 'wiaAmIEligible/wiaAmIEligible.html',
+            controller: 'WIAAmIEligibleController'
+        })
+        .when('/wiaServices', {
+            templateUrl: 'wiaServies/wiaservices.html',
+            controller: 'WIAServiesController'
+        })
         .when('/wiaLocations', {
             templateUrl: 'wiaLocations/wiaLocations.html',
             controller: 'WIALocationsController'
@@ -40,10 +48,6 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/earlyEducation', {
             templateUrl: 'earlyEducation/earlyEducation.html',
             controller: 'EarlyEducationController'
-        })
-        .when('/wiaAmIEligible', {
-            templateUrl: 'wiaAmIEligible/wiaAmIEligible.html',
-            controller: 'WIAAmIEligibleController'
         })
         .when('/assistanceProgramsEldersServices', {
             templateUrl: 'assistanceProgramsEldersServices/assistanceProgramsEldersServices.html',
