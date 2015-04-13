@@ -2,7 +2,6 @@
     flex-direction: column;
     overflow: hidden;
     color: rgba(60, 60, 60, 0.8);
-    float: left;
 }
 
 .about-us .title-container {
@@ -45,7 +44,6 @@
 .about-us .splash .column-container {
     flex-direction: column;
     display: inline-block;
-    background:#666666;
 }
 
 .about-us .splash .column-header {
@@ -54,6 +52,10 @@
     margin: 10px 10px 0 10px;
     padding: 10px 10px 0 10px;
     background: #E8E8E8;
+}
+
+.about-us .body-text {
+    width: 768px;
 }
 
 .about-us .splash .column-text {

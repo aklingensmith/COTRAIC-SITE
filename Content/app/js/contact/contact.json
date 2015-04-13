@@ -34,7 +34,7 @@
         "preKCityLine": "Pittsburgh, PA 15226",
         "preKPhone": "Telephone: (412)-531-3290",
         "preKFax": "Fax: (412)-531-3295",
-        "preKEmail": "mmihalko@cotraic.org"
+        "preKEmail": "mmihalko@cotraic.org",
         
-
+	"displayPopup": true
 }
