@@ -1,7 +1,7 @@
 app.factory('EarlyHeadStartServicesService', ['$http', function ($http) {
 
     var getDataFromJson = function () {
-        var promise = $http.get('earlyHeadStartServices/earlyHeadStartServices.json').success(function (data) {
+        var promise = $http.get('app/js/earlyHeadStartServices/earlyHeadStartServices.json').success(function (data) {
             return data;
         });
 

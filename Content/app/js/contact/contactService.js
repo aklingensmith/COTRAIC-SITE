@@ -1,7 +1,7 @@
 app.factory('ContactService', ['$http', function ($http) {
 
     var getDataFromJson = function () {
-        var promise = $http.get('contact/contact.json').success(function (data) {
+        var promise = $http.get('app/js/contact/contact.json').success(function (data) {
             return data;
         });
         

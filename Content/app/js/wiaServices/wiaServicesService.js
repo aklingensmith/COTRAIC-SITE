@@ -1,7 +1,7 @@
 app.factory('WIAServicesService', ['$http', function ($http) {
 
     var getDataFromJson = function () {
-        var promise = $http.get('wiaServices/wiaServices.json').success(function (data) {
+        var promise = $http.get('app/js/wiaServices/wiaServices.json').success(function (data) {
             return data;
         });
 

@@ -1,7 +1,7 @@
 app.factory('EarlyEducationService', ['$http', function ($http) {
 
     var getDataFromJson = function () {
-        var promise = $http.get('earlyEducation/earlyEducation.json').success(function (data) {
+        var promise = $http.get('app/js/earlyEducation/earlyEducation.json').success(function (data) {
             return data;
         });
 

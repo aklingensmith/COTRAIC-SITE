@@ -2,71 +2,71 @@ var app = angular.module('cotriacWebApp', ['ngRoute']);
 
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/historyAndPurpose', {
-            templateUrl: 'historyAndPurpose/historyAndPurpose.html',
+            templateUrl: 'app/js/historyAndPurpose/historyAndPurpose.html',
             controller: 'HistoryAndPurposeController'
         })
         .when('/aboutUs', {
-            templateUrl: 'aboutUs/aboutUs.html',
+            templateUrl: 'app/js/aboutUs/aboutUs.html',
             controller: 'AboutUsController'
         })
         .when('/aboutUsContact', {
-            templateUrl: 'aboutUsContact/aboutUsContact.html',
+            templateUrl: 'app/js/aboutUsContact/aboutUsContact.html',
             controller: 'AboutUsContactController'
         })
         .when('/preKServices', {
-            templateUrl: 'preKServices/preKServices.html',
+            templateUrl: 'app/js/preKServices/preKServices.html',
             controller: 'PreKServicesController'
         })
         .when('/earlyHeadStartServices', {
-            templateUrl: 'earlyHeadStartServices/earlyHeadStartServices.html',
+            templateUrl: 'app/js/earlyHeadStartServices/earlyHeadStartServices.html',
             controller: 'EarlyHeadStartServicesController'
         })
         .when('/headStartServices', {
-            templateUrl: 'headStartServices/headStartServices.html',
+            templateUrl: 'app/js/headStartServices/headStartServices.html',
             controller: 'HeadStartServicesController'
         })
         .when('/annualReport', {
-            templateUrl: 'annualReport/annualReport.html',
+            templateUrl: 'app/js/annualReport/annualReport.html',
             controller: 'AnnualReportController'
         })
         .when('/wiaAmIEligible', {
-            templateUrl: 'wiaAmIEligible/wiaAmIEligible.html',
+            templateUrl: 'app/js/wiaAmIEligible/wiaAmIEligible.html',
             controller: 'WIAAmIEligibleController'
         })
         .when('/wiaServices', {
-            templateUrl: 'wiaServices/wiaServices.html',
+            templateUrl: 'app/js/wiaServices/wiaServices.html',
             controller: 'WIAServicesController'
         })
         .when('/wiaLocations', {
-            templateUrl: 'wiaLocations/wiaLocations.html',
+            templateUrl: 'app/js/wiaLocations/wiaLocations.html',
             controller: 'WIALocationsController'
         })
         .when('/eldersEligibility', {
-            templateUrl: 'eldersEligibility/eldersEligibility.html',
+            templateUrl: 'app/js/eldersEligibility/eldersEligibility.html',
             controller: 'EldersEligibilityController'
         })
         .when('/earlyEducation', {
-            templateUrl: 'earlyEducation/earlyEducation.html',
+            templateUrl: 'app/js/earlyEducation/earlyEducation.html',
             controller: 'EarlyEducationController'
         })
         .when('/assistanceProgramsEldersServices', {
-            templateUrl: 'assistanceProgramsEldersServices/assistanceProgramsEldersServices.html',
+            templateUrl: 'app/js/assistanceProgramsEldersServices/assistanceProgramsEldersServices.html',
             controller: 'AssistanceProgramsEldersServicesController'
         })
         .when('/assistancePrograms', {
-            templateUrl: 'AssistancePrograms/AssistancePrograms.html',
+            templateUrl: 'app/js/AssistancePrograms/AssistancePrograms.html',
             controller: 'AssistanceProgramsController'
         })
         .when('/eligibility', {
-            templateUrl: 'eligibility/eligibility.html',
+            templateUrl: 'app/js/eligibility/eligibility.html',
             controller: 'EligibilityController'
         })
         .when('/culturalPowWow', {
-            templateUrl: 'culturalPowWow/culturalPowWow.html',
+            templateUrl: 'app/js/culturalPowWow/culturalPowWow.html',
             controller: 'CulturalPowWowController'
         })
         .when('/contact', {
-            templateUrl: 'contact/contact.html',
+            templateUrl: 'app/js/contact/contact.html',
             controller: 'ContactController'
         })
         .otherwise({
