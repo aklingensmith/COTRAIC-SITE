@@ -16,7 +16,7 @@ describe('Unit: EldersEligibilityController', function () {
                 text: 'This is the text'
             };
 
-            httpBackend.expectGET('app/js/eldersEligibility/eldersEligibility.json').respond(200, response);
+            httpBackend.expectGET('Content/app/js/eldersEligibility/eldersEligibility.json').respond(200, response);
             controller = $controller('EldersEligibilityController', {
                 $scope: scope,
                 EldersEligibilityService: EldersEligibilityService

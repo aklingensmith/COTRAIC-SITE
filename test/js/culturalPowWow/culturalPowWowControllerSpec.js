@@ -16,7 +16,7 @@ describe('Unit: CulturalPowWowController', function () {
                 "content": "This is the content",
                 "copyrighttext": "2014 COTRAIC, Inc."
             }
-            httpBackend.expectGET('app/js/culturalPowWow/culturalPowWow.json').respond(200, response);
+            httpBackend.expectGET('Content/app/js/culturalPowWow/culturalPowWow.json').respond(200, response);
             controller = $controller('CulturalPowWowController', {
                 $scope: scope, 
                 CulturalPowWowService: CulturalPowWowService

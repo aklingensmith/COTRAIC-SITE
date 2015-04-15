@@ -3,7 +3,7 @@ app.directive('emailDialog', function () {
         restrict: 'E',
 	replace: true,
 	
-        templateUrl: 'app/js/emailDialog/emailDialog.html',
+        templateUrl: 'Content/app/js/emailDialog/emailDialog.html',
         scope: {
             showEmailDialog: '=',
             contactName: '=',

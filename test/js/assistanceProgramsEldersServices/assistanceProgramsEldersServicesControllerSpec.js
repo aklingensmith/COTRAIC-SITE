@@ -21,7 +21,7 @@ describe('Unit: AssistanceProgramsEldersServicesController', function () {
                 copyrighttext: 'This is the copyright'
             };
             
-            httpBackend.expectGET('app/js/assistanceProgramsEldersServices/assistanceProgramsEldersServices.json').respond(200, response);
+            httpBackend.expectGET('Content/app/js/assistanceProgramsEldersServices/assistanceProgramsEldersServices.json').respond(200, response);
             controller = $controller('AssistanceProgramsEldersServicesController', {
                 $scope: scope,
                 AssistanceProgramsEldersServicesService: AssistanceProgramsEldersServicesService

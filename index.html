@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html ng-app="cotriacWebApp">
+
+<head>
+    <!-- Angular JS -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js" type="text/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-route.js" type="text/javascript"></script>
+
+    <!-- Source Code references -->
+    <link rel="stylesheet" href="Content/app/css/navigation.css">
+    <link rel="stylesheet" href="Content/app/css/hr.css">
+    <link rel="stylesheet" href="Content/app/css/historyAndPurpose.css">
+    <link rel="stylesheet" href="Content/app/css/index.css">
+    <link rel="stylesheet" href="Content/app/css/educationServices.css">
+    <link rel="stylesheet" href="Content/app/css/eldersEligibility.css">
+
+    <script src="Content/app/js/app.js"></script>
+    <script src="Content/app/js/navigation/treeController.js"></script>
+    <script src="Content/app/js/historyAndPurpose/historyAndPurposeController.js"></script>
+    <link rel="stylesheet" href="Content/app/css/aboutUs.css">
+    <script src="Content/app/js/historyAndPurpose/historyAndPurposeService.js"></script>
+    <script src="Content/app/js/aboutUs/aboutUsController.js"></script>
+    <script src="Content/app/js/aboutUs/aboutUsService.js"></script>
+    <link rel="stylesheet" href="Content/app/css/aboutUsContact.css">
+    <script src="Content/app/js/aboutUsContact/aboutUsContactController.js"></script>
+    <script src="Content/app/js/aboutUsContact/aboutUsContactService.js"></script>
+    <script src="Content/app/js/annualReport/annualReportController.js"></script>
+    <script src="Content/app/js/annualReport/annualReportService.js"></script>
+    <link rel="stylesheet" href="Content/app/css/annualReport.css">
+    <script src="Content/app/js/earlyEducation/earlyEducationController.js"></script>
+    <script src="Content/app/js/earlyEducation/earlyEducationService.js"></script>
+    <link rel="stylesheet" href="Content/app/css/earlyEducation.css">
+    <script src="Content/app/js/emailDialog/emailDialog.html"></script>
+    <script src="Content/app/js/emailDialog/emailDialogController.js"></script>
+    <link rel="stylesheet" href="Content/app/css/emailDialog.css"></link>
+    <script src="Content/app/js/preKServices/preKServicesController.js"></script>
+    <script src="Content/app/js/preKServices/preKServicesService.js"></script>
+    <script src="Content/app/js/earlyHeadStartServices/earlyHeadStartServicesController.js"></script>
+    <script src="Content/app/js/earlyHeadStartServices/earlyHeadStartServicesService.js"></script>
+    <script src="Content/app/js/headStartServices/headStartServicesController.js"></script>
+    <script src="Content/app/js/headStartServices/headStartServicesService.js"></script>
+    <script src="Content/app/js/wiaAmIEligible/wiaAmIEligibleController.js"></script>
+    <script src="Content/app/js/wiaAmIEligible/wiaAmIEligibleService.js"></script>
+    <link rel="stylesheet" href="Content/app/css/wiaAmIEligible.css">
+    <script src="Content/app/js/wiaLocations/wiaLocationsController.js"></script>
+    <script src="Content/app/js/wiaLocations/wiaLocationsService.js"></script>
+    <link rel="stylesheet" href="Content/app/css/wiaLocations.css">
+    <script src="Content/app/js/wiaServices/wiaServicesController.js"></script>
+    <script src="Content/app/js/wiaServices/wiaServicesService.js"></script>
+    <link rel="stylesheet" href="Content/app/css/wiaServices.css">
+    <script src="Content/app/js/eldersEligibility/eldersEligibilityController.js"></script>
+    <script src="Content/app/js/eldersEligibility/eldersEligibilityService.js"></script>
+    <script src="Content/app/js/assistanceProgramsEldersServices/assistanceProgramsEldersServicesController.js"></script>
+    <script src="Content/app/js/assistanceProgramsEldersServices/assistanceProgramsEldersServicesService.js"></script>
+    <script src="Content/app/js/AssistancePrograms/AssistanceProgramsController.js"></script>
+    <script src="Content/app/js/AssistancePrograms/assistanceProgramsService.js"></script>
+    <link rel="stylesheet" href="Content/app/css/assistancePrograms.css">
+    <script src="Content/app/js/culturalPowWow/culturalPowWowController.js"></script>
+    <script src="Content/app/js/culturalPowWow/culturalPowWowService.js"></script>
+    <link rel="stylesheet" href="Content/app/css/culturalPowWow.css">
+    <script src="Content/app/js/eligibility/eligibilityController.js"></script>
+    <script src="Content/app/js/eligibility/eligibilityService.js"></script>
+    <link rel="stylesheet" href="Content/app/css/eligibility.css">
+    <link rel="stylesheet" href="Content/app/css/contact.css">
+    <script src="Content/app/js/contact/contactController.js"></script>
+    <script src="Content/app/js/contact/contactService.js"></script>
+
+</head>
+
+<body ng-cloak>
+    <div class="container">
+        <div class="navbar">
+            <center>
+                <a href="./#"> <img src="Content/app/img/COTRAICTransp.png" height="260" />
+                </a>
+            </center>
+            <treeview></treeview>
+        </div>
+        <div class="body-styling">
+            <div ng-view></div>
+        </div>
+    </div>
+</body>
+
+</html>

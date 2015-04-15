@@ -1,7 +1,7 @@
 app.directive('treeview', function () {
     return {
         restrict: "E",
-        templateUrl: 'app/js/navigation/navigation.html',
+        templateUrl: 'Content/app/js/navigation/navigation.html',
         scope: {},
         controller: 'TreeController',
         link: function (scope, e, a, controller) {
