@@ -24,7 +24,7 @@ describe('Unit: AboutUsContactController', function() {
 		displayPopup: false
             };
 
-            httpBackend.expectGET('aboutUsContact/aboutUsContact.json').respond(200, response);
+            httpBackend.expectGET('app/js/aboutUsContact/aboutUsContact.json').respond(200, response);
             controller = $controller('AboutUsContactController', {
                 $scope: scope,
                 AboutUsContactService: AboutUsContactService

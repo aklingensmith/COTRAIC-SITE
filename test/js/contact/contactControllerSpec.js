@@ -51,7 +51,7 @@ describe('Unit: ContactController', function () {
                 "displayPopup" : false
                 
             }
-                httpBackend.expectGET('contact/contact.json').respond(200, response);
+                httpBackend.expectGET('app/js/contact/contact.json').respond(200, response);
                 controller = $controller('ContactController', {
                 $scope: scope,
                 ContactService: ContactService

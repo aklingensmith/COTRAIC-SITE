@@ -59,7 +59,7 @@ describe('Unit: WIALocationsController', function () {
                 niaEmail: 'This is an email addres',
             };
 
-            httpBackend.expectGET('wiaLocations/wiaLocations.json').respond(200, response);
+            httpBackend.expectGET('app/js/wiaLocations/wiaLocations.json').respond(200, response);
             controller = $controller('WIALocationsController', {
                 $scope: scope,
                 WIALocationsService: WIALocationsService

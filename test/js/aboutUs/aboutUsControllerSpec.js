@@ -16,7 +16,7 @@ describe('Unit: AboutUsController', function () {
                 text: 'This is the text'
             };
 
-            httpBackend.expectGET('aboutUs/aboutUs.json').respond(200, response);
+            httpBackend.expectGET('app/js/aboutUs/aboutUs.json').respond(200, response);
             controller = $controller('AboutUsController', {
                 $scope: scope,
                 AboutUsService: AboutUsService

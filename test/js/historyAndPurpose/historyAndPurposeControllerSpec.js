@@ -19,7 +19,7 @@ describe('Unit: HistoryAndPurposeController', function () {
 		
             };
 
-            httpBackend.expectGET('historyAndPurpose/historyAndPurpose.json').respond(200, response);
+            httpBackend.expectGET('app/js/historyAndPurpose/historyAndPurpose.json').respond(200, response);
             controller = $controller('HistoryAndPurposeController', {
                 $scope: scope,
                 HistoryAndPurposeService: HistoryAndPurposeService
