@@ -69,6 +69,14 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'Content/app/js/contact/contact.html',
             controller: 'ContactController'
         })
+        .when('/careers', {
+            templateUrl: 'Content/app/js/careers/careers.html',
+            controller: 'CareersController'
+        })
+        .when('/boardMembers', {
+            templateUrl: 'Content/app/js/boardMembers/boardMembers.html',
+            controller: 'BoardMembersController'
+        })
         .otherwise({
             redirectTo: '/aboutUs'
         });

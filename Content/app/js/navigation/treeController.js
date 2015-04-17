@@ -82,12 +82,22 @@ app.controller("TreeController", ['$scope', function ($scope) {
                     link: "#/wiaLocations"
             }
             ]
-    }, {
+        },
+        {
             name: "Cultural",
             nodes: [
                 {
                     name: "Pow Wow",
                     link: "#/culturalPowWow"
                 }]
-    }];
+        },
+        {
+            name: "Board Members",
+            link: "#/boardMembers"
+        },
+        {
+            name: "Careers",
+            link: "#/careers"
+    },
+    ];
 }]);

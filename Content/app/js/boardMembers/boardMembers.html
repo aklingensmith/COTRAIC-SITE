@@ -1,0 +1,15 @@
+<div id="wrapper">
+    <div class="body-text">
+        <ul>
+            <h1>Board Members</h1>
+            <li ng-repeat="data in boardMembers">
+                <div>
+                    <img src="{{data.picture}}">
+                    <p>{{data.name}}</p>
+                    <p>{{data.jobTitle}}</p>
+                    <p>{{data.biography}}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

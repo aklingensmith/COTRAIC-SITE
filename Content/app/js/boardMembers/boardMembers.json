@@ -1,0 +1,22 @@
+{
+    "boardMembers": [
+        {
+            "picture": "/Content/app/img/placeHolder.png",
+            "name": "Placeholder name 1",
+            "jobTitle": "Placeholder jobTitle 1",
+            "biography": "Placeholder biography 1"
+        },
+        {
+            "picture": "/Content/app/img/placeHolder.png",
+            "name": "Placeholder name 2",
+            "jobTitle": "Placeholder jobTitle 2",
+            "biography": "Placeholder biography 2"
+        },
+        {
+            "picture": "/Content/app/img/placeHolder.png",
+            "name": "Placeholder name 3",
+            "jobTitle": "Placeholder jobTitle 3",
+            "biography": "Placeholder biography 3"
+        }
+    ]
+}

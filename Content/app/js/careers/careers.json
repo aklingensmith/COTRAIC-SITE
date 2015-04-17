@@ -1,0 +1,16 @@
+{
+    "careers": [
+        {
+            "jobTitle": "Placeholder title 1",
+            "jobDescription": "Placeholder description 1"
+        },
+        {
+            "jobTitle": "Placeholder title 2",
+            "jobDescription": "Placeholder description 2"
+        },
+        {
+            "jobTitle": "Placeholder title 3",
+            "jobDescription": "Placeholder description 3"
+        }
+    ]
+}

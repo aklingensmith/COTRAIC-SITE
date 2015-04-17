@@ -1,0 +1,14 @@
+div#wrapper li {
+    list-style-type: none;
+    text-align: left;
+}
+
+div#wrapper p {
+    list-style-type: none;
+    text-align: left;
+}
+
+div#wrapper h1 {
+    list-style-type: none;
+    text-align: center;
+}
