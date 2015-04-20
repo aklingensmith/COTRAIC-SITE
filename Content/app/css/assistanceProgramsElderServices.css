@@ -6,7 +6,7 @@
     margin-left: 0;
 }
 
-.wiaServices {
+.assistance-programsEldersServices {
     display: inline-block;
     flex: 1 0 auto;
     vertical-align: top;
@@ -16,11 +16,11 @@
     color: rgba(60, 60, 60, 1);
 }
 
-.wiaServices .body-text {
+.assistance-programsEldersServices .body-text {
     width: 768px;
 }
 
-.wiaServices td {
+.assistance-programsEldersServices td {
     padding-left: 100px;
     padding-right: 100px;
     border: none;
