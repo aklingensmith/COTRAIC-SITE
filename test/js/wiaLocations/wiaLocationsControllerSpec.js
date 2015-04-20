@@ -57,6 +57,7 @@ describe('Unit: WIALocationsController', function () {
                 eastpointEmail: 'This is an email addres',
                 kentuckyEmail: 'This is an email addres',
                 niaEmail: 'This is an email addres',
+                displayPopup : false
             };
 
             httpBackend.expectGET('Content/app/js/wiaLocations/wiaLocations.json').respond(200, response);
@@ -204,6 +205,8 @@ describe('Unit: WIALocationsController', function () {
            it('sets the email address', function () {
             expect(scope.niaEmail).toEqual(response.niaEmail);
         });
-        
+        it('sets whether the email popup displays', function () {
+            expect(scope.displayPopup).toEqual(response.displayPopup);
+        });        
     });
 });

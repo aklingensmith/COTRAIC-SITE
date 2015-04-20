@@ -1,7 +1,6 @@
-app.controller('ContactController', ['$scope', '$log', 'ContactService',
+app.controller('ContactController', ['$scope', 'ContactService',
 
-    function ($scope, $log, ContactService) {
-	$scope.$log = $log;
+    function ($scope, ContactService) {
         ContactService.get().then(function(data){
         $scope.title = data.data.title;
         $scope.knoxville = data.data.knoxville;

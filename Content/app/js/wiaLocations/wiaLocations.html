@@ -2,6 +2,15 @@
 <div class = "site-flex"> 
     <div class = "wia-locations">
         <div id="content" align="center">
+	    <div ng-switch="location">
+	    <email-dialog ng-switch-when="westpa" show-email-dialog="showEmailDialog" contact-name="westPAContactInfo" width='750px'>An error occurred.</email-dialog>
+	    <email-dialog ng-switch-when="eastpa" show-email-dialog="showEmailDialog" contact-name="eastPAContactInfo" width='750px'>An error occurred.</email-dialog>
+	    <email-dialog ng-switch-when="wv" show-email-dialog="showEmailDialog" contact-name="wvContactInfo" width='750px'>An error occurred.</email-dialog>
+	    <email-dialog ng-switch-when="maryland" show-email-dialog="showEmailDialog" contact-name="marylandContactInfo" width='750px'>An error occurred.</email-dialog>
+	    <email-dialog ng-switch-when="eastpoint" show-email-dialog="showEmailDialog" contact-name="eastpointContactInfo" width='750px'>An error occurred.</email-dialog>
+	    <email-dialog ng-switch-when="kentucky" show-email-dialog="showEmailDialog" contact-name="kentuckyContactInfo" width='750px'>An error occurred.</email-dialog>
+	    <email-dialog ng-switch-when="nia" show-email-dialog="showEmailDialog" contact-name="niaContactInfo" width='750px'>An error occurred.</email-dialog>
+	    </div>
             <!-- begin navigation -->
 
             <h1>{{title}}</h1>
@@ -14,7 +23,9 @@
                     {{westPACenter}}<br>
                     {{westPAAddress}}<br>
                     {{westPAZip}}<br>
-                    {{westPAPhone}} <button ng-click="openEmail()"> Email:</button><br>
+                    {{westPAPhone}}
+                            <a ng-if="displayPopup" ng-click="openEmail('westpa')" class="email-button" >Email</a>
+                            <a ng-if="!displayPopup" ng-href="mailto:{{westernPaEmail}}" class="email-button">Email</a>
                     <br></p>
                                         <p><a href="https://www.google.com/maps/place/120+Charles+St,+Blawnox,+PA+15238/@40.581618,-79.894539,17z/data=!3m1!4b1!4m2!3m1!1s0x8834923dd10c03cf:0xe66d734238845d80"><img src= "/Content/app/img/DorseyvilleMap.png"/></a></p></div>
                 <br>
@@ -24,7 +35,9 @@
                    {{eastPAText}}<br>
                    {{eastPAAddress}}<br>
                    {{eastPAZip}}<br>
-                   {{eastPAPhone}} <button ng-click="openEmail()"> Email:</button> <br>
+                   {{eastPAPhone}} 
+                            <a ng-if="displayPopup" ng-click="openEmail('eastpa')" class="email-button" >Email</a>
+                            <a ng-if="!displayPopup" ng-href="mailto:{{easternPaEmail}}" class="email-button">Email</a>
                    <br></p>
                     
                        <p><br><a href="https://www.google.com/maps/place/1855+New+Hope+St,+Norristown,+PA+19401/@40.1229804,-75.3183748,17z/data=!3m1!4b1!4m2!3m1!1s0x89c6bd959cf1d647:0x28e3aa9b4ec8e743"> <img src= "/Content/app/img/newHopeStreetMap.png" /></a></p></div>
@@ -36,7 +49,9 @@
                     {{wvText}}<br>
                     {{wvAddress}}<br>
                     {{wvZip}}<br>
-                    {{wvPhone}} <button ng-click="openEmail()"> Email:</button> <br>
+                    {{wvPhone}} 
+                            <a ng-if="displayPopup" ng-click="openEmail('wv')" class="email-button" >Email</a>
+                            <a ng-if="!displayPopup" ng-href="mailto:{{westVirginiaEmail}}" class="email-button">Email</a>
                    </p>
                     <p><a href="https://www.google.com/maps/place/Charleston+Job+Services/@38.3478536,-81.6237474,17z/data=!4m5!1m2!2m1!1sworkforce+west+virginia+center+!3m1!1s0x0000000000000000:0x3412e6b29e05ad8a"><img src= "/Content/app/img/westVirginiaMap.png"/></a></p></div>
                     <br>
@@ -46,7 +61,9 @@
                     {{marylandText}}<br>
                     {{marylandAddress}}<br>
                     {{marylandZip}}<br>
-                    {{marylandPhone}} <button ng-click="openEmail()"> Email:</button> <br>
+                    {{marylandPhone}} 
+                            <a ng-if="displayPopup" ng-click="openEmail('maryland')" class="email-button" >Email</a>
+                            <a ng-if="!displayPopup" ng-href="mailto:{{westernMarylandEmail}}" class="email-button">Email</a>
                         </p></div>
                         <div class ="map"><p><br><a href="https://www.google.com/maps/place/33+W+Washington+St,+Hagerstown,+MD+21740/@39.642321,-77.7213421,17z/data=!3m1!4b1!4m2!3m1!1s0x89c9ed3896eb9207:0x4706d699e58e26a0"><img src= "/Content/app/img/westernMarylandMap.png"/></a></p></div>
                     <div class = "header3">
@@ -57,7 +74,9 @@
                     {{eastpointText}}<br>
                     {{eastpointAddress}}<br>
                     {{eastpointZip}}<br>
-                    {{eastpointPhone}} <button ng-click="openEmail()"> Email:</button> <br>
+                    {{eastpointPhone}} 
+                            <a ng-if="displayPopup" ng-click="openEmail('eastpoint')" class="email-button" >Email</a>
+                            <a ng-if="!displayPopup" ng-href="mailto:{{eastpointEmail}}" class="email-button">Email</a>
                     </p>
                                         <p><a href="https://www.google.com/maps/place/7930+Eastern+Blvd,+Baltimore,+MD+21224/@39.2949891,-76.5118161,17z/data=!3m1!4b1!4m2!3m1!1s0x89c806dd124e49bf:0x896bdcf538ba8f56"> <img src= "/Content/app/img/eastpointWorkforceMap.png"/></a></p></div>
                 <br>
@@ -67,7 +86,9 @@
                    {{kentuckyText}}<br>
                    {{kentuckyAddress}}<br>
                    {{kentuckyZip}}<br>
-                   {{kentuckyPhone}} <button ng-click="openEmail()"> Email:</button> <br>
+                   {{kentuckyPhone}} 
+                            <a ng-if="displayPopup" ng-click="openEmail('kentucky')" class="email-button" >Email</a>
+                            <a ng-if="!displayPopup" ng-href="mailto:{{kentuckyEmail}}" class="email-button">Email</a>
                    </p>
                        <p><a href="https://www.google.com/maps/place/1055+Industry+Rd,+Lexington,+KY+40505/@38.044868,-84.461118,17z/data=!3m1!4b1!4m2!3m1!1s0x884245136e6fed69:0x8a6c1900c2620b83"> <img src= "/Content/app/img/centralKentuckyMap.png" /></a></p></div>
                         <div class = "header4">
@@ -77,12 +98,13 @@
                     {{niaText}}<br>
                     {{niaAddress}}<br>
                     {{niaZip}}<br>
-                    {{niaPhone}} <button ng-click="openEmail()"> Email:</button> <br>
+                    {{niaPhone}} 
+                            <a ng-if="displayPopup" ng-click="openEmail('nia')" class="email-button" >Email</a>
+                            <a ng-if="!displayPopup" ng-href="mailto:{{niaEmail}}" class="email-button">Email</a>
                     </p>
                                         <p><a href="https://www.google.com/maps/place/2900+W+Broadway,+Louisville,+KY+40211/@38.2492889,-85.8004586,17z/data=!3m1!4b1!4m2!3m1!1s0x88696d2ee2cc1329:0x17a132497b1a0070"> <img src= "/Content/app/img/niaMap.png"/></a></p></div>
                 </div>
                 </div>
-                    <email-dialog show-email-dialog="showEmailDialog"></email-dialog>
             </div>
         </div>
     </div>

@@ -47,9 +47,17 @@ app.controller('WIALocationsController', ['$scope', 'WIALocationsService',
             $scope.eastpointEmail = data.data.eastpointEmail;
             $scope.kentuckyEmail = data.data.kentuckyEmail;
             $scope.niaEmail = data.data.niaEmail;
-            
+		$scope.displayPopup = data.data.displayPopup; 
         })
-         $scope.openEmail = function () {
+         $scope.openEmail = function (locationparam) {
             $scope.showEmailDialog = true;
+	    $scope.location = locationparam;
+	    $scope.westPAContactInfo = { cname: $scope.westPAText, email: $scope.westernPaEmail};
+	    $scope.eastPAContactInfo = { cname: $scope.eastPAText, email: $scope.easternPaEmail};
+	    $scope.wvContactInfo = { cname: $scope.wvText, email: $scope.westVirginiaEmail};
+	    $scope.marylandContactInfo = { cname: $scope.marylandText, email: $scope.westernMarylandEmail};
+	    $scope.eastpointContactInfo = { cname: $scope.eastpointText, email: $scope.eastpointEmail};
+	    $scope.kentuckyContactInfo = { cname: $scope.kentuckyText, email: $scope.kentuckyEmail};
+	    $scope.niaContactInfo = { cname: $scope.niaText, email: $scope.niaEmail};
         };
 }]);

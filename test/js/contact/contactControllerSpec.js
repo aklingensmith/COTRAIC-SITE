@@ -175,7 +175,7 @@ describe('Unit: ContactController', function () {
             expect(scope.earlyHeadStartEmail).toEqual(response.earlyHeadStartEmail);
         });
 
-        it('sets whether the email popup disppppppppppppplays', function () {
+        it('sets whether the email popup displays', function () {
             expect(scope.displayPopup).toEqual(response.displayPopup);
         });
 

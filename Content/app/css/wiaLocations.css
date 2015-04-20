@@ -36,6 +36,7 @@ span.second{
     left: 400px;
     color: #fff;
     position: absolute;
+    font-size: 0.95em;
 }
 .first-col{
     float: left;
@@ -156,7 +157,6 @@ button{
 button:hover
 {
     color: red;
-    background-color: #666666;
 }
 button:focus
 {
