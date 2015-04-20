@@ -2,11 +2,16 @@
     <div class="body-text">
         <ul>
             <h1>Board Members</h1>
+            <hr class="hr">
             <li ng-repeat="data in boardMembers">
                 <div>
                     <img src="{{data.picture}}">
-                    <p>{{data.name}}</p>
-                    <p>{{data.jobTitle}}</p>
+                    <div>
+                        <h3>
+                            <span>{{data.jobTitle}},</span>
+                            <span>{{data.name}}</span>
+                        </h3>
+                    </div>
                     <p>{{data.biography}}</p>
                 </div>
             </li>
