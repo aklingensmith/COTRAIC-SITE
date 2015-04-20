@@ -10,5 +10,9 @@ app.controller('AboutUsController', ['$scope', 'AboutUsService',
             $scope.columnTwoText = data.data.columnTwoText;
             $scope.columnThreeHeader = data.data.columnThreeHeader;
             $scope.columnThreeText = data.data.columnThreeText;
+            $scope.splashImage = data.data.splashImage;
+            $scope.splashImage2 = data.data.splashImage2;
+            $scope.splashImage3 = data.data.splashImage3;
+            $scope.splashImage4 = data.data.splashImage4;
         });
 }]);
