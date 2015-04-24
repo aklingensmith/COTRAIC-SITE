@@ -36,5 +36,5 @@
         "preKFax": "Fax: (412)-531-3295",
         "preKEmail": "mmihalko@cotraic.org",
         
-	"displayPopup": true
+	"displayPopup": false
 }
