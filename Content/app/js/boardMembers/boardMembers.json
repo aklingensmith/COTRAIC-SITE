@@ -2,9 +2,9 @@
     "boardMembers": [
         {
             "picture": "/Content/app/img/placeHolder.png",
-            "name": "Placeholder name 1",
-            "jobTitle": "Placeholder jobTitle 1",
-            "biography": "Placeholder biography 1"
+            "name": "Russ Simms",
+            "jobTitle": "CEO",
+            "biography": "I am the CEO."
         },
         {
             "picture": "/Content/app/img/placeHolder.png",
